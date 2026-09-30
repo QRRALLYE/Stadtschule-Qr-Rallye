@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mission Stadtschule – Finale</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">MISSION <span>STADTSCHULE</span></a>
+  <div class="badge">FINAL MISSION</div>
+</header>
+
+<main class="final-wrap">
+  <section class="final-card">
+    <div class="eyebrow">🔒 FINAL MISSION</div>
+    <h1>Der Code ist<br><span>gefunden.</span></h1>
+    <p>Du hast alle sieben Stationen geschafft. Gib das Lösungswort ein.</p>
+    <input id="finalInput" class="answer" autocomplete="off" placeholder="LÖSUNGSWORT">
+    <button class="btn" onclick="checkFinal()">CODE PRÜFEN →</button>
+    <div id="finalMessage"></div>
+    <div id="videoBox" class="video-box hidden">
+      <div class="video-placeholder">🎬</div>
+      <h2>Willkommen an der Stadtschule!</h2>
+      <p>Hier euer Abschlussvideo einfügen.</p>
+      <div class="video-frame">
+        <p>VIDEO</p>
+        <small>Ersetzt diesen Bereich später durch euer YouTube-/MP4-Video.</small>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
