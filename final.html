@@ -2,35 +2,51 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c36">
+  <meta name="description" content="Setze die gesammelten Buchstaben zusammen und knacke das Finale der Mission Stadtschule.">
   <title>Mission Stadtschule – Finale</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <a class="brand" href="index.html">MISSION <span>STADTSCHULE</span></a>
+  <a class="brand" href="index.html" aria-label="Zurück zur Mission Stadtschule Startseite">MISSION <span>STADTSCHULE</span></a>
+  <nav class="top-links" aria-label="Hauptnavigation">
+    <a href="index.html#stationen">Alle Stationen</a>
+  </nav>
   <div class="badge">FINAL MISSION</div>
 </header>
 
 <main class="final-wrap">
   <section class="final-card">
-    <div class="eyebrow">🔒 FINAL MISSION</div>
-    <h1>Der Code ist<br><span>gefunden.</span></h1>
-    <p>Du hast alle sieben Stationen geschafft. Gib das Lösungswort ein.</p>
-    <input id="finalInput" class="answer" autocomplete="off" placeholder="LÖSUNGSWORT">
-    <button class="btn" onclick="checkFinal()">CODE PRÜFEN →</button>
-    <div id="finalMessage"></div>
+    <div class="eyebrow"><span class="eyebrow-mark" aria-hidden="true">✦</span> FINAL MISSION</div>
+    <h1>Bereit fürs<br><span>Finale?</span></h1>
+    <p>Setze deine sieben Buchstaben zusammen und gib das geheime Lösungswort ein.</p>
+    <div id="finalLocked" class="locked-message hidden" role="status">
+      <strong>Das Finale ist noch verschlossen.</strong>
+      <p>Sammle erst alle sieben Buchstaben. Dein nächster offener Hinweis wartet schon.</p>
+      <a id="nextStationLink" class="btn" href="index.html#stationen">ZUR NÄCHSTEN STATION <span aria-hidden="true">→</span></a>
+    </div>
+    <form id="finalForm" class="final-form">
+      <label class="field-label" for="finalInput">Dein Lösungswort</label>
+      <input id="finalInput" class="answer" autocomplete="off" autocapitalize="characters" placeholder="LÖSUNGSWORT" aria-describedby="finalMessage" required>
+      <button class="btn" type="submit">CODE PRÜFEN <span aria-hidden="true">→</span></button>
+      <div id="finalMessage" aria-live="polite"></div>
+    </form>
     <div id="videoBox" class="video-box hidden">
-      <div class="video-placeholder">🎬</div>
+      <div class="video-placeholder" aria-hidden="true">▶</div>
       <h2>Willkommen an der Stadtschule!</h2>
-      <p>Hier euer Abschlussvideo einfügen.</p>
+      <p>Das hast du dir verdient. Schau dir zum Abschluss das Video an.</p>
       <div class="video-frame">
-        <p>VIDEO</p>
-        <small>Ersetzt diesen Bereich später durch euer YouTube-/MP4-Video.</small>
+        <div><strong>DEIN ABSCHLUSSVIDEO</strong><small>Füge hier euer YouTube- oder MP4-Video ein.</small></div>
       </div>
     </div>
   </section>
 </main>
+<footer class="site-footer">
+  <a class="text-link" href="index.html">← Zurück zur Übersicht</a>
+  <span>Mission Stadtschule · Finale</span>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

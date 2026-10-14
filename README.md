@@ -10,6 +10,8 @@
 - `style.css` — дизайн
 - `images/` — 7 фотографий из вашего архива
 
+Главная страница содержит ссылки на все семь станций и показывает сохранённый прогресс. Ссылки на главную страницу и список станций доступны также из каждой миссии.
+
 ## Буквы
 1. S
 2. T
@@ -22,20 +24,24 @@
 Финальное слово: **STATION**
 
 ## Как загрузить на GitHub Pages
-1. Войдите на GitHub и создайте новый репозиторий, например `mission-stadtschule`.
-2. Загрузите в репозиторий все файлы и папку `images`.
-3. Откройте **Settings → Pages**.
-4. В разделе Source выберите **Deploy from a branch**.
-5. Выберите ветку `main` и папку `/ (root)`.
-6. Сохраните. GitHub выдаст ссылку вида:
-   `https://ВАШ-USERNAME.github.io/mission-stadtschule/`
+1. Загрузите все файлы проекта и папку `images` в репозиторий.
+2. Откройте **Settings → Pages**.
+3. В разделе Source выберите **Deploy from a branch**.
+4. Выберите ветку `main` и папку `/ (root)`, затем сохраните.
+5. После публикации сайт будет доступен по адресу:
+   `https://qrrallye.github.io/Stadtschule-Qr-Rallye/`
+
+Если ссылка пока показывает ошибку 404, включите GitHub Pages в настройках репозитория и дождитесь завершения публикации.
 
 ## QR-коды
-После публикации используйте URL:
-- `https://ВАШ-USERNAME.github.io/mission-stadtschule/station.html?station=1`
-- `...station.html?station=2`
-- ...
-- `...station.html?station=7`
+После публикации добавьте к адресу сайта `station.html?station=N`, где `N` — номер станции от 1 до 7. Например:
+- `https://qrrallye.github.io/Stadtschule-Qr-Rallye/station.html?station=1`
+- `https://qrrallye.github.io/Stadtschule-Qr-Rallye/station.html?station=2`
+- `https://qrrallye.github.io/Stadtschule-Qr-Rallye/station.html?station=3`
+- `https://qrrallye.github.io/Stadtschule-Qr-Rallye/station.html?station=4`
+- `https://qrrallye.github.io/Stadtschule-Qr-Rallye/station.html?station=5`
+- `https://qrrallye.github.io/Stadtschule-Qr-Rallye/station.html?station=6`
+- `https://qrrallye.github.io/Stadtschule-Qr-Rallye/station.html?station=7`
 
 Каждый URL нужно превратить в QR-код и распечатать у соответствующей станции.
 
@@ -51,4 +57,4 @@
 ## Как добавить настоящее видео
 В `final.html` замените блок `.video-frame` на ваш `<video controls>` или iframe YouTube/школьного видеохостинга.
 
-Важно: сайт использует `localStorage`, поэтому прогресс хранится на устройстве участника. Если участник сменит телефон/браузер, прогресс начнётся заново.
+Важно: сайт использует `localStorage`, поэтому прогресс хранится на устройстве участника. Если участник сменит телефон/браузер, прогресс начнётся заново. Финал открывается только после прохождения всех семи станций.
