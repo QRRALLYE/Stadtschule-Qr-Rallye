@@ -12,7 +12,7 @@ const stations = {
   2: {
     title: "SEKRETARIAT",
     place: "Sekretariat",
-    image: "images/station5.jpg",
+    image: "images/station2.jpg",
     letter: "T",
     question: "Welcher Raum ist auf dem großen Schild über dem Fenster genannt?",
     answers: ["SEKRETARIAT"],
@@ -52,7 +52,7 @@ const stations = {
   6: {
     title: "DRAUSSEN",
     place: "Eingang / Blick auf den Schulhof",
-    image: "images/station2.jpg",
+    image: "images/station7.jpg",
     letter: "O",
     question: "Welche Farbe hat der Boden des Sportbereichs draußen?",
     answers: ["ROT", "ROT/ORANGE", "ORANGE"],
@@ -62,7 +62,7 @@ const stations = {
   7: {
     title: "PODCAST",
     place: "Podcast-Bereich",
-    image: "images/station7.jpg",
+    image: "images/station5.jpg",
     letter: "N",
     question: "Was möchte die Schule laut dem Plakat starten?",
     answers: ["PODCAST", "EINEN PODCAST", "EINEN SCHULPODCAST", "SCHULPODCAST"],
