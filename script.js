@@ -1,7 +1,7 @@
 const stations = {
   1: {
-    title: "STAFFROOM",
-    place: "Staffroom / Lehrerzimmer",
+    title: "LEHRERZIMMER",
+    place: "Lehrerzimmer",
     image: "images/station1.jpg",
     letter: "S",
     question: "Auf der Tür steht ein englisches Wort. Welches Wort ist es?",
@@ -21,7 +21,7 @@ const stations = {
   },
   3: {
     title: "AULA",
-    place: "Aula / Eingangsbereich",
+    place: "Wegweiser zu Aula und Mensa",
     image: "images/station4.jpg",
     letter: "A",
     question: "Auf dem Wegweiser stehen zwei Orte. Einer davon ist die Aula. Wie heißt der andere?",
@@ -30,8 +30,8 @@ const stations = {
     type: "text"
   },
   4: {
-    title: "DER HINWEIS",
-    place: "Station 4",
+    title: "SPÜLKÜCHE",
+    place: "Raum N.E35",
     image: "images/station3.jpg",
     letter: "T",
     question: "Welche Raum-Nummer steht auf dem kleinen Schild an der Tür?",
@@ -40,7 +40,7 @@ const stations = {
     type: "text"
   },
   5: {
-    title: "DER FLUR",
+    title: "FEUERLÖSCHER",
     place: "Schulflur",
     image: "images/station6.jpg",
     letter: "I",
@@ -50,8 +50,8 @@ const stations = {
     type: "text"
   },
   6: {
-    title: "DRAUSSEN",
-    place: "Eingang / Blick auf den Schulhof",
+    title: "SCHULHOF",
+    place: "Blick durch die Fenster",
     image: "images/station7.jpg",
     letter: "O",
     question: "Welche Farbe hat der Boden des Sportbereichs draußen?",
@@ -60,8 +60,8 @@ const stations = {
     type: "text"
   },
   7: {
-    title: "PODCAST",
-    place: "Podcast-Bereich",
+    title: "SCHULPODCAST",
+    place: "Podcast-Plakat",
     image: "images/station5.jpg",
     letter: "N",
     question: "Was möchte die Schule laut dem Plakat starten?",
@@ -168,7 +168,7 @@ function renderStationLinks(solved = getSolved()) {
     const number = Number(key);
     const done = solved.includes(number);
     return `
-      <a class="station-tile" href="station.html?station=${number}" aria-label="Station ${number}: ${station.place}, ${done ? "geschafft" : "starten"}">
+      <a class="station-tile" data-station="${number}" href="station.html?station=${number}" aria-label="Station ${number}: ${station.place}, ${done ? "geschafft" : "starten"}">
         <img src="${station.image}" alt="" loading="lazy">
         <div class="station-tile-content">
           <div class="station-tile-top">
@@ -199,8 +199,9 @@ function renderStation() {
   }
   document.title = `Station ${n}: ${s.title} – Mission Stadtschule`;
   const solved = getSolved().includes(n);
+  card.dataset.station = String(n);
   card.innerHTML = `
-    <div class="station-image-wrap"><img src="${s.image}" alt="Einblick in den Bereich: ${s.place}"></div>
+    <div class="station-image-wrap"><img src="${s.image}" alt="Foto vom Standort: ${s.place}"><span class="station-photo-label">ORIGINALFOTO AUS DER SCHULE</span></div>
     <div class="station-content">
       <div class="eyebrow"><span class="eyebrow-mark" aria-hidden="true">⌖</span> ${s.place}</div>
       <h1>STATION ${n}<br><span>${s.title}</span></h1>
