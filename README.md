@@ -54,6 +54,16 @@
 - `letter` — букву станции
 - `image` — фотографию
 
+## Язык и порядок фотографий
+На сайте можно выбрать Deutsch, English, العربية или Русский. Выбор языка сохраняется на устройстве. На каждой станции используются фото с соответствующим номером:
+1. `images/station1.jpg` — дверь учительской и надпись STAFF ROOM
+2. `images/station2.jpg` — вывеска Sekretariat
+3. `images/station3.jpg` — указатель Aula / Mensa
+4. `images/station4.jpg` — дверь моечной с номером N.E35
+5. `images/station5.jpg` — плакат школьного подкаста
+6. `images/station6.jpg` — огнетушитель в коридоре
+7. `images/station7.jpg` — спортивная площадка за окнами
+
 ## Как добавить настоящее видео
 В `final.html` замените блок `.video-frame` на ваш `<video controls>` или iframe YouTube/школьного видеохостинга.
 
