@@ -137,7 +137,7 @@ const stations = {
 const translations = {
   de: {
     language: "Sprache", languageSelect: "Sprache auswählen", homeLink: "Mission Stadtschule – Startseite", backHome: "Zurück zur Mission Stadtschule Startseite", mainNav: "Hauptnavigation", navStations: "Stationen", navFinal: "Finale", stationCount: "7 STATIONEN",
-    progressAria: "Fortschritt der sieben Stationen",
+    progressAria: "Fortschritt der sieben Stationen", resetProgress: "Fortschritt zurücksetzen", resetConfirm: "Möchtest du deinen Fortschritt wirklich zurücksetzen?", resetDone: "Fortschritt zurückgesetzt. Du kannst neu starten.",
     heroEyebrow: "DIE SCHULRALLYE", heroTitle: "Deine Schule.<br><span>Deine Mission.</span>",
     heroDescription: "Entdecke die Stadtschule aus einer neuen Perspektive. Finde die QR-Codes, löse sieben Aufgaben und sammle die Buchstaben für das geheime Lösungswort.",
     startMission: "MISSION STARTEN", seeStations: "Alle Stationen ansehen", heroNote: "Sieben Stationen · ein geheimes Lösungswort",
@@ -151,6 +151,7 @@ const translations = {
     checkAnswer: "ANTWORT PRÜFEN", checkAgain: "NOCH EINMAL PRÜFEN", tip: "Tipp:", correct: "✓ RICHTIG! Dein Geheim-Buchstabe ist",
     nextStation: "WEITER ZUR NÄCHSTEN STATION", finalCode: "ZUM FINALEN CODE",
     incorrect: "✕ Noch nicht richtig. Schau dir das Foto und den Hinweis noch einmal genau an.",
+    showHint: "Tipp anzeigen", hideHint: "Tipp verbergen",
     storageLoadError: "Dein Fortschritt konnte nicht geladen werden. Bitte prüfe die Speichereinstellungen deines Browsers.",
     storageSaveError: "Der Browser konnte deinen Fortschritt nicht speichern. Bitte aktiviere den lokalen Speicher.",
     stationMissing: "Diese Station gibt es nicht.", stationMissingText: "Prüfe den QR-Code oder gehe zurück zur Übersicht.",
@@ -166,11 +167,11 @@ const translations = {
     closingVideo: "DEIN ABSCHLUSSVIDEO", videoPrompt: "Füge hier euer YouTube- oder MP4-Video ein.",
     footerHome: "Eine Entdeckungsreise durch deine Schule.", footerFinal: "Mission Stadtschule · Finale",
     titleHome: "Mission Stadtschule – Die QR-Rallye", titleStation: "Station", titleNotFound: "Station nicht gefunden",
-    titleFinal: "Mission Stadtschule – Finale"
+    titleFinal: "Mission Stadtschule – Finale", metaHome: "Entdecke die Stadtschule bei einer interaktiven QR-Rallye mit sieben spannenden Stationen.", metaStation: "Löse eine Station der QR-Rallye an der Stadtschule.", metaFinal: "Setze die gesammelten Buchstaben zusammen und knacke das Finale der Mission Stadtschule."
   },
   en: {
     language: "Language", languageSelect: "Choose language", homeLink: "Mission Stadtschule home", backHome: "Back to Mission Stadtschule home", mainNav: "Main navigation", navStations: "Stations", navFinal: "Final", stationCount: "7 STATIONS",
-    progressAria: "Progress through the seven stations",
+    progressAria: "Progress through the seven stations", resetProgress: "Reset progress", resetConfirm: "Are you sure you want to reset your progress?", resetDone: "Progress reset. You can start again.",
     heroEyebrow: "THE SCHOOL RALLY", heroTitle: "Your school.<br><span>Your mission.</span>",
     heroDescription: "Explore Stadtschule from a new perspective. Find the QR codes, solve seven puzzles and collect the letters to reveal the secret word.",
     startMission: "START MISSION", seeStations: "View all stations", heroNote: "Seven stations · one secret word",
@@ -184,6 +185,7 @@ const translations = {
     checkAnswer: "CHECK ANSWER", checkAgain: "CHECK AGAIN", tip: "Hint:", correct: "✓ CORRECT! Your secret letter is",
     nextStation: "NEXT STATION", finalCode: "GO TO FINAL CODE",
     incorrect: "✕ Not quite. Take another look at the photo and the hint.",
+    showHint: "Show hint", hideHint: "Hide hint",
     storageLoadError: "Your progress could not be loaded. Check your browser storage settings.",
     storageSaveError: "Your browser could not save your progress. Please enable local storage.",
     stationMissing: "This station does not exist.", stationMissingText: "Check the QR code or return to the overview.",
@@ -199,11 +201,11 @@ const translations = {
     closingVideo: "YOUR FINAL VIDEO", videoPrompt: "Add your YouTube or MP4 video here.",
     footerHome: "An adventure through your school.", footerFinal: "Mission Stadtschule · Final",
     titleHome: "Mission Stadtschule – QR Rally", titleStation: "Station", titleNotFound: "Station not found",
-    titleFinal: "Mission Stadtschule – Final"
+    titleFinal: "Mission Stadtschule – Final", metaHome: "Explore Stadtschule in an interactive QR rally with seven exciting stations.", metaStation: "Solve a station in the Stadtschule QR rally.", metaFinal: "Put your collected letters together and crack the final mission."
   },
   ar: {
     language: "اللغة", languageSelect: "اختر اللغة", homeLink: "الصفحة الرئيسية لمهمة شتادتشوله", backHome: "العودة إلى الصفحة الرئيسية لمهمة شتادتشوله", mainNav: "القائمة الرئيسية", navStations: "المحطات", navFinal: "النهاية", stationCount: "٧ محطات",
-    progressAria: "التقدم في المحطات السبع",
+    progressAria: "التقدم في المحطات السبع", resetProgress: "إعادة ضبط التقدم", resetConfirm: "هل تريد بالتأكيد إعادة ضبط تقدمك؟", resetDone: "تمت إعادة ضبط التقدم. يمكنك البدء من جديد.",
     heroEyebrow: "جولة المدرسة", heroTitle: "مدرستك.<br><span>مهمتك.</span>",
     heroDescription: "اكتشف مدرسة شتادتشوله من منظور جديد. اعثر على رموز QR، وحلّ سبعة ألغاز، واجمع الحروف لاكتشاف الكلمة السرية.",
     startMission: "ابدأ المهمة", seeStations: "عرض جميع المحطات", heroNote: "سبع محطات · كلمة سرية واحدة",
@@ -217,6 +219,7 @@ const translations = {
     checkAnswer: "تحقق من الإجابة", checkAgain: "تحقق مرة أخرى", tip: "تلميح:", correct: "✓ صحيح! حرفك السري هو",
     nextStation: "المحطة التالية", finalCode: "إلى الرمز النهائي",
     incorrect: "✕ ليست صحيحة بعد. ألقِ نظرة أخرى على الصورة والتلميح.",
+    showHint: "إظهار التلميح", hideHint: "إخفاء التلميح",
     storageLoadError: "تعذّر تحميل تقدمك. تحقّق من إعدادات التخزين في المتصفح.",
     storageSaveError: "تعذّر على المتصفح حفظ تقدمك. يُرجى تفعيل التخزين المحلي.",
     stationMissing: "هذه المحطة غير موجودة.", stationMissingText: "تحقّق من رمز QR أو عُد إلى القائمة.",
@@ -232,11 +235,11 @@ const translations = {
     closingVideo: "فيديو الختام", videoPrompt: "أضف فيديو YouTube أو MP4 هنا.",
     footerHome: "مغامرة لاكتشاف مدرستك.", footerFinal: "مهمة شتادتشوله · النهاية",
     titleHome: "مهمة شتادتشوله – جولة QR", titleStation: "المحطة", titleNotFound: "المحطة غير موجودة",
-    titleFinal: "مهمة شتادتشوله – النهاية"
+    titleFinal: "مهمة شتادتشوله – النهاية", metaHome: "اكتشف مدرسة شتادتشوله في جولة تفاعلية برموز QR تضم سبع محطات ممتعة.", metaStation: "حل إحدى محطات جولة رموز QR في مدرسة شتادتشوله.", metaFinal: "اجمع الحروف التي حصلت عليها واكتشف المهمة النهائية."
   },
   ru: {
     language: "Язык", languageSelect: "Выбрать язык", homeLink: "Главная страница миссии Stadtschule", backHome: "Вернуться на главную страницу миссии Stadtschule", mainNav: "Главная навигация", navStations: "Станции", navFinal: "Финал", stationCount: "7 СТАНЦИЙ",
-    progressAria: "Прогресс прохождения семи станций",
+    progressAria: "Прогресс прохождения семи станций", resetProgress: "Сбросить прогресс", resetConfirm: "Ты действительно хочешь сбросить прогресс?", resetDone: "Прогресс сброшен. Можно начать заново.",
     heroEyebrow: "ШКОЛЬНЫЙ КВЕСТ", heroTitle: "Твоя школа.<br><span>Твоя миссия.</span>",
     heroDescription: "Открой для себя Stadtschule с новой стороны. Найди QR-коды, реши семь загадок и собери буквы секретного слова.",
     startMission: "НАЧАТЬ МИССИЮ", seeStations: "Все станции", heroNote: "Семь станций · одно секретное слово",
@@ -250,6 +253,7 @@ const translations = {
     checkAnswer: "ПРОВЕРИТЬ ОТВЕТ", checkAgain: "ПРОВЕРИТЬ ЕЩЁ РАЗ", tip: "Подсказка:", correct: "✓ ВЕРНО! Твоя секретная буква:",
     nextStation: "СЛЕДУЮЩАЯ СТАНЦИЯ", finalCode: "К ФИНАЛЬНОМУ КОДУ",
     incorrect: "✕ Пока неверно. Внимательно посмотри на фото и подсказку.",
+    showHint: "Показать подсказку", hideHint: "Скрыть подсказку",
     storageLoadError: "Не удалось загрузить прогресс. Проверь настройки хранилища браузера.",
     storageSaveError: "Браузеру не удалось сохранить прогресс. Включи локальное хранилище.",
     stationMissing: "Такой станции нет.", stationMissingText: "Проверь QR-код или вернись к списку.",
@@ -265,7 +269,7 @@ const translations = {
     closingVideo: "ФИНАЛЬНОЕ ВИДЕО", videoPrompt: "Добавь сюда видео YouTube или MP4.",
     footerHome: "Приключение по твоей школе.", footerFinal: "Миссия Stadtschule · Финал",
     titleHome: "Миссия Stadtschule – QR-квест", titleStation: "Станция", titleNotFound: "Станция не найдена",
-    titleFinal: "Миссия Stadtschule – Финал"
+    titleFinal: "Миссия Stadtschule – Финал", metaHome: "Исследуй Stadtschule в интерактивном QR-квесте с семью интересными станциями.", metaStation: "Реши одну из станций QR-квеста Stadtschule.", metaFinal: "Составь финальное слово из собранных букв и разгадай последнюю загадку."
   }
 };
 
@@ -303,6 +307,11 @@ function setLanguage(language) {
     finalMessage.firstElementChild.textContent = translations[language].accepted;
   } else if (finalMessage?.firstElementChild?.classList.contains("error")) {
     finalMessage.firstElementChild.textContent = translations[language].wrongCode;
+  }
+  const description = document.querySelector('meta[name="description"]');
+  if (description) {
+    const key = document.getElementById("finalForm") ? "metaFinal" : document.getElementById("stationCard") ? "metaStation" : "metaHome";
+    description.content = translations[language][key];
   }
   renderProgress();
   renderStation();
@@ -448,6 +457,8 @@ function stationFromUrl() {
 function renderStation() {
   const card = document.getElementById("stationCard");
   if (!card) return;
+  const previousAnswer = document.getElementById("stationAnswer")?.value || "";
+  const hintWasOpen = document.getElementById("hintToggle")?.getAttribute("aria-expanded") === "true";
   const n = stationFromUrl();
   const s = stations[n];
   const stationLabel = document.getElementById("stationNumber");
@@ -474,9 +485,24 @@ function renderStation() {
         <button class="btn" type="submit">${solved ? translations[currentLanguage].checkAgain : translations[currentLanguage].checkAnswer} <span aria-hidden="true">→</span></button>
       </form>
       <div id="stationMessage" aria-live="polite"></div>
-      <div class="hint"><strong>${translations[currentLanguage].tip}</strong> ${stationText(s, "hint")}</div>
+      <div class="hint-panel">
+        <button id="hintToggle" class="hint-toggle" type="button" aria-expanded="${hintWasOpen}" aria-controls="stationHint">${hintWasOpen ? translations[currentLanguage].hideHint : translations[currentLanguage].showHint} <span aria-hidden="true">${hintWasOpen ? "−" : "+"}</span></button>
+        <div id="stationHint" class="hint" ${hintWasOpen ? "" : "hidden"}><strong>${translations[currentLanguage].tip}</strong> ${stationText(s, "hint")}</div>
+      </div>
     </div>`;
+  document.getElementById("stationAnswer").value = previousAnswer;
   bindAnswerFields();
+}
+function resetProgress() {
+  if (!window.confirm(translations[currentLanguage].resetConfirm)) return;
+  if (!saveSolved([])) {
+    renderProgress();
+    return;
+  }
+  renderProgress();
+  const status = document.getElementById("progressStatus");
+  if (status) status.textContent = translations[currentLanguage].resetDone;
+  renderFinal();
 }
 function checkStation(n) {
   const s = stations[n];
@@ -549,6 +575,18 @@ document.addEventListener("submit", (event) => {
     event.preventDefault();
     checkFinal();
   }
+});
+document.addEventListener("click", (event) => {
+  const hintToggle = event.target.closest("#hintToggle");
+  if (hintToggle) {
+    const hint = document.getElementById("stationHint");
+    const isOpen = hintToggle.getAttribute("aria-expanded") === "true";
+    hintToggle.setAttribute("aria-expanded", String(!isOpen));
+    hintToggle.innerHTML = `${isOpen ? translations[currentLanguage].showHint : translations[currentLanguage].hideHint} <span aria-hidden="true">${isOpen ? "+" : "−"}</span>`;
+    hint.hidden = isOpen;
+    return;
+  }
+  if (event.target.closest("#resetProgress")) resetProgress();
 });
 initLanguage();
 bindAnswerFields();
