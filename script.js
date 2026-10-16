@@ -135,6 +135,116 @@ const stations = {
 };
 
 const translations = {
+  es: {
+    language: "Idioma", languageSelect: "Elegir idioma", homeLink: "Inicio de Mission Stadtschule", backHome: "Volver al inicio de Mission Stadtschule", mainNav: "Navegación principal", navStations: "Estaciones", navFinal: "Final", stationCount: "7 ESTACIONES",
+    progressAria: "Progreso de las siete estaciones", resetProgress: "Reiniciar progreso", resetConfirm: "¿Seguro que quieres reiniciar el progreso?", resetDone: "Progreso reiniciado. Puedes empezar de nuevo.",
+    heroEyebrow: "EL RETO ESCOLAR", heroTitle: "Tu escuela.<br><span>Tu misión.</span>", heroDescription: "Descubre Stadtschule desde otra perspectiva. Encuentra los códigos QR, resuelve siete acertijos y reúne las letras de la palabra secreta.",
+    startMission: "EMPEZAR MISIÓN", seeStations: "Ver todas las estaciones", heroNote: "Siete estaciones · una palabra secreta",
+    progressTitle: "TU AVENTURA", progressCaption: "estaciones completadas", progressWaiting: "Tus letras te están esperando.", progressEach: "Cada estación te da una letra.", progressDone: "¡Lo has conseguido! Ya puedes abrir el final.",
+    rulesLabel: "Cómo funciona el reto", rule1: "Encuentra un código QR", rule2: "Resuelve el acertijo", rule3: "Reúne las letras", rule4: "Descifra el código final",
+    overviewEyebrow: "TU RECORRIDO POR LA ESCUELA", overviewTitle: "Siete lugares.<br><span>Siete misterios.</span>", overviewDescription: "Escanea el código QR en el lugar o elige una estación de la lista.",
+    done: "✓ COMPLETADA", discover: "DESCUBRIR →", station: "ESTACIÓN", photoLabel: "FOTO ORIGINAL DE LA ESCUELA",
+    mission: "MISIÓN:", answerLabel: "Tu respuesta", answerPlaceholder: "TU RESPUESTA", checkAnswer: "COMPROBAR", checkAgain: "COMPROBAR OTRA VEZ", tip: "Pista:", correct: "✓ ¡CORRECTO! Tu letra secreta es",
+    nextStation: "SIGUIENTE ESTACIÓN", previousStation: "ESTACIÓN ANTERIOR", stationOverview: "TODAS LAS ESTACIONES", finalCode: "IR AL CÓDIGO FINAL",
+    incorrect: "✕ Aún no. Mira otra vez la foto y la pista.", showHint: "Mostrar pista", hideHint: "Ocultar pista",
+    storageLoadError: "No se pudo cargar tu progreso. Revisa el almacenamiento del navegador.", storageSaveError: "No se pudo guardar tu progreso. Activa el almacenamiento local.",
+    stationMissing: "Esta estación no existe.", stationMissingText: "Comprueba el código QR o vuelve a la lista.", overview: "VER ESTACIONES", backOverview: "← Volver a la lista", progressSaved: "Tu progreso se guarda en este dispositivo.",
+    finalMission: "MISIÓN FINAL", finalTitle: "¿Listo para el<br><span>final?</span>", finalDescription: "Une tus siete letras e introduce la palabra secreta.",
+    lockedTitle: "La misión final todavía está bloqueada.", lockedText: "Primero reúne las siete letras. Tu siguiente pista te espera.", nextOpen: "SIGUIENTE ESTACIÓN",
+    solutionLabel: "Palabra secreta", solutionPlaceholder: "PALABRA SECRETA", checkCode: "COMPROBAR CÓDIGO", accepted: "✓ ¡CÓDIGO ACEPTADO! La misión final está desbloqueada.",
+    wrongCode: "✕ El código aún no es correcto. Reúne las siete letras.", welcome: "¡Te damos la bienvenida a Stadtschule!",
+    videoDescription: "Te lo has ganado. Mira el vídeo para terminar el reto.", closingVideo: "TU VÍDEO FINAL", videoPrompt: "Añade aquí tu vídeo de YouTube o MP4.",
+    footerHome: "Una aventura por tu escuela.", footerFinal: "Mission Stadtschule · Final",
+    titleHome: "Mission Stadtschule – Reto QR", titleStation: "Estación", titleNotFound: "Estación no encontrada", titleFinal: "Mission Stadtschule – Final",
+    metaHome: "Descubre Stadtschule con un reto QR interactivo de siete estaciones.", metaStation: "Resuelve una estación del reto QR de Stadtschule.", metaFinal: "Reúne las letras y descifra la misión final."
+  },
+  fr: {
+    language: "Langue", languageSelect: "Choisir la langue", homeLink: "Accueil Mission Stadtschule", backHome: "Retour à l’accueil Mission Stadtschule", mainNav: "Navigation principale", navStations: "Étapes", navFinal: "Final", stationCount: "7 ÉTAPES",
+    progressAria: "Progression dans les sept étapes", resetProgress: "Réinitialiser la progression", resetConfirm: "Veux-tu vraiment réinitialiser ta progression ?", resetDone: "Progression réinitialisée. Tu peux recommencer.",
+    heroEyebrow: "LE DÉFI DE L’ÉCOLE", heroTitle: "Ton école.<br><span>Ta mission.</span>", heroDescription: "Découvre Stadtschule autrement. Trouve les codes QR, résous sept énigmes et rassemble les lettres du mot secret.",
+    startMission: "COMMENCER", seeStations: "Voir toutes les étapes", heroNote: "Sept étapes · un mot secret",
+    progressTitle: "TON AVENTURE", progressCaption: "étapes terminées", progressWaiting: "Tes lettres t’attendent.", progressEach: "Chaque étape te donne une lettre.", progressDone: "Bravo ! Tu peux maintenant ouvrir le final.",
+    rulesLabel: "Comment fonctionne le défi", rule1: "Trouve un code QR", rule2: "Résous l’énigme", rule3: "Rassemble les lettres", rule4: "Déchiffre le code final",
+    overviewEyebrow: "TON PARCOURS DANS L’ÉCOLE", overviewTitle: "Sept lieux.<br><span>Sept mystères.</span>", overviewDescription: "Scanne le code QR sur place ou choisis une étape dans la liste.",
+    done: "✓ TERMINÉE", discover: "DÉCOUVRIR →", station: "ÉTAPE", photoLabel: "PHOTO ORIGINALE DE L’ÉCOLE",
+    mission: "MISSION :", answerLabel: "Ta réponse", answerPlaceholder: "TA RÉPONSE", checkAnswer: "VÉRIFIER", checkAgain: "VÉRIFIER ENCORE", tip: "Indice :", correct: "✓ CORRECT ! Ta lettre secrète est",
+    nextStation: "ÉTAPE SUIVANTE", previousStation: "ÉTAPE PRÉCÉDENTE", stationOverview: "TOUTES LES ÉTAPES", finalCode: "PASSER AU CODE FINAL",
+    incorrect: "✕ Pas encore. Regarde attentivement la photo et l’indice.", showHint: "Afficher l’indice", hideHint: "Masquer l’indice",
+    storageLoadError: "Impossible de charger ta progression. Vérifie le stockage de ton navigateur.", storageSaveError: "Impossible d’enregistrer ta progression. Active le stockage local.",
+    stationMissing: "Cette étape n’existe pas.", stationMissingText: "Vérifie le code QR ou retourne à la liste.", overview: "VOIR LES ÉTAPES", backOverview: "← Retour à la liste", progressSaved: "Ta progression est enregistrée sur cet appareil.",
+    finalMission: "MISSION FINALE", finalTitle: "Prêt pour le<br><span>final ?</span>", finalDescription: "Assemble tes sept lettres et saisis le mot secret.",
+    lockedTitle: "La mission finale est encore verrouillée.", lockedText: "Rassemble d’abord les sept lettres. Le prochain indice t’attend.", nextOpen: "ÉTAPE SUIVANTE",
+    solutionLabel: "Mot secret", solutionPlaceholder: "MOT SECRET", checkCode: "VÉRIFIER LE CODE", accepted: "✓ CODE ACCEPTÉ ! La mission finale est débloquée.",
+    wrongCode: "✕ Ce n’est pas encore le bon code. Rassemble les sept lettres.", welcome: "Bienvenue à Stadtschule !",
+    videoDescription: "Tu l’as bien mérité. Regarde la vidéo pour terminer le défi.", closingVideo: "TA VIDÉO FINALE", videoPrompt: "Ajoute ici ta vidéo YouTube ou MP4.",
+    footerHome: "Une aventure à travers ton école.", footerFinal: "Mission Stadtschule · Final",
+    titleHome: "Mission Stadtschule – Défi QR", titleStation: "Étape", titleNotFound: "Étape introuvable", titleFinal: "Mission Stadtschule – Final",
+    metaHome: "Découvre Stadtschule avec un défi QR interactif en sept étapes.", metaStation: "Résous une étape du défi QR de Stadtschule.", metaFinal: "Rassemble les lettres et déchiffre la mission finale."
+  },
+  tr: {
+    language: "Dil", languageSelect: "Dil seç", homeLink: "Mission Stadtschule ana sayfa", backHome: "Mission Stadtschule ana sayfasına dön", mainNav: "Ana menü", navStations: "İstasyonlar", navFinal: "Final", stationCount: "7 İSTASYON",
+    progressAria: "Yedi istasyondaki ilerleme", resetProgress: "İlerlemeyi sıfırla", resetConfirm: "İlerlemeni sıfırlamak istediğine emin misin?", resetDone: "İlerleme sıfırlandı. Yeniden başlayabilirsin.",
+    heroEyebrow: "OKUL MACERASI", heroTitle: "Okulun.<br><span>Görevin.</span>", heroDescription: "Stadtschule’yi yeni bir gözle keşfet. QR kodlarını bul, yedi bulmacayı çöz ve gizli kelimenin harflerini topla.",
+    startMission: "GÖREVE BAŞLA", seeStations: "Tüm istasyonları gör", heroNote: "Yedi istasyon · bir gizli kelime",
+    progressTitle: "MACERAN", progressCaption: "tamamlanan istasyon", progressWaiting: "Harflerin seni bekliyor.", progressEach: "Her istasyon sana bir harf verir.", progressDone: "Başardın! Artık finali açabilirsin.",
+    rulesLabel: "Oyun nasıl oynanır", rule1: "QR kodunu bul", rule2: "Bulmacayı çöz", rule3: "Harfleri topla", rule4: "Son kodu çöz",
+    overviewEyebrow: "OKULDAKİ ROTAN", overviewTitle: "Yedi yer.<br><span>Yedi sır.</span>", overviewDescription: "Bulunduğun yerdeki QR kodunu tara veya listeden bir istasyon seç.",
+    done: "✓ TAMAMLANDI", discover: "KEŞFET →", station: "İSTASYON", photoLabel: "OKULDAN GERÇEK FOTOĞRAF",
+    mission: "GÖREV:", answerLabel: "Cevabın", answerPlaceholder: "CEVABIN", checkAnswer: "CEVABI KONTROL ET", checkAgain: "TEKRAR KONTROL ET", tip: "İpucu:", correct: "✓ DOĞRU! Gizli harfin:",
+    nextStation: "SONRAKİ İSTASYON", previousStation: "ÖNCEKİ İSTASYON", stationOverview: "TÜM İSTASYONLAR", finalCode: "SON KODA GİT",
+    incorrect: "✕ Henüz doğru değil. Fotoğrafa ve ipucuna tekrar bak.", showHint: "İpucunu göster", hideHint: "İpucunu gizle",
+    storageLoadError: "İlerlemen yüklenemedi. Tarayıcı depolama ayarlarını kontrol et.", storageSaveError: "İlerlemen kaydedilemedi. Lütfen yerel depolamayı etkinleştir.",
+    stationMissing: "Bu istasyon mevcut değil.", stationMissingText: "QR kodunu kontrol et veya istasyon listesine dön.", overview: "İSTASYONLARA DÖN", backOverview: "← Listeye dön", progressSaved: "İlerlemen bu cihazda kaydedilir.",
+    finalMission: "SON GÖREV", finalTitle: "Finale<br><span>hazır mısın?</span>", finalDescription: "Yedi harfi birleştir ve gizli kelimeyi gir.",
+    lockedTitle: "Son görev henüz kilitli.", lockedText: "Önce yedi harfi topla. Sıradaki çözülmemiş ipucu seni bekliyor.", nextOpen: "SONRAKİ İSTASYON",
+    solutionLabel: "Gizli kelime", solutionPlaceholder: "GİZLİ KELİME", checkCode: "KODU KONTROL ET", accepted: "✓ KOD KABUL EDİLDİ! Son görev açıldı.",
+    wrongCode: "✕ Kod henüz doğru değil. Yedi harfin tamamını topla.", welcome: "Stadtschule’ye hoş geldin!",
+    videoDescription: "Bunu hak ettin. Macerayı bitirmek için videoyu izle.", closingVideo: "FİNAL VİDEON", videoPrompt: "YouTube veya MP4 videonu buraya ekle.",
+    footerHome: "Okulunda bir keşif yolculuğu.", footerFinal: "Mission Stadtschule · Final",
+    titleHome: "Mission Stadtschule – QR Macerası", titleStation: "İstasyon", titleNotFound: "İstasyon bulunamadı", titleFinal: "Mission Stadtschule – Final",
+    metaHome: "Stadtschule’yi yedi istasyonlu etkileşimli QR macerasıyla keşfet.", metaStation: "Stadtschule QR macerasında bir istasyonu çöz.", metaFinal: "Harfleri birleştir ve son görevin şifresini çöz."
+  }
+};
+
+const stationTranslations = {
+  es: [
+    { title: "CÓDIGO DEL CARTEL", place: "Sala de profesores", question: "El nombre grande en inglés de la puerta tiene dos palabras. Multiplica el número de palabras por 3.", hint: "Mira «STAFF ROOM» y calcula 2 × 3.", answers: ["6", "SEIS"] },
+    { title: "ACERTIJO DEL CARTEL", place: "Secretaría", question: "Cuenta las letras de la palabra grande del cartel y réstale 4.", hint: "«Sekretariat» tiene 11 letras. Calcula 11 − 4.", answers: ["7", "SIETE"] },
+    { title: "CÓDIGO DEL INDICADOR", place: "Indicador del salón de actos y el comedor", question: "Suma las letras de los dos lugares del indicador. ¿Cuál es el resultado?", hint: "AULA tiene 4 letras y MENSA tiene 5.", answers: ["9", "NUEVE"] },
+    { title: "CÓDIGO DEL AULA", place: "Puerta de la cocina de lavado", question: "En el cartel de la puerta pone N.E35. Suma las dos cifras del número del aula.", hint: "Las cifras son 3 y 5.", answers: ["8", "OCHO"] },
+    { title: "SUMA DEL PASILLO", place: "Pasillo de la escuela", question: "Cuenta los extintores rojos de la foto y suma 6.", hint: "En la foto hay un extintor. Calcula 1 + 6.", answers: ["7", "SIETE"] },
+    { title: "CÓDIGO DEL PATIO", place: "Pista deportiva exterior", question: "Busca el color de la pista. Suma 5 al número de letras de la palabra alemana ROT.", hint: "La pista es roja. ROT tiene 3 letras: 3 + 5.", answers: ["8", "OCHO"] },
+    { title: "SUMA DEL CARTEL", place: "Pasillo junto al cartel del pódcast", question: "Cuenta las letras de PODCAST en el cartel y réstale 2.", hint: "PODCAST tiene 7 letras. Calcula 7 − 2.", answers: ["5", "CINCO"] }
+  ],
+  fr: [
+    { title: "CODE DE L’ENSEIGNE", place: "Salle des professeurs", question: "Le grand nom anglais sur la porte contient deux mots. Multiplie le nombre de mots par 3.", hint: "Regarde « STAFF ROOM » et calcule 2 × 3.", answers: ["6", "SIX"] },
+    { title: "ÉNIGME DE L’ENSEIGNE", place: "Secrétariat", question: "Compte les lettres du grand mot sur l’enseigne, puis soustrais 4.", hint: "« Sekretariat » contient 11 lettres. Calcule 11 − 4.", answers: ["7", "SEPT"] },
+    { title: "CODE DU PANNEAU", place: "Panneau vers l’aula et la cantine", question: "Additionne le nombre de lettres des deux lieux indiqués. Quel est le résultat ?", hint: "AULA a 4 lettres et MENSA en a 5.", answers: ["9", "NEUF"] },
+    { title: "CODE DE LA SALLE", place: "Porte de la plonge", question: "La porte indique N.E35. Additionne les deux chiffres du numéro de salle.", hint: "Les chiffres sont 3 et 5.", answers: ["8", "HUIT"] },
+    { title: "CALCUL DU COULOIR", place: "Couloir de l’école", question: "Compte les extincteurs rouges sur la photo et ajoute 6.", hint: "Il y a un extincteur sur la photo. Calcule 1 + 6.", answers: ["7", "SEPT"] },
+    { title: "CODE DE LA COUR", place: "Terrain de sport extérieur", question: "Trouve la couleur du terrain. Ajoute 5 au nombre de lettres du mot allemand ROT.", hint: "Le terrain est rouge. ROT a 3 lettres : 3 + 5.", answers: ["8", "HUIT"] },
+    { title: "CALCUL DE L’AFFICHE", place: "Couloir près de l’affiche du podcast", question: "Compte les lettres de PODCAST sur l’affiche, puis soustrais 2.", hint: "PODCAST contient 7 lettres. Calcule 7 − 2.", answers: ["5", "CINQ"] }
+  ],
+  tr: [
+    { title: "KAPI TABELASI KODU", place: "Öğretmenler odası", question: "Kapıdaki büyük İngilizce oda adında iki kelime var. Kelime sayısını 3 ile çarp.", hint: "«STAFF ROOM» yazısına bak ve 2 × 3 işlemini yap.", answers: ["6", "ALTI"] },
+    { title: "TABELA BULMACASI", place: "Sekreterlik", question: "Tabeladaki büyük kelimenin harflerini say ve 4 çıkar.", hint: "«Sekretariat» 11 harflidir. 11 − 4 işlemini yap.", answers: ["7", "YEDİ"] },
+    { title: "YÖN TABELASI KODU", place: "Salon ve yemekhane yön tabelası", question: "Yön tabelasındaki iki yer adının harf sayılarını topla. Sonuç kaç?", hint: "AULA 4, MENSA 5 harflidir.", answers: ["9", "DOKUZ"] },
+    { title: "ODA NUMARASI KODU", place: "Bulaşık odasının kapısı", question: "Kapı tabelasında N.E35 yazıyor. Oda numarasındaki iki rakamı topla.", hint: "Rakamlar 3 ve 5.", answers: ["8", "SEKİZ"] },
+    { title: "KORİDOR İŞLEMİ", place: "Okul koridoru", question: "Fotoğraftaki kırmızı yangın söndürücüleri say ve 6 ekle.", hint: "Fotoğrafta bir yangın söndürücü var. 1 + 6 işlemini yap.", answers: ["7", "YEDİ"] },
+    { title: "OKUL BAHÇESİ KODU", place: "Açık hava spor sahası", question: "Sahanın rengini bul. Almanca ROT kelimesinin harf sayısına 5 ekle.", hint: "Saha kırmızı. ROT 3 harflidir: 3 + 5.", answers: ["8", "SEKİZ"] },
+    { title: "AFİŞ İŞLEMİ", place: "Podcast afişinin yanındaki koridor", question: "Afişteki PODCAST kelimesinin harflerini say ve 2 çıkar.", hint: "PODCAST 7 harflidir. 7 − 2 işlemini yap.", answers: ["5", "BEŞ"] }
+  ]
+};
+
+for (const [language, translatedStations] of Object.entries(stationTranslations)) {
+  translatedStations.forEach((translatedStation, index) => {
+    for (const [key, value] of Object.entries(translatedStation)) {
+      stations[index + 1][key][language] = value;
+    }
+  });
+}
+
+Object.assign(translations, {
   de: {
     language: "Sprache", languageSelect: "Sprache auswählen", homeLink: "Mission Stadtschule – Startseite", backHome: "Zurück zur Mission Stadtschule Startseite", mainNav: "Hauptnavigation", navStations: "Stationen", navFinal: "Finale", stationCount: "7 STATIONEN",
     progressAria: "Fortschritt der sieben Stationen", resetProgress: "Fortschritt zurücksetzen", resetConfirm: "Möchtest du deinen Fortschritt wirklich zurücksetzen?", resetDone: "Fortschritt zurückgesetzt. Du kannst neu starten.",
@@ -271,7 +381,12 @@ const translations = {
     titleHome: "Миссия Stadtschule – QR-квест", titleStation: "Станция", titleNotFound: "Станция не найдена",
     titleFinal: "Миссия Stadtschule – Финал", metaHome: "Исследуй Stadtschule в интерактивном QR-квесте с семью интересными станциями.", metaStation: "Реши одну из станций QR-квеста Stadtschule.", metaFinal: "Составь финальное слово из собранных букв и разгадай последнюю загадку."
   }
-};
+});
+
+Object.assign(translations.de, { previousStation: "VORHERIGE STATION", stationOverview: "ALLE STATIONEN" });
+Object.assign(translations.en, { previousStation: "PREVIOUS STATION", stationOverview: "ALL STATIONS" });
+Object.assign(translations.ar, { previousStation: "المحطة السابقة", stationOverview: "جميع المحطات" });
+Object.assign(translations.ru, { previousStation: "ПРЕДЫДУЩАЯ СТАНЦИЯ", stationOverview: "ВСЕ СТАНЦИИ" });
 
 let currentLanguage = "de";
 
@@ -339,7 +454,7 @@ function stationText(station, key) {
 }
 
 function normalize(s) {
-  return String(s || "").trim().toUpperCase()
+  return String(s || "").trim().toLocaleUpperCase(currentLanguage)
     .replaceAll("Ä","AE").replaceAll("Ö","OE").replaceAll("Ü","UE").replaceAll("ß","SS")
     .replace(/[٠-٩]/g, (digit) => String(digit.charCodeAt(0) - 0x0660))
     .replace(/\s+/g, " ");
@@ -489,6 +604,10 @@ function renderStation() {
         <button id="hintToggle" class="hint-toggle" type="button" aria-expanded="${hintWasOpen}" aria-controls="stationHint">${hintWasOpen ? translations[currentLanguage].hideHint : translations[currentLanguage].showHint} <span aria-hidden="true">${hintWasOpen ? "−" : "+"}</span></button>
         <div id="stationHint" class="hint" ${hintWasOpen ? "" : "hidden"}><strong>${translations[currentLanguage].tip}</strong> ${stationText(s, "hint")}</div>
       </div>
+      <nav class="station-nav" aria-label="${translations[currentLanguage].mainNav}">
+        <a class="station-nav-button" href="${n > 1 ? `station.html?station=${n - 1}` : "index.html#stationen"}"><span aria-hidden="true">←</span> ${n > 1 ? translations[currentLanguage].previousStation : translations[currentLanguage].stationOverview}</a>
+        <a class="station-nav-button primary" href="${n < 7 ? `station.html?station=${n + 1}` : "final.html"}">${n < 7 ? translations[currentLanguage].nextStation : translations[currentLanguage].finalCode} <span aria-hidden="true">→</span></a>
+      </nav>
     </div>`;
   document.getElementById("stationAnswer").value = previousAnswer;
   bindAnswerFields();
