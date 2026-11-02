@@ -159,6 +159,12 @@ h1, .overview-heading h2 { font-family: "Arial", ui-sans-serif, system-ui, sans-
 .text-link { display: inline-flex; align-items: center; gap: 8px; }
 .hero-note { margin-top: 42px; color: var(--muted); font-size: 12px; }
 .hero-note span { margin-right: 8px; color: var(--accent); }
+.hero-emoji-reactions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 20px; }
+.hero-emoji-label { margin-right: 4px; color: var(--muted); font-size: 11px; font-weight: 750; }
+.hero-emoji-reactions button { display: inline-flex; min-width: 56px; height: 38px; align-items: center; justify-content: center; gap: 6px; padding: 0 10px; border: 1px solid #ffffff24; border-radius: 12px; background: #ffffff0a; color: var(--text); cursor: pointer; font-size: 17px; transition: transform .18s ease, border-color .18s ease, background .18s ease; }
+.hero-emoji-reactions button span:last-child { color: var(--muted); font-size: 11px; font-weight: 850; }
+.hero-emoji-reactions button:hover, .hero-emoji-reactions button.is-pressed { transform: translateY(-2px); border-color: var(--blue); background: #22e8ff20; }
+.hero-emoji-reactions button.is-pressed span:first-child { animation: emoji-correct .5s ease both; }
 
 .progress-card, .hero-card, .station-card, .final-card {
   border: 1px solid #ffffff17;

@@ -52,6 +52,12 @@
         <a class="text-link" href="#stationen"><span data-i18n="seeStations">Alle Stationen ansehen</span> <span aria-hidden="true">↓</span></a>
       </div>
       <div class="hero-note"><span aria-hidden="true">◷</span> <span data-i18n="heroNote">Sieben Stationen · ein geheimes Lösungswort</span></div>
+          <div class="hero-emoji-reactions" aria-label="Emoji-Reaktionen">
+            <span class="hero-emoji-label" data-i18n="emojiCheerLabel">Добавь настроения</span>
+            <button type="button" data-hero-reaction aria-label="Rocket reaction" data-i18n-aria-label="emojiRocket"><span aria-hidden="true">🚀</span><span data-hero-count>0</span></button>
+            <button type="button" data-hero-reaction aria-label="Heart reaction" data-i18n-aria-label="emojiHeart"><span aria-hidden="true">💙</span><span data-hero-count>0</span></button>
+            <button type="button" data-hero-reaction aria-label="Sparkle reaction" data-i18n-aria-label="emojiSparkles"><span aria-hidden="true">✨</span><span data-hero-count>0</span></button>
+          </div>
     </div>
 
     <aside class="progress-card" aria-labelledby="progressTitle">
@@ -195,9 +201,9 @@
   <div class="admin-access-card">
     <button type="button" class="admin-access-close" id="adminAccessClose" aria-label="Close">×</button>
     <h3 data-i18n="adminAccessTitle">Admin-Zugang</h3>
-    <p data-i18n="adminAccessText">Gib den Code ein, um den Admin-Modus zu aktivieren.</p>
+    <p data-i18n="adminAccessText">Введите код</p>
     <label for="adminAccessInput" class="sr-only" data-i18n="adminAccessLabel">Code</label>
-    <input id="adminAccessInput" class="review-input" type="password" maxlength="20" placeholder="AdminSS" autocomplete="off">
+    <input id="adminAccessInput" class="review-input" type="password" maxlength="20" placeholder="Введите код" data-i18n-placeholder="adminAccessPlaceholder" autocomplete="off">
     <button type="button" class="btn" id="adminAccessConfirm"><span data-i18n="adminAccessActivate">Aktivieren</span> <span aria-hidden="true">→</span></button>
   </div>
 </div>
