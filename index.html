@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#8c123d">
   <meta name="description" content="Entdecke die Stadtschule bei einer interaktiven QR-Rallye mit sieben spannenden Stationen.">
   <title>Mission Stadtschule – Die QR-Rallye</title>
-  <link rel="stylesheet" href="style.css?v=mission-20261102-6">
+  <link rel="stylesheet" href="style.css?v=mission-20261102-7">
 </head>
 <body>
 <header class="top">
@@ -33,6 +33,8 @@
       <strong data-i18n="settingsTitle">ANSICHT &amp; TON</strong>
       <label for="siteBrightness" data-i18n="brightness">Bildschirmhelligkeit</label>
       <div class="brightness-control"><input id="siteBrightness" type="range" min="80" max="120" value="105"><output id="brightnessValue" for="siteBrightness">105%</output></div>
+      <label for="soundVolume" data-i18n="soundVolume">Lautstärke</label>
+      <div class="brightness-control"><input id="soundVolume" type="range" min="0" max="100" value="80"><output id="soundVolumeValue" for="soundVolume">80%</output></div>
       <label class="settings-toggle" for="soundEffects"><input id="soundEffects" type="checkbox" checked><span data-i18n="soundEffects">Klicksounds</span></label>
     </div>
   </details>
@@ -92,6 +94,20 @@
   <span data-i18n="footerHome">Eine Entdeckungsreise durch deine Schule.</span>
 </footer>
 
-<script src="script.js?v=mission-20261102-6"></script>
+<details class="quick-emoji-game">
+  <summary data-i18n-aria-label="emojiGameOpen" data-i18n-title="emojiGameOpen" aria-label="Emoji-Spiel öffnen" title="Emoji-Spiel öffnen">🎮</summary>
+  <div class="quick-game-panel">
+    <strong data-i18n="emojiGameTitle">DIE EMOJI-MISSION</strong>
+    <p data-i18n="emojiGameQuestion">Welches Emoji gehört zu unserer Schule?</p>
+    <div class="emoji-choices" role="group" aria-label="Emoji-Spiel">
+      <button type="button" data-emoji-choice="🌳" data-i18n-aria-label="emojiTree" aria-label="Baum" aria-pressed="false">🌳</button>
+      <button type="button" data-emoji-choice="🏫" data-i18n-aria-label="emojiSchool" aria-label="Schule" aria-pressed="false">🏫</button>
+      <button type="button" data-emoji-choice="⚽" data-i18n-aria-label="emojiFootball" aria-label="Fußball" aria-pressed="false">⚽</button>
+    </div>
+    <p id="emojiGameMessage" class="emoji-game-message" role="status" aria-live="polite"></p>
+  </div>
+</details>
+
+<script src="script.js?v=mission-20261102-7"></script>
 </body>
 </html>

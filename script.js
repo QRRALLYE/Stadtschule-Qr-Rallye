@@ -398,13 +398,13 @@ Object.assign(translations.en, { previousStation: "PREVIOUS STATION", stationOve
 Object.assign(translations.ar, { previousStation: "المحطة السابقة", stationOverview: "جميع المحطات" });
 Object.assign(translations.ru, { previousStation: "ПРЕДЫДУЩАЯ СТАНЦИЯ", stationOverview: "ВСЕ СТАНЦИИ" });
 
-Object.assign(translations.de, { factMonth: "💡 Wusstest du schon? An dieser QR-Rallye wurde einen Monat lang gearbeitet!", factClass: "🏫 Wusstest du schon? An unserer Schule gibt es seit Kurzem die Klasse 5e!", creditsTitle: "Das Team hinter der Rallye", creditProgram: "Programmiert von Konstantin Korneev (Konstantin Kornieiev)", creditDesign: "Design von Konstantin Korneev (Konstantin Kornieiev)", creditText: "Text von Vladyslav Shevchenko", creditTest: "Getestet von Konstantin Korneev und Vladyslav Shevchenko", sliderToggle: "Neon-Regler öffnen", sliderLabel: "Neon-Leuchten", sliderSecret: "✨ Neon-Level eingestellt!", colorSecret: "🌈 Geheime Neon-Farbenfolge gefunden!", starSecret: "⭐ Sternen-Geheimnis entdeckt!" });
-Object.assign(translations.en, { factMonth: "💡 Did you know? This QR rally took a whole month to create!", factClass: "🏫 Did you know? Our school recently welcomed class 5e!", creditsTitle: "The team behind the rally", creditProgram: "Programmed by Konstantin Korneev (Konstantin Kornieiev)", creditDesign: "Designed by Konstantin Korneev (Konstantin Kornieiev)", creditText: "Text by Vladyslav Shevchenko", creditTest: "Tested by Konstantin Korneev and Vladyslav Shevchenko", sliderToggle: "Open neon slider", sliderLabel: "Neon glow", sliderSecret: "✨ Neon level set!", colorSecret: "🌈 Secret neon colour sequence found!", starSecret: "⭐ Star secret discovered!" });
-Object.assign(translations.ar, { factMonth: "💡 هل تعلم؟ استغرق إعداد جولة QR هذه شهرًا كاملًا!", factClass: "🏫 هل تعلم؟ انضم الصف 5e إلى مدرستنا مؤخرًا!", creditsTitle: "فريق إعداد الجولة", creditProgram: "البرمجة: Konstantin Korneev (Konstantin Kornieiev)", creditDesign: "التصميم: Konstantin Korneev (Konstantin Kornieiev)", creditText: "النص: Vladyslav Shevchenko", creditTest: "الاختبار: Konstantin Korneev وVladyslav Shevchenko", sliderToggle: "افتح شريط ضبط النيون", sliderLabel: "سطوع النيون", sliderSecret: "✨ تم ضبط مستوى النيون!", colorSecret: "🌈 اكتشفت تسلسل ألوان النيون السري!", starSecret: "⭐ اكتشفت سر النجمة!" });
-Object.assign(translations.ru, { factMonth: "💡 Знаешь ли ты? На создание этого QR-квеста ушёл целый месяц!", factClass: "🏫 Знаешь ли ты? Недавно в нашей школе появился класс 5e!", creditsTitle: "Команда создателей квеста", creditProgram: "Программирование: Konstantin Korneev (Konstantin Kornieiev)", creditDesign: "Дизайн: Konstantin Korneev (Konstantin Kornieiev)", creditText: "Текст: Владислав Шевченко (Vladyslav Shevchenko)", creditTest: "Тестирование: Konstantin Korneev и Vladyslav Shevchenko", sliderToggle: "Открыть неоновый ползунок", sliderLabel: "Яркость неона", sliderSecret: "✨ Уровень неона настроен!", colorSecret: "🌈 Секретная последовательность неоновых цветов найдена!", starSecret: "⭐ Секрет звезды раскрыт!" });
-Object.assign(translations.es, { factMonth: "💡 ¿Sabías que…? ¡Esta ruta QR se creó durante todo un mes!", factClass: "🏫 ¿Sabías que…? ¡Hace poco llegó a nuestra escuela la clase 5e!", creditsTitle: "El equipo detrás de la ruta", creditProgram: "Programación: Konstantin Korneev (Konstantin Kornieiev)", creditDesign: "Diseño: Konstantin Korneev (Konstantin Kornieiev)", creditText: "Texto: Vladyslav Shevchenko", creditTest: "Pruebas: Konstantin Korneev y Vladyslav Shevchenko", sliderToggle: "Abrir el control de neón", sliderLabel: "Brillo de neón", sliderSecret: "✨ ¡Nivel de neón ajustado!", colorSecret: "🌈 ¡Has encontrado la secuencia de neón!", starSecret: "⭐ ¡Secreto de la estrella descubierto!" });
-Object.assign(translations.fr, { factMonth: "💡 Le savais-tu ? Cette aventure QR a été créée en un mois !", factClass: "🏫 Le savais-tu ? La classe 5e a récemment rejoint notre école !", creditsTitle: "L’équipe derrière le parcours", creditProgram: "Programmation : Konstantin Korneev (Konstantin Kornieiev)", creditDesign: "Design : Konstantin Korneev (Konstantin Kornieiev)", creditText: "Texte : Vladyslav Shevchenko", creditTest: "Tests : Konstantin Korneev et Vladyslav Shevchenko", sliderToggle: "Ouvrir le réglage néon", sliderLabel: "Lueur néon", sliderSecret: "✨ Intensité néon réglée !", colorSecret: "🌈 Séquence de couleurs néon découverte !", starSecret: "⭐ Secret de l’étoile découvert !" });
-Object.assign(translations.tr, { factMonth: "💡 Biliyor muydun? Bu QR macerası bir ay boyunca hazırlandı!", factClass: "🏫 Biliyor muydun? Okulumuzda kısa süre önce 5e sınıfı açıldı!", creditsTitle: "Rallinin arkasındaki ekip", creditProgram: "Programlama: Konstantin Korneev (Konstantin Kornieiev)", creditDesign: "Tasarım: Konstantin Korneev (Konstantin Kornieiev)", creditText: "Metin: Vladyslav Shevchenko", creditTest: "Test edenler: Konstantin Korneev ve Vladyslav Shevchenko", sliderToggle: "Neon ayarını aç", sliderLabel: "Neon parlaklığı", sliderSecret: "✨ Neon seviyesi ayarlandı!", colorSecret: "🌈 Gizli neon renk sırası bulundu!", starSecret: "⭐ Yıldız sırrı keşfedildi!" });
+Object.assign(translations.de, { factMonth: "💡 Wusstest du schon? An dieser QR-Rallye wurde einen Monat lang gearbeitet!", factClass: "🏫 Wusstest du schon? An unserer Schule gibt es seit Kurzem die Klasse 5e!", creditsTitle: "Das Team hinter der Rallye", sliderToggle: "Neon-Regler öffnen", sliderLabel: "Neon-Leuchten", sliderSecret: "✨ Neon-Level eingestellt!", colorSecret: "🌈 Geheime Neon-Farbenfolge gefunden!", starSecret: "⭐ Sternen-Geheimnis entdeckt!" });
+Object.assign(translations.en, { factMonth: "💡 Did you know? This QR rally took a whole month to create!", factClass: "🏫 Did you know? Our school recently welcomed class 5e!", creditsTitle: "The team behind the rally", sliderToggle: "Open neon slider", sliderLabel: "Neon glow", sliderSecret: "✨ Neon level set!", colorSecret: "🌈 Secret neon colour sequence found!", starSecret: "⭐ Star secret discovered!" });
+Object.assign(translations.ar, { factMonth: "💡 هل تعلم؟ استغرق إعداد جولة QR هذه شهرًا كاملًا!", factClass: "🏫 هل تعلم؟ انضم الصف 5e إلى مدرستنا مؤخرًا!", creditsTitle: "فريق إعداد الجولة", sliderToggle: "افتح شريط ضبط النيون", sliderLabel: "سطوع النيون", sliderSecret: "✨ تم ضبط مستوى النيون!", colorSecret: "🌈 اكتشفت تسلسل ألوان النيون السري!", starSecret: "⭐ اكتشفت سر النجمة!" });
+Object.assign(translations.ru, { factMonth: "💡 Знаешь ли ты? На создание этого QR-квеста ушёл целый месяц!", factClass: "🏫 Знаешь ли ты? Недавно в нашей школе появился класс 5e!", creditsTitle: "Команда создателей квеста", sliderToggle: "Открыть неоновый ползунок", sliderLabel: "Яркость неона", sliderSecret: "✨ Уровень неона настроен!", colorSecret: "🌈 Секретная последовательность неоновых цветов найдена!", starSecret: "⭐ Секрет звезды раскрыт!" });
+Object.assign(translations.es, { factMonth: "💡 ¿Sabías que…? ¡Esta ruta QR se creó durante todo un mes!", factClass: "🏫 ¿Sabías que…? ¡Hace poco llegó a nuestra escuela la clase 5e!", creditsTitle: "El equipo detrás de la ruta", sliderToggle: "Abrir el control de neón", sliderLabel: "Brillo de neón", sliderSecret: "✨ ¡Nivel de neón ajustado!", colorSecret: "🌈 ¡Has encontrado la secuencia de neón!", starSecret: "⭐ ¡Secreto de la estrella descubierto!" });
+Object.assign(translations.fr, { factMonth: "💡 Le savais-tu ? Cette aventure QR a été créée en un mois !", factClass: "🏫 Le savais-tu ? La classe 5e a récemment rejoint notre école !", creditsTitle: "L’équipe derrière le parcours", sliderToggle: "Ouvrir le réglage néon", sliderLabel: "Lueur néon", sliderSecret: "✨ Intensité néon réglée !", colorSecret: "🌈 Séquence de couleurs néon découverte !", starSecret: "⭐ Secret de l’étoile découvert !" });
+Object.assign(translations.tr, { factMonth: "💡 Biliyor muydun? Bu QR macerası bir ay boyunca hazırlandı!", factClass: "🏫 Biliyor muydun? Okulumuzda kısa süre önce 5e sınıfı açıldı!", creditsTitle: "Rallinin arkasındaki ekip", sliderToggle: "Neon ayarını aç", sliderLabel: "Neon parlaklığı", sliderSecret: "✨ Neon seviyesi ayarlandı!", colorSecret: "🌈 Gizli neon renk sırası bulundu!", starSecret: "⭐ Yıldız sırrı keşfedildi!" });
 
 Object.assign(translations.de, { settingsTitle: "ANSICHT & TON", settingsOpen: "Einstellungen öffnen", brightness: "Bildschirmhelligkeit", soundEffects: "Klicksounds", storyThanks: "Danke, dass du unsere Rallye gespielt hast. Schön, dass du dabei warst! 💙" });
 Object.assign(translations.en, { settingsTitle: "DISPLAY & SOUND", settingsOpen: "Open settings", brightness: "Screen brightness", soundEffects: "Click sounds", storyThanks: "Thanks for playing our rally! We are glad you joined us! 💙" });
@@ -413,6 +413,21 @@ Object.assign(translations.ru, { settingsTitle: "ЭКРАН И ЗВУК", settin
 Object.assign(translations.es, { settingsTitle: "PANTALLA Y SONIDO", settingsOpen: "Abrir ajustes", brightness: "Brillo de pantalla", soundEffects: "Sonidos al pulsar", storyThanks: "¡Gracias por jugar nuestra aventura! ¡Nos alegra que hayas participado! 💙" });
 Object.assign(translations.fr, { settingsTitle: "ÉCRAN ET SON", settingsOpen: "Ouvrir les réglages", brightness: "Luminosité de l’écran", soundEffects: "Sons des clics", storyThanks: "Merci d’avoir joué à notre aventure ! Nous sommes ravis de ta participation ! 💙" });
 Object.assign(translations.tr, { settingsTitle: "EKRAN VE SES", settingsOpen: "Ayarları aç", brightness: "Ekran parlaklığı", soundEffects: "Tıklama sesleri", storyThanks: "Oyunumuzu oynadığın için teşekkürler! Katıldığın için çok mutluyuz! 💙" });
+
+Object.assign(translations.de, { creditProgram: "Programmiert von Konstantin Korneev, Klasse 7A", creditDesign: "Design von Konstantin Korneev, Klasse 7A", creditText: "Text von Vladyslav Shevchenko, Klasse 7A", creditTest: "Getestet von Konstantin Korneev und Vladyslav Shevchenko, beide Klasse 7A", soundVolume: "Lautstärke", emojiGameOpen: "Emoji-Spiel öffnen", emojiGameTitle: "DIE EMOJI-MISSION", emojiGameQuestion: "Welches Emoji gehört zu unserer Schule?", emojiGameWrong: "Fast! Such noch einmal.", emojiGameCorrect: "Richtig! 🏫 Du kennst dich aus!" });
+Object.assign(translations.en, { creditProgram: "Programmed by Konstantin Korneev, class 7A", creditDesign: "Designed by Konstantin Korneev, class 7A", creditText: "Text by Vladyslav Shevchenko, class 7A", creditTest: "Tested by Konstantin Korneev and Vladyslav Shevchenko, both class 7A", soundVolume: "Sound volume", emojiGameOpen: "Open the emoji game", emojiGameTitle: "THE EMOJI MISSION", emojiGameQuestion: "Which emoji belongs at our school?", emojiGameWrong: "Almost! Give it another try.", emojiGameCorrect: "Correct! 🏫 You know your school!" });
+Object.assign(translations.ar, { creditProgram: "البرمجة: Konstantin Korneev، الصف 7A", creditDesign: "التصميم: Konstantin Korneev، الصف 7A", creditText: "النص: Vladyslav Shevchenko، الصف 7A", creditTest: "الاختبار: Konstantin Korneev وVladyslav Shevchenko، الصف 7A", soundVolume: "مستوى الصوت", emojiGameOpen: "افتح لعبة الرموز", emojiGameTitle: "مهمة الرموز التعبيرية", emojiGameQuestion: "أي رمز تعبيري يناسب مدرستنا؟", emojiGameWrong: "قريب! حاول مرة أخرى.", emojiGameCorrect: "صحيح! 🏫 أنت تعرف مدرستك جيدًا!" });
+Object.assign(translations.ru, { creditProgram: "Программирование: Константин Корнеев (Konstantin Korneev), 7А", creditDesign: "Дизайн: Константин Корнеев (Konstantin Korneev), 7А", creditText: "Текст: Владислав Шевченко (Vladyslav Shevchenko), 7А", creditTest: "Тестирование: Константин Корнеев (Konstantin Korneev) и Владислав Шевченко (Vladyslav Shevchenko), 7А", soundVolume: "Громкость звука", emojiGameOpen: "Открыть игру с эмодзи", emojiGameTitle: "ЭМОДЗИ-МИССИЯ", emojiGameQuestion: "Какой эмодзи подходит нашей школе?", emojiGameWrong: "Почти! Попробуй ещё раз.", emojiGameCorrect: "Верно! 🏫 Ты отлично знаешь свою школу!" });
+Object.assign(translations.es, { creditProgram: "Programación: Konstantin Korneev, clase 7A", creditDesign: "Diseño: Konstantin Korneev, clase 7A", creditText: "Texto: Vladyslav Shevchenko, clase 7A", creditTest: "Pruebas: Konstantin Korneev y Vladyslav Shevchenko, ambos de 7A", soundVolume: "Volumen del sonido", emojiGameOpen: "Abrir el juego de emojis", emojiGameTitle: "LA MISIÓN DE LOS EMOJIS", emojiGameQuestion: "¿Qué emoji representa nuestra escuela?", emojiGameWrong: "¡Casi! Inténtalo otra vez.", emojiGameCorrect: "¡Correcto! 🏫 ¡Conoces muy bien tu escuela!" });
+Object.assign(translations.fr, { creditProgram: "Programmation : Konstantin Korneev, classe 7A", creditDesign: "Design : Konstantin Korneev, classe 7A", creditText: "Texte : Vladyslav Shevchenko, classe 7A", creditTest: "Tests : Konstantin Korneev et Vladyslav Shevchenko, tous deux en 7A", soundVolume: "Volume sonore", emojiGameOpen: "Ouvrir le jeu d’émojis", emojiGameTitle: "LA MISSION DES ÉMOJIS", emojiGameQuestion: "Quel émoji représente notre école ?", emojiGameWrong: "Presque ! Réessaie.", emojiGameCorrect: "Bonne réponse ! 🏫 Tu connais bien ton école !" });
+Object.assign(translations.tr, { creditProgram: "Programlama: Konstantin Korneev, 7A sınıfı", creditDesign: "Tasarım: Konstantin Korneev, 7A sınıfı", creditText: "Metin: Vladyslav Shevchenko, 7A sınıfı", creditTest: "Test edenler: Konstantin Korneev ve Vladyslav Shevchenko, ikisi de 7A sınıfında", soundVolume: "Ses düzeyi", emojiGameOpen: "Emoji oyununu aç", emojiGameTitle: "EMOJİ GÖREVİ", emojiGameQuestion: "Okulumuzu hangi emoji temsil ediyor?", emojiGameWrong: "Az kaldı! Tekrar dene.", emojiGameCorrect: "Doğru! 🏫 Okulunu çok iyi tanıyorsun!" });
+Object.assign(translations.de, { emojiGameGroup: "Emoji-Spiel", emojiTree: "Baum", emojiSchool: "Schule", emojiFootball: "Fußball" });
+Object.assign(translations.en, { emojiGameGroup: "Emoji game", emojiTree: "Tree", emojiSchool: "School", emojiFootball: "Football" });
+Object.assign(translations.ar, { emojiGameGroup: "لعبة الرموز التعبيرية", emojiTree: "شجرة", emojiSchool: "مدرسة", emojiFootball: "كرة قدم" });
+Object.assign(translations.ru, { emojiGameGroup: "Игра с эмодзи", emojiTree: "Дерево", emojiSchool: "Школа", emojiFootball: "Футбольный мяч" });
+Object.assign(translations.es, { emojiGameGroup: "Juego de emojis", emojiTree: "Árbol", emojiSchool: "Escuela", emojiFootball: "Fútbol" });
+Object.assign(translations.fr, { emojiGameGroup: "Jeu d’émojis", emojiTree: "Arbre", emojiSchool: "École", emojiFootball: "Ballon de football" });
+Object.assign(translations.tr, { emojiGameGroup: "Emoji oyunu", emojiTree: "Ağaç", emojiSchool: "Okul", emojiFootball: "Futbol topu" });
 
 const schoolStories = {
   de: `<p class="story-lead">💙🏫 <strong>STADTSCHULE LÜBBECKE</strong><br>Gemeinsam lernen. Gemeinsam wachsen. Gemeinsam erfolgreich sein!</p><p>Willkommen an der Stadtschule Lübbecke! 🌟 Lernen, Gemeinschaft, Kreativität und persönliche Entwicklung gehören zusammen. Schülerinnen und Schüler entdecken Interessen, stärken Fähigkeiten und finden ihren eigenen Weg in die Zukunft. Wir sind eine Ganztagsschule für die Jahrgänge 5 bis 10 und bieten verschiedene Schulabschlüsse der Sekundarstufe I. Bei uns ist jeder Mensch wichtig! ❤️</p><h3>📚 1. Spannender Unterricht ab Klasse 5</h3><p>Mathematik stärkt logisches Denken; in Deutsch lesen und schreiben wir, in Englisch üben wir eine internationale Sprache. Gesellschaftslehre verbindet Geschichte, Erdkunde, Politik und Kulturen. Naturwissenschaften entdecken Tiere, Pflanzen, den menschlichen Körper und Naturphänomene. Informatik erkundet Computer und digitale Technologien. Sport und Schwimmen bringen Bewegung und Teamgeist; Kunst und Musik fördern Kreativität. Religion und Praktische Philosophie beschäftigen sich mit Werten und Lebensfragen. Soziales Lernen übt Respekt, Zusammenarbeit und Konfliktlösung.</p><h3>🧪 2. Naturwissenschaften: Forschen und Entdecken</h3><p>In höheren Klassen werden die Fächer vertieft: 🧬 Biologie behandelt Körper, Tiere, Pflanzen, Umwelt und Gesundheit. ⚗️ Chemie erforscht Stoffe, Reaktionen, Experimente und Chemie im Alltag. ⚡ Physik beschäftigt sich mit Energie, Bewegung, Elektrizität, Licht, Schall und Technik.</p><h3>⭐ 3. Wahlpflicht ab Klasse 7</h3><p>Am Ende der 6. Klasse wählen Jugendliche ein zusätzliches Fach: 🇫🇷 Französisch, 🇪🇸 Spanisch, 💻 MINT (Mathematik, Informatik, Naturwissenschaften und Technik), 🎭 Darstellen und Gestalten, 🍳 Hauswirtschaft oder 🔧 Technik. Es zählt wie ein Hauptfach; Interessen und Stärken helfen bei der Wahl.</p><h3>🌍 4. Bilingualer Unterricht</h3><p>Erweiterter Englischunterricht ab Klasse 5 kann auf den bilingualen Schwerpunkt ab Klasse 7 vorbereiten. Ausgewählte Unterrichtsinhalte können dann auch auf Englisch behandelt werden.</p><h3>💻 5. MINT – Die Zukunft entdecken</h3><p>MINT steht für Mathematik, Informatik, Naturwissenschaften und Technik. Jugendliche probieren Neues aus und erforschen Computer, Technik und Wissenschaft.</p><h3>⏰ 6. Ganztagsschule und Lernzeiten</h3><p>Dazu gehören begleitete Lernzeiten für Aufgaben und Wiederholung, Mittagspause in der schuleigenen Cafeteria, Arbeitsgemeinschaften und überwiegend 90-minütige Unterrichtsblöcke für vertieftes Lernen.</p><h3>❤️ 7. Eine Schule für alle</h3><p>Kinder und Jugendliche mit unterschiedlichen Fähigkeiten und Lernvoraussetzungen lernen gemeinsam. Lehrkräfte, Sonderpädagoginnen und Sonderpädagogen sowie weitere Fachkräfte bieten individuelle Unterstützung, differenziertes Lernen, zusätzliche Förderung und gegenseitige Rücksichtnahme.</p><p class="story-motto">Unser Motto: Jeder Mensch ist unterschiedlich – und genau das macht unsere Gemeinschaft stark! 🌈</p>`,
@@ -425,8 +440,9 @@ const schoolStories = {
 };
 
 let currentLanguage = "de";
-let siteSettings = { brightness: 105, soundEffects: true };
+let siteSettings = { brightness: 105, soundEffects: true, soundVolume: 80 };
 let clickAudioContext;
+let emojiGameResult = "";
 let creditTapCount = 0;
 let colorSequence = [];
 
@@ -477,6 +493,7 @@ function setLanguage(language) {
   renderFinal();
   renderSchoolStory();
   renderSettings();
+  renderEmojiGame();
   if (document.getElementById("finalForm")) document.title = translations[language].titleFinal;
   if (document.getElementById("stationGrid")) document.title = translations[language].titleHome;
 }
@@ -503,6 +520,27 @@ function renderSettings() {
   if (output) output.value = `${new Intl.NumberFormat(currentLanguage).format(siteSettings.brightness)}%`;
   const soundToggle = document.getElementById("soundEffects");
   if (soundToggle) soundToggle.checked = siteSettings.soundEffects;
+  const soundVolume = document.getElementById("soundVolume");
+  if (soundVolume) soundVolume.value = String(siteSettings.soundVolume);
+  const soundVolumeValue = document.getElementById("soundVolumeValue");
+  if (soundVolumeValue) soundVolumeValue.value = `${new Intl.NumberFormat(currentLanguage).format(siteSettings.soundVolume)}%`;
+}
+
+function renderEmojiGame() {
+  document.querySelectorAll("[data-emoji-choice]").forEach((choice) => {
+    const isCorrect = choice.dataset.emojiChoice === "🏫";
+    choice.setAttribute("aria-label", translations[currentLanguage][isCorrect ? "emojiSchool" : choice.dataset.emojiChoice === "🌳" ? "emojiTree" : "emojiFootball"]);
+    choice.setAttribute("aria-pressed", String(emojiGameResult === choice.dataset.emojiChoice));
+    choice.classList.toggle("is-correct", emojiGameResult === choice.dataset.emojiChoice && isCorrect);
+    choice.classList.toggle("is-wrong", emojiGameResult === choice.dataset.emojiChoice && !isCorrect);
+  });
+  const group = document.querySelector(".emoji-choices");
+  if (group) group.setAttribute("aria-label", translations[currentLanguage].emojiGameGroup);
+  const message = document.getElementById("emojiGameMessage");
+  if (message) {
+    message.textContent = emojiGameResult ? translations[currentLanguage][emojiGameResult === "🏫" ? "emojiGameCorrect" : "emojiGameWrong"] : "";
+    message.classList.toggle("is-wrong", Boolean(emojiGameResult && emojiGameResult !== "🏫"));
+  }
 }
 
 function saveSettings() {
@@ -518,6 +556,7 @@ function initSettings() {
     const saved = JSON.parse(localStorage.getItem("missionSettings") || "{}");
     if (Number.isFinite(saved.brightness)) siteSettings.brightness = Math.min(120, Math.max(80, Math.round(saved.brightness)));
     if (typeof saved.soundEffects === "boolean") siteSettings.soundEffects = saved.soundEffects;
+    if (Number.isFinite(saved.soundVolume)) siteSettings.soundVolume = Math.min(100, Math.max(0, Math.round(saved.soundVolume)));
   } catch (error) {
     console.error("Mission Stadtschule: Einstellungen konnten nicht geladen werden.", error);
   }
@@ -526,7 +565,7 @@ function initSettings() {
 }
 
 function playClickSound() {
-  if (!siteSettings.soundEffects) return;
+  if (!siteSettings.soundEffects || siteSettings.soundVolume === 0) return;
   const AudioContextConstructor = window.AudioContext || window.webkitAudioContext;
   if (!AudioContextConstructor) return;
   try {
@@ -535,15 +574,15 @@ function playClickSound() {
     const oscillator = clickAudioContext.createOscillator();
     const volume = clickAudioContext.createGain();
     const start = clickAudioContext.currentTime;
-    oscillator.type = "sine";
-    oscillator.frequency.setValueAtTime(660, start);
-    oscillator.frequency.exponentialRampToValueAtTime(440, start + 0.07);
-    volume.gain.setValueAtTime(0.035, start);
-    volume.gain.exponentialRampToValueAtTime(0.001, start + 0.08);
+    oscillator.type = "triangle";
+    oscillator.frequency.setValueAtTime(880, start);
+    oscillator.frequency.exponentialRampToValueAtTime(587, start + 0.11);
+    volume.gain.setValueAtTime(0.12 * siteSettings.soundVolume / 100, start);
+    volume.gain.exponentialRampToValueAtTime(0.001, start + 0.13);
     oscillator.connect(volume);
     volume.connect(clickAudioContext.destination);
     oscillator.start(start);
-    oscillator.stop(start + 0.08);
+    oscillator.stop(start + 0.13);
   } catch (error) {
     console.warn("Mission Stadtschule: Klicksound ist nicht verfügbar.", error);
   }
@@ -569,6 +608,7 @@ function bindAnswerFields() {
       const cursor = input.selectionStart ?? input.value.length;
       const nextValue = normalize(input.value);
       input.value = nextValue;
+      if (input.id === "finalInput") input.removeAttribute("aria-invalid");
 
       if (typeof input.setSelectionRange === "function") {
         const nextCursor = Math.min(cursor, nextValue.length);
@@ -796,7 +836,8 @@ function renderSchoolStory() {
   if (sliderSecret && !sliderSecret.classList.contains("hidden")) sliderSecret.textContent = translations[currentLanguage].sliderSecret;
 }
 function checkFinal() {
-  const value = normalize(document.getElementById("finalInput")?.value);
+  const input = document.getElementById("finalInput");
+  const value = normalize(input?.value);
   const msg = document.getElementById("finalMessage");
   if (!msg) return;
   if (getSolved().length < Object.keys(stations).length) {
@@ -804,12 +845,16 @@ function checkFinal() {
     return;
   }
   if (value.replaceAll("İ", "I") === "STATION") {
+    input?.setAttribute("aria-invalid", "false");
     msg.innerHTML = `<div class="success">${translations[currentLanguage].accepted}</div>`;
     document.getElementById("schoolReveal").classList.remove("hidden");
     renderSchoolStory();
+    document.getElementById("schoolReveal").scrollIntoView?.({ behavior: window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
   } else {
+    input?.setAttribute("aria-invalid", "true");
     msg.innerHTML = `<div class="error">${translations[currentLanguage].wrongCode}</div>`;
   }
+  input?.blur();
 }
 document.addEventListener("submit", (event) => {
   if (event.target.id === "stationForm") {
@@ -832,6 +877,12 @@ document.addEventListener("click", (event) => {
       ], { duration: 190, easing: "ease-out" });
     }
     playClickSound();
+  }
+  const emojiChoice = event.target.closest("[data-emoji-choice]");
+  if (emojiChoice) {
+    emojiGameResult = emojiChoice.dataset.emojiChoice;
+    renderEmojiGame();
+    return;
   }
   const creditTrigger = event.target.closest("#creditTrigger");
   if (creditTrigger) {
@@ -882,6 +933,10 @@ document.addEventListener("input", (event) => {
   if (event.target.id === "siteBrightness") {
     siteSettings.brightness = Math.min(120, Math.max(80, Number(event.target.value)));
     document.documentElement.style.setProperty("--display-brightness", String(siteSettings.brightness / 100));
+    renderSettings();
+    saveSettings();
+  } else if (event.target.id === "soundVolume") {
+    siteSettings.soundVolume = Math.min(100, Math.max(0, Number(event.target.value)));
     renderSettings();
     saveSettings();
   } else if (event.target.id === "neonIntensity") {
