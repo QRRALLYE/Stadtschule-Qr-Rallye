@@ -140,8 +140,8 @@ create policy "Visitors upload review photos and admins upload replies"
     bucket_id = 'review-photos'
     and storage.extension(name) in ('jpg', 'jpeg', 'png', 'webp')
     and (
-      storage.foldername(name)[1] = 'reviews'
-      or (storage.foldername(name)[1] = 'replies' and public.is_review_admin())
+      (storage.foldername(name))[1] = 'reviews'
+      or ((storage.foldername(name))[1] = 'replies' and public.is_review_admin())
     )
   );
 
