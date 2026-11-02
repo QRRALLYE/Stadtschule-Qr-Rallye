@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#8c123d">
   <meta name="description" content="Setze die gesammelten Buchstaben zusammen und knacke das Finale der Mission Stadtschule.">
   <title>Mission Stadtschule – Finale</title>
-  <link rel="stylesheet" href="style.css?v=mission-20261102-8">
+  <link rel="stylesheet" href="style.css?v=mission-20261102-9">
 </head>
 <body class="final-page">
 <header class="top">
@@ -35,6 +35,14 @@
       <label for="soundVolume" data-i18n="soundVolume">Lautstärke</label>
       <div class="brightness-control"><input id="soundVolume" type="range" min="0" max="100" value="80"><output id="soundVolumeValue" for="soundVolume">80%</output></div>
       <label class="settings-toggle" for="soundEffects"><input id="soundEffects" type="checkbox" checked><span data-i18n="soundEffects">Klicksounds</span></label>
+      <fieldset class="layout-mode-setting">
+        <legend data-i18n="deviceModeTitle">Gerätegröße</legend>
+        <div class="layout-mode-options">
+          <label class="layout-mode-option"><input type="radio" name="layoutMode" value="auto" checked><span data-i18n="deviceModeAuto">Auto</span></label>
+          <label class="layout-mode-option"><input type="radio" name="layoutMode" value="phone"><span data-i18n="deviceModePhone">Telefon</span></label>
+          <label class="layout-mode-option"><input type="radio" name="layoutMode" value="tablet"><span data-i18n="deviceModeTablet">Tablet</span></label>
+        </div>
+      </fieldset>
     </div>
   </details>
   <div class="badge" data-i18n="finalMission">FINAL MISSION</div>
@@ -101,6 +109,6 @@
     <p id="emojiGameMessage" class="emoji-game-message" role="status" aria-live="polite"></p>
   </div>
 </details>
-<script src="script.js?v=mission-20261102-8"></script>
+<script src="script.js?v=mission-20261102-9"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#8c123d">
   <meta name="description" content="Entdecke die Stadtschule bei einer interaktiven QR-Rallye mit sieben spannenden Stationen.">
   <title>Mission Stadtschule – Die QR-Rallye</title>
-  <link rel="stylesheet" href="style.css?v=mission-20261102-8">
+  <link rel="stylesheet" href="style.css?v=mission-20261102-9">
 </head>
 <body class="home-page">
 <header class="top">
@@ -36,6 +36,14 @@
       <label for="soundVolume" data-i18n="soundVolume">Lautstärke</label>
       <div class="brightness-control"><input id="soundVolume" type="range" min="0" max="100" value="80"><output id="soundVolumeValue" for="soundVolume">80%</output></div>
       <label class="settings-toggle" for="soundEffects"><input id="soundEffects" type="checkbox" checked><span data-i18n="soundEffects">Klicksounds</span></label>
+      <fieldset class="layout-mode-setting">
+        <legend data-i18n="deviceModeTitle">Gerätegröße</legend>
+        <div class="layout-mode-options">
+          <label class="layout-mode-option"><input type="radio" name="layoutMode" value="auto" checked><span data-i18n="deviceModeAuto">Auto</span></label>
+          <label class="layout-mode-option"><input type="radio" name="layoutMode" value="phone"><span data-i18n="deviceModePhone">Telefon</span></label>
+          <label class="layout-mode-option"><input type="radio" name="layoutMode" value="tablet"><span data-i18n="deviceModeTablet">Tablet</span></label>
+        </div>
+      </fieldset>
     </div>
   </details>
   <div class="badge" data-i18n="stationCount">7 STATIONEN</div>
@@ -163,19 +171,25 @@
 
           <label for="reviewText" data-i18n="reviewText">Feedback</label>
           <textarea id="reviewText" class="review-textarea" rows="4" maxlength="220" placeholder="Wie war die Rallye?" data-i18n-placeholder="reviewTextPlaceholder" required></textarea>
+          <label for="reviewPhoto" data-i18n="reviewPhotoLabel">Foto (optional)</label>
+          <input id="reviewPhoto" class="review-input photo-input" type="file" accept="image/jpeg,image/png,image/webp" disabled>
           <button class="btn" type="submit"><span data-i18n="reviewSubmit">Veröffentlichen</span> <span aria-hidden="true">→</span></button>
         </form>
+        <p id="reviewCloudNotice" class="cloud-setup-note" data-i18n="reviewCloudSetup">Фото будут доступны после подключения общей базы.</p>
         <div class="admin-panel hidden" id="adminPanel">
           <div class="admin-panel-head">
             <h4 data-i18n="adminReplyTitle">Admin Antwort</h4>
             <span class="admin-badge">ADMIN</span>
+            <button id="adminSignOutButton" class="admin-sign-out hidden" type="button" data-i18n="adminSignOut">Abmelden</button>
           </div>
           <p class="admin-hint" data-i18n="adminHint">Nur für die Schulverwaltung sichtbar.</p>
           <form id="adminReplyForm" class="review-form">
             <label for="adminReviewSelect" data-i18n="adminSelect">Bewertung auswählen</label>
             <select id="adminReviewSelect" class="review-select"></select>
             <label for="adminReplyText" data-i18n="adminReplyText">Antwort</label>
-            <textarea id="adminReplyText" class="review-textarea" rows="3" maxlength="220" placeholder="Antwort für die Community" data-i18n-placeholder="adminReplyPlaceholder" required></textarea>
+            <textarea id="adminReplyText" class="review-textarea" rows="3" maxlength="220" placeholder="Antwort für die Community" data-i18n-placeholder="adminReplyPlaceholder"></textarea>
+            <label for="adminReplyPhoto" data-i18n="adminReplyPhotoLabel">Antwortfoto (optional)</label>
+            <input id="adminReplyPhoto" class="review-input photo-input" type="file" accept="image/jpeg,image/png,image/webp" disabled>
             <button class="btn secondary" type="submit"><span data-i18n="adminReplySubmit">Antwort speichern</span> <span aria-hidden="true">→</span></button>
             <button class="btn danger" type="button" id="deleteSelectedReview"><span data-i18n="adminDelete">Bewertung löschen</span> <span aria-hidden="true">✕</span></button>
           </form>
@@ -203,10 +217,15 @@
   <div class="admin-access-card">
     <button type="button" class="admin-access-close" id="adminAccessClose" aria-label="Close">×</button>
     <h3 data-i18n="adminAccessTitle">Admin-Zugang</h3>
-    <p data-i18n="adminAccessText">Введите код</p>
-    <label for="adminAccessInput" class="sr-only" data-i18n="adminAccessLabel">Code</label>
+    <p id="adminAccessDescription" data-i18n="adminAccessText">Введите код</p>
+    <div id="adminEmailField" class="hidden">
+      <label for="adminAccessEmail" data-i18n="adminEmailLabel">Admin email</label>
+      <input id="adminAccessEmail" class="review-input" type="email" autocomplete="username">
+    </div>
+    <label id="adminAccessLabelText" for="adminAccessInput" class="sr-only" data-i18n="adminAccessLabel">Code</label>
     <input id="adminAccessInput" class="review-input" type="password" maxlength="20" placeholder="Введите код" data-i18n-placeholder="adminAccessPlaceholder" autocomplete="off">
     <button type="button" class="btn" id="adminAccessConfirm"><span data-i18n="adminAccessActivate">Aktivieren</span> <span aria-hidden="true">→</span></button>
+    <p id="adminAccessStatus" role="status" aria-live="polite"></p>
   </div>
 </div>
 
@@ -224,6 +243,8 @@
   </div>
 </details>
 
-<script src="script.js?v=mission-20261102-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js?v=mission-20261102-10"></script>
+<script src="script.js?v=mission-20261102-10"></script>
 </body>
 </html>

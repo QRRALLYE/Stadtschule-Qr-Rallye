@@ -460,9 +460,29 @@ Object.assign(translations.ru, { adminAccessText: "Введите код", admin
 Object.assign(translations.es, { adminAccessText: "Introduce el código", adminAccessPlaceholder: "Introduce el código", adminHint: "Visible solo para la administración escolar.", emojiCheerLabel: "¡Dale energía!", emojiRocket: "Reacción de cohete", emojiHeart: "Reacción de corazón", emojiSparkles: "Reacción brillante" });
 Object.assign(translations.fr, { adminAccessText: "Saisis le code", adminAccessPlaceholder: "Saisis le code", adminHint: "Visible uniquement par l’administration de l’école.", emojiCheerLabel: "Ajoute de l’énergie", emojiRocket: "Réaction fusée", emojiHeart: "Réaction cœur", emojiSparkles: "Réaction brillante" });
 Object.assign(translations.tr, { adminAccessText: "Kodu gir", adminAccessPlaceholder: "Kodu gir", adminHint: "Yalnızca okul yönetimi görür.", emojiCheerLabel: "Enerji kat", emojiRocket: "Roket tepkisi", emojiHeart: "Kalp tepkisi", emojiSparkles: "Işıl ışıl tepki" });
+Object.assign(translations.de, { deviceModeTitle: "Gerätegröße", deviceModeAuto: "Auto", deviceModePhone: "Handy", deviceModeTablet: "Tablet" });
+Object.assign(translations.en, { deviceModeTitle: "Device size", deviceModeAuto: "Auto", deviceModePhone: "Phone", deviceModeTablet: "Tablet" });
+Object.assign(translations.ar, { deviceModeTitle: "حجم الجهاز", deviceModeAuto: "تلقائي", deviceModePhone: "هاتف", deviceModeTablet: "جهاز لوحي" });
+Object.assign(translations.ru, { deviceModeTitle: "Режим экрана", deviceModeAuto: "Авто", deviceModePhone: "Телефон", deviceModeTablet: "Планшет" });
+Object.assign(translations.es, { deviceModeTitle: "Tamaño del dispositivo", deviceModeAuto: "Auto", deviceModePhone: "Móvil", deviceModeTablet: "Tableta" });
+Object.assign(translations.fr, { deviceModeTitle: "Format de l’écran", deviceModeAuto: "Auto", deviceModePhone: "Téléphone", deviceModeTablet: "Tablette" });
+Object.assign(translations.tr, { deviceModeTitle: "Cihaz boyutu", deviceModeAuto: "Otomatik", deviceModePhone: "Telefon", deviceModeTablet: "Tablet" });
+Object.assign(translations.de, { reviewPhotoLabel: "Foto (optional)", adminReplyPhotoLabel: "Antwortfoto (optional)", reviewCloudSetup: "Foto-Uploads werden nach der Cloud-Einrichtung aktiviert.", adminEmailLabel: "Admin-E-Mail", adminLoginError: "Anmeldung fehlgeschlagen.", adminCloudError: "Anmeldung oder Admin-Berechtigung fehlt.", adminCloudAccessText: "Melde dich mit dem Schul-Admin-Konto an.", adminPasswordLabel: "Passwort", reviewCloudError: "Speichern fehlgeschlagen. Prüfe die Cloud-Einrichtung.", photoError: "Das Bild ist zu groß oder hat ein nicht unterstütztes Format." });
+Object.assign(translations.en, { reviewPhotoLabel: "Photo (optional)", adminReplyPhotoLabel: "Reply photo (optional)", reviewCloudSetup: "Photo uploads will be enabled after cloud setup.", adminEmailLabel: "Admin email", adminLoginError: "Sign-in failed.", adminCloudError: "Sign-in failed or admin access is not assigned.", adminCloudAccessText: "Sign in with the school admin account.", adminPasswordLabel: "Password", reviewCloudError: "Could not save. Check the cloud setup.", photoError: "The image is too large or its format is not supported." });
+Object.assign(translations.ar, { reviewPhotoLabel: "صورة (اختياري)", adminReplyPhotoLabel: "صورة الرد (اختياري)", reviewCloudSetup: "سيتم تفعيل رفع الصور بعد إعداد التخزين السحابي.", adminEmailLabel: "بريد المسؤول", adminLoginError: "تعذر تسجيل الدخول.", adminCloudError: "فشل تسجيل الدخول أو لم يتم منح صلاحية الإدارة.", adminCloudAccessText: "سجّل الدخول بحساب إدارة المدرسة.", adminPasswordLabel: "كلمة المرور", reviewCloudError: "تعذر الحفظ. تحقق من إعداد السحابة.", photoError: "الصورة كبيرة جدًا أو تنسيقها غير مدعوم." });
+Object.assign(translations.ru, { reviewPhotoLabel: "Фото (необязательно)", adminReplyPhotoLabel: "Фото к ответу (необязательно)", reviewCloudSetup: "Загрузка фото станет доступна после настройки облака.", adminEmailLabel: "Почта администратора", adminLoginError: "Не удалось войти.", adminCloudError: "Не удалось войти или аккаунту не выданы права администратора.", adminCloudAccessText: "Войди через аккаунт школьного администратора.", adminPasswordLabel: "Пароль", reviewCloudError: "Не удалось сохранить. Проверь настройки облака.", photoError: "Файл слишком большой или его формат не поддерживается.", adminSignOut: "Выйти" });
+Object.assign(translations.es, { reviewPhotoLabel: "Foto (opcional)", adminReplyPhotoLabel: "Foto de respuesta (opcional)", reviewCloudSetup: "La carga de fotos estará disponible tras configurar la nube.", adminEmailLabel: "Correo del administrador", adminLoginError: "No se pudo iniciar sesión.", adminCloudError: "No se pudo iniciar sesión o falta el permiso de administrador.", adminCloudAccessText: "Inicia sesión con la cuenta de administración escolar.", adminPasswordLabel: "Contraseña", reviewCloudError: "No se pudo guardar. Comprueba la configuración de la nube.", photoError: "La imagen es demasiado grande o su formato no está admitido." });
+Object.assign(translations.fr, { reviewPhotoLabel: "Photo (facultatif)", adminReplyPhotoLabel: "Photo de réponse (facultatif)", reviewCloudSetup: "L’envoi de photos sera activé après la configuration du cloud.", adminEmailLabel: "E-mail admin", adminLoginError: "Échec de la connexion.", adminCloudError: "Connexion impossible ou droits admin absents.", adminCloudAccessText: "Connecte-toi avec le compte admin de l’école.", adminPasswordLabel: "Mot de passe", reviewCloudError: "Échec de l’enregistrement. Vérifie la configuration cloud.", photoError: "L’image est trop volumineuse ou son format n’est pas pris en charge." });
+Object.assign(translations.tr, { reviewPhotoLabel: "Fotoğraf (isteğe bağlı)", adminReplyPhotoLabel: "Yanıt fotoğrafı (isteğe bağlı)", reviewCloudSetup: "Fotoğraf yükleme bulut kurulumu tamamlanınca açılır.", adminEmailLabel: "Yönetici e-postası", adminLoginError: "Giriş başarısız.", adminCloudError: "Giriş başarısız veya yönetici yetkisi verilmemiş.", adminCloudAccessText: "Okul yönetici hesabıyla giriş yap.", adminPasswordLabel: "Şifre", reviewCloudError: "Kaydedilemedi. Bulut kurulumunu kontrol et.", photoError: "Görsel çok büyük veya biçimi desteklenmiyor." });
+Object.assign(translations.de, { adminSignOut: "Abmelden" });
+Object.assign(translations.en, { adminSignOut: "Sign out" });
+Object.assign(translations.ar, { adminSignOut: "تسجيل الخروج" });
+Object.assign(translations.es, { adminSignOut: "Cerrar sesión" });
+Object.assign(translations.fr, { adminSignOut: "Se déconnecter" });
+Object.assign(translations.tr, { adminSignOut: "Çıkış yap" });
 
 let currentLanguage = "de";
-let siteSettings = { brightness: 105, soundEffects: true, soundVolume: 80 };
+let siteSettings = { brightness: 105, soundEffects: true, soundVolume: 80, layoutMode: "auto" };
 let clickAudioContext;
 let emojiGameResult = "";
 let creditTapCount = 0;
@@ -470,8 +490,15 @@ let colorSequence = [];
 const defaultReviews = [];
 const ADMIN_SECRET = "AdminSS";
 const LEGACY_ADMIN_SECRET = "stadtschule";
+const supabaseConfig = window.MISSION_SUPABASE_CONFIG || {};
+const supabaseClient = window.supabase?.createClient && supabaseConfig.url && supabaseConfig.anonKey
+  ? window.supabase.createClient(supabaseConfig.url, supabaseConfig.anonKey)
+  : null;
+let cloudReviews = [];
+let cloudAdmin = false;
 
 function isAdminMode() {
+  if (supabaseClient) return cloudAdmin;
   try {
     const params = new URLSearchParams(window.location.search);
     const urlToken = (params.get("admin") || "").trim();
@@ -493,6 +520,11 @@ function isAdminMode() {
 }
 
 function setAdminMode(enabled) {
+  if (supabaseClient) {
+    cloudAdmin = enabled;
+    renderReviews();
+    return;
+  }
   try {
     if (enabled) {
       localStorage.setItem("missionAdminMode", "true");
@@ -552,6 +584,7 @@ function setLanguage(language) {
   renderFinal();
   renderSchoolStory();
   renderSettings();
+  setCloudUi();
   renderEmojiGame();
   renderReviews();
   if (document.getElementById("finalForm")) document.title = translations[language].titleFinal;
@@ -584,9 +617,14 @@ function renderSettings() {
   if (soundVolume) soundVolume.value = String(siteSettings.soundVolume);
   const soundVolumeValue = document.getElementById("soundVolumeValue");
   if (soundVolumeValue) soundVolumeValue.value = `${new Intl.NumberFormat(currentLanguage).format(siteSettings.soundVolume)}%`;
+  document.querySelectorAll('input[name="layoutMode"]').forEach((input) => {
+    input.checked = input.value === siteSettings.layoutMode;
+  });
+  document.documentElement.dataset.layoutMode = siteSettings.layoutMode;
 }
 
 function getReviews() {
+  if (supabaseClient) return cloudReviews;
   try {
     const saved = JSON.parse(localStorage.getItem("missionReviews") || "null");
     if (!Array.isArray(saved)) return [...defaultReviews];
@@ -598,6 +636,8 @@ function getReviews() {
         text: review.text.trim(),
         rating: Number.isFinite(Number(review.rating)) ? Math.max(1, Math.min(5, Number(review.rating))) : 5,
         reply: typeof review.reply === "string" ? review.reply : "",
+        photoUrl: typeof review.photoUrl === "string" ? review.photoUrl : "",
+        replyPhotoUrl: typeof review.replyPhotoUrl === "string" ? review.replyPhotoUrl : "",
         reactions: review.reactions && typeof review.reactions === "object" ? review.reactions : { love: 0, great: 0, fire: 0 }
       }));
   } catch (error) {
@@ -614,6 +654,100 @@ function saveReviews(reviews) {
     console.error("Mission Stadtschule: Bewertungen konnten nicht gespeichert werden.", error);
     return false;
   }
+}
+
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[character]);
+}
+
+async function loadCloudReviews() {
+  if (!supabaseClient) return;
+  const { data, error } = await supabaseClient
+    .from("reviews")
+    .select("id,name,text,rating,photo_path,reply,reply_photo_path,reactions,created_at")
+    .order("created_at", { ascending: false })
+    .limit(100);
+  if (error) {
+    console.error("Mission Stadtschule: Cloud-Bewertungen konnten nicht geladen werden.", error);
+    return;
+  }
+  cloudReviews = (data || []).map((review) => ({
+    id: review.id,
+    name: review.name,
+    text: review.text,
+    rating: review.rating,
+    photoUrl: review.photo_path ? supabaseClient.storage.from("review-photos").getPublicUrl(review.photo_path).data.publicUrl : "",
+    reply: review.reply || "",
+    replyPhotoUrl: review.reply_photo_path ? supabaseClient.storage.from("review-photos").getPublicUrl(review.reply_photo_path).data.publicUrl : "",
+    reactions: review.reactions || { love: 0, great: 0, fire: 0 }
+  }));
+  renderReviews();
+}
+
+async function syncCloudAdmin() {
+  if (!supabaseClient) return;
+  const { data: { session } } = await supabaseClient.auth.getSession();
+  if (!session) {
+    cloudAdmin = false;
+    renderReviews();
+    return;
+  }
+  const { data, error } = await supabaseClient
+    .from("review_admins")
+    .select("user_id")
+    .eq("user_id", session.user.id)
+    .maybeSingle();
+  cloudAdmin = Boolean(data && !error);
+  if (!cloudAdmin) await supabaseClient.auth.signOut();
+  renderReviews();
+}
+
+async function uploadCloudPhoto(file, folder) {
+  if (!file) return "";
+  if (!supabaseClient || !["image/jpeg", "image/png", "image/webp"].includes(file.type) || file.size > 5 * 1024 * 1024) {
+    throw new Error("unsupported-photo");
+  }
+  const filePath = `${folder}/${crypto.randomUUID()}.${file.type === "image/png" ? "png" : file.type === "image/webp" ? "webp" : "jpg"}`;
+  const { data, error } = await supabaseClient.storage
+    .from("review-photos")
+    .upload(filePath, file, { contentType: file.type, upsert: false });
+  if (error) throw error;
+  return data.path;
+}
+
+function setCloudUi() {
+  const enabled = Boolean(supabaseClient);
+  document.querySelectorAll("#reviewPhoto, #adminReplyPhoto").forEach((input) => { input.disabled = !enabled; });
+  document.getElementById("reviewCloudNotice")?.classList.toggle("hidden", enabled);
+  document.getElementById("adminEmailField")?.classList.toggle("hidden", !enabled);
+  document.getElementById("adminSignOutButton")?.classList.toggle("hidden", !enabled || !cloudAdmin);
+  const codeLabel = document.getElementById("adminAccessLabelText");
+  const accessText = document.getElementById("adminAccessDescription");
+  const codeInput = document.getElementById("adminAccessInput");
+  if (enabled) {
+    if (codeLabel) codeLabel.textContent = translations[currentLanguage].adminPasswordLabel;
+    if (accessText) accessText.textContent = translations[currentLanguage].adminCloudAccessText;
+    if (codeInput) {
+      codeInput.maxLength = 100;
+      codeInput.placeholder = translations[currentLanguage].adminPasswordLabel;
+      codeInput.autocomplete = "current-password";
+    }
+  }
+}
+
+function showFormMessage(form, text, isError = false) {
+  form.querySelector(".review-success, .review-error")?.remove();
+  const message = document.createElement("p");
+  message.className = isError ? "review-error" : "review-success";
+  message.textContent = text;
+  form.appendChild(message);
+  window.setTimeout(() => message.remove(), 3500);
 }
 
 function renderReviews() {
@@ -644,32 +778,40 @@ function renderReviews() {
       const adminActions = isAdminMode()
         ? `
           <div class="review-admin-actions">
-            <button type="button" class="admin-delete-btn" data-delete-review="${review.id}">${translations[currentLanguage]?.adminDelete || translations.de.adminDelete}</button>
+            <button type="button" class="admin-delete-btn" data-delete-review="${escapeHtml(review.id)}">${translations[currentLanguage]?.adminDelete || translations.de.adminDelete}</button>
           </div>
         `
         : "";
       const reactionButtons = reactionConfig.map(({ key, emoji }) => {
         const count = Number(reactions[key] || 0);
         return `
-          <button type="button" class="review-reaction" data-review-reaction="${key}" data-review-id="${review.id}" aria-label="${emoji}">
+            <button type="button" class="review-reaction" data-review-reaction="${key}" data-review-id="${escapeHtml(review.id)}" aria-label="${emoji}">
             <span>${emoji}</span>
             <span>${count}</span>
           </button>
         `;
       }).join("");
+      const reviewPhoto = review.photoUrl
+        ? `<img class="review-photo" src="${escapeHtml(review.photoUrl)}" alt="${escapeHtml(review.name)}">`
+        : "";
+      const replyPhoto = review.replyPhotoUrl
+        ? `<img class="review-photo review-reply-photo" src="${escapeHtml(review.replyPhotoUrl)}" alt="${escapeHtml(adminLabel)}">`
+        : "";
 
       return `
         <article class="review-card">
           <div class="review-meta">
-            <strong>${review.name || "Guest"}</strong>
+            <strong>${escapeHtml(review.name || "Guest")}</strong>
             <span class="review-stars" aria-label="${(Number(review.rating) || 5)} out of 5 stars">${stars}</span>
           </div>
-          <p class="review-text">${review.text}</p>
+          <p class="review-text">${escapeHtml(review.text)}</p>
+          ${reviewPhoto}
           <div class="review-reactions" aria-label="Reactions">${reactionButtons}</div>
           ${adminActions}
           <div class="review-reply">
             <strong>${adminLabel}</strong>
-            <p>${review.reply ? review.reply : noReply}</p>
+            <p>${review.reply ? escapeHtml(review.reply) : noReply}</p>
+            ${replyPhoto}
           </div>
         </article>
       `;
@@ -682,6 +824,7 @@ function renderReviews() {
     adminPanel.classList.toggle("hidden", !isAdmin);
     adminPanel.setAttribute("aria-hidden", String(!isAdmin));
   }
+  setCloudUi();
 
   const toggleReviewsButton = document.getElementById("toggleReviewsButton");
   if (toggleReviewsButton) {
@@ -699,7 +842,7 @@ function renderReviews() {
   if (select) {
     const selectedValue = select.value || (reviews[0] && reviews[0].id) || "";
     select.innerHTML = reviews.length
-      ? reviews.map((review) => `<option value="${review.id}">${review.name || "Guest"}</option>`).join("")
+      ? reviews.map((review) => `<option value="${escapeHtml(review.id)}">${escapeHtml(review.name || "Guest")}</option>`).join("")
       : '<option value="">—</option>';
     if (selectedValue && [...select.options].some((option) => option.value === selectedValue)) {
       select.value = selectedValue;
@@ -738,6 +881,7 @@ function initSettings() {
     if (Number.isFinite(saved.brightness)) siteSettings.brightness = Math.min(120, Math.max(80, Math.round(saved.brightness)));
     if (typeof saved.soundEffects === "boolean") siteSettings.soundEffects = saved.soundEffects;
     if (Number.isFinite(saved.soundVolume)) siteSettings.soundVolume = Math.min(100, Math.max(0, Math.round(saved.soundVolume)));
+    if (["auto", "phone", "tablet"].includes(saved.layoutMode)) siteSettings.layoutMode = saved.layoutMode;
   } catch (error) {
     console.error("Mission Stadtschule: Einstellungen konnten nicht geladen werden.", error);
   }
@@ -1037,7 +1181,7 @@ function checkFinal() {
   }
   input?.blur();
 }
-document.addEventListener("submit", (event) => {
+document.addEventListener("submit", async (event) => {
   if (event.target.id === "stationForm") {
     event.preventDefault();
     checkStation(stationFromUrl());
@@ -1056,6 +1200,32 @@ document.addEventListener("submit", (event) => {
     const text = (textInput?.value || "").trim();
     const rating = Number(ratingInput?.value || 5);
     if (!text) return;
+    if (supabaseClient) {
+      try {
+        const photoFile = form.querySelector("#reviewPhoto")?.files?.[0];
+        const photoUrl = await uploadCloudPhoto(photoFile, "reviews");
+        const { error } = await supabaseClient.from("reviews").insert({
+          name: name || "Guest",
+          text,
+          rating: Math.max(1, Math.min(5, rating)),
+          photo_path: photoUrl || null
+        });
+        if (error) throw error;
+        form.reset();
+        form.querySelectorAll(".star-button").forEach((button) => {
+          const active = Number(button.dataset.rating) === 1;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+        form.querySelector("#reviewRatingValue").value = "1";
+        await loadCloudReviews();
+        showFormMessage(form, translations[currentLanguage].reviewAddTitle);
+      } catch (error) {
+        console.error("Mission Stadtschule: Bewertung konnte nicht veröffentlicht werden.", error);
+        showFormMessage(form, error.message === "unsupported-photo" ? translations[currentLanguage].photoError : translations[currentLanguage].reviewCloudError, true);
+      }
+      return;
+    }
     const reviews = getReviews();
     const nextReview = {
       id: `review-${Date.now()}`,
@@ -1078,20 +1248,36 @@ document.addEventListener("submit", (event) => {
       if (ratingHidden) ratingHidden.value = "1";
       renderReviews();
       const title = translations[currentLanguage]?.reviewAddTitle || translations.de.reviewAddTitle;
-      const message = document.createElement("p");
-      message.className = "review-success";
-      message.textContent = title;
-      form.appendChild(message);
-      window.setTimeout(() => message.remove(), 2200);
+      showFormMessage(form, title);
     }
   }
   if (event.target.id === "adminReplyForm") {
     event.preventDefault();
     const select = document.getElementById("adminReviewSelect");
     const textArea = document.getElementById("adminReplyText");
+    const photoFile = document.getElementById("adminReplyPhoto")?.files?.[0];
     const reviewId = select?.value;
     const reply = (textArea?.value || "").trim();
-    if (!reviewId || !reply) return;
+    if (!reviewId || (!reply && !photoFile)) return;
+    if (supabaseClient) {
+      if (!isAdminMode()) return;
+      try {
+        const photoUrl = await uploadCloudPhoto(photoFile, "replies");
+        const { error } = await supabaseClient.from("reviews")
+          .update({ reply, reply_photo_path: photoUrl || null })
+          .eq("id", reviewId);
+        if (error) throw error;
+        textArea.value = "";
+        document.getElementById("adminReplyPhoto").value = "";
+        await loadCloudReviews();
+        showFormMessage(event.target, translations[currentLanguage].adminReplySubmit);
+      } catch (error) {
+        console.error("Mission Stadtschule: Admin-Antwort konnte nicht gespeichert werden.", error);
+        showFormMessage(event.target, error.message === "unsupported-photo" ? translations[currentLanguage].photoError : translations[currentLanguage].reviewCloudError, true);
+      }
+      return;
+    }
+    if (!reply) return;
     const reviews = getReviews();
     const updatedReviews = reviews.map((review) => review.id === reviewId ? { ...review, reply } : review);
     if (saveReviews(updatedReviews)) {
@@ -1100,7 +1286,7 @@ document.addEventListener("submit", (event) => {
     }
   }
 });
-document.addEventListener("click", (event) => {
+document.addEventListener("click", async (event) => {
   const ratingButton = event.target.closest(".star-button");
   if (ratingButton) {
     const form = ratingButton.closest("#reviewForm");
@@ -1120,11 +1306,19 @@ document.addEventListener("click", (event) => {
     if (modal) {
       modal.classList.remove("hidden");
       modal.setAttribute("aria-hidden", "false");
-      const input = document.getElementById("adminAccessInput");
+      const input = document.getElementById(supabaseClient ? "adminAccessEmail" : "adminAccessInput");
       if (input) {
         input.focus();
       }
     }
+    return;
+  }
+
+  const adminSignOutButton = event.target.closest("#adminSignOutButton");
+  if (adminSignOutButton && supabaseClient) {
+    await supabaseClient.auth.signOut();
+    cloudAdmin = false;
+    renderReviews();
     return;
   }
 
@@ -1141,9 +1335,31 @@ document.addEventListener("click", (event) => {
   const adminCodeConfirm = event.target.closest("#adminAccessConfirm");
   if (adminCodeConfirm) {
     const input = document.getElementById("adminAccessInput");
-    const code = input?.value?.trim() || "";
-    if (code.toLowerCase() === ADMIN_SECRET.toLowerCase()) {
+    const status = document.getElementById("adminAccessStatus");
+    if (supabaseClient) {
+      const email = document.getElementById("adminAccessEmail")?.value?.trim() || "";
+      const password = input?.value || "";
+      const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
+      if (!error) await syncCloudAdmin();
+      if (!error && cloudAdmin) {
+        if (status) status.textContent = "";
+      } else {
+        if (error) console.warn("Mission Stadtschule: Admin-Anmeldung fehlgeschlagen.", error);
+        if (status) status.textContent = translations[currentLanguage].adminCloudError;
+        input.value = "";
+        input.focus();
+        return;
+      }
+    } else {
+      const code = input?.value?.trim() || "";
+      if (code.toLowerCase() !== ADMIN_SECRET.toLowerCase()) {
+        input.value = "";
+        input.focus();
+        return;
+      }
       setAdminMode(true);
+    }
+    {
       const modal = document.getElementById("adminAccessModal");
       if (modal) {
         modal.classList.add("hidden");
@@ -1152,9 +1368,6 @@ document.addEventListener("click", (event) => {
       if (document.getElementById("adminPanel")) {
         document.getElementById("adminPanel").scrollIntoView({ behavior: "smooth", block: "start" });
       }
-    } else {
-      input.value = "";
-      input.focus();
     }
     return;
   }
@@ -1163,7 +1376,13 @@ document.addEventListener("click", (event) => {
   if (deleteSelectedButton) {
     const select = document.getElementById("adminReviewSelect");
     const reviewId = select?.value;
-    if (!reviewId) return;
+    if (!reviewId || !isAdminMode()) return;
+    if (supabaseClient) {
+      const { error } = await supabaseClient.from("reviews").delete().eq("id", reviewId);
+      if (error) console.error("Mission Stadtschule: Bewertung konnte nicht gelöscht werden.", error);
+      await loadCloudReviews();
+      return;
+    }
     const reviews = getReviews().filter((review) => review.id !== reviewId);
     if (saveReviews(reviews)) {
       renderReviews();
@@ -1174,6 +1393,13 @@ document.addEventListener("click", (event) => {
   const deleteReviewButton = event.target.closest("[data-delete-review]");
   if (deleteReviewButton) {
     const reviewId = deleteReviewButton.getAttribute("data-delete-review");
+    if (!isAdminMode()) return;
+    if (supabaseClient) {
+      const { error } = await supabaseClient.from("reviews").delete().eq("id", reviewId);
+      if (error) console.error("Mission Stadtschule: Bewertung konnte nicht gelöscht werden.", error);
+      await loadCloudReviews();
+      return;
+    }
     const reviews = getReviews().filter((review) => review.id !== reviewId);
     if (saveReviews(reviews)) {
       renderReviews();
@@ -1185,6 +1411,15 @@ document.addEventListener("click", (event) => {
   if (reactionButton) {
     const reviewId = reactionButton.getAttribute("data-review-id");
     const reactionKey = reactionButton.getAttribute("data-review-reaction");
+    if (supabaseClient) {
+      const { error } = await supabaseClient.rpc("add_review_reaction", {
+        p_review_id: reviewId,
+        p_reaction: reactionKey
+      });
+      if (error) console.error("Mission Stadtschule: Reaktion konnte nicht gespeichert werden.", error);
+      await loadCloudReviews();
+      return;
+    }
     const reviews = getReviews();
     const updatedReviews = reviews.map((review) => {
       if (review.id !== reviewId) return review;
@@ -1309,8 +1544,23 @@ document.addEventListener("change", (event) => {
   if (event.target.id === "soundEffects") {
     siteSettings.soundEffects = event.target.checked;
     saveSettings();
+  } else if (event.target.name === "layoutMode") {
+    siteSettings.layoutMode = event.target.value;
+    renderSettings();
+    saveSettings();
   }
 });
 initLanguage();
 initSettings();
 bindAnswerFields();
+setCloudUi();
+if (supabaseClient) {
+  void loadCloudReviews();
+  void syncCloudAdmin();
+  supabaseClient.channel("public:reviews")
+    .on("postgres_changes", { event: "*", schema: "public", table: "reviews" }, () => { void loadCloudReviews(); })
+    .subscribe();
+  supabaseClient.auth.onAuthStateChange(() => {
+    window.setTimeout(() => { void syncCloudAdmin(); }, 0);
+  });
+}

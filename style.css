@@ -282,6 +282,8 @@ a.letter:hover { transform: translateY(-3px); }
 .review-form-card, .review-list-wrap { padding: 20px; border: 1px solid #ffffff18; border-radius: 24px; background: rgba(18, 26, 41, 0.9); }
 .review-list-wrap.is-focused { box-shadow: 0 0 0 2px rgba(69, 199, 255, 0.7), 0 0 28px rgba(69, 199, 255, 0.2); }
 .review-form-card h3, .admin-panel h4 { margin: 0 0 12px; font-size: 18px; }
+.admin-panel-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.admin-panel-head h4 { margin: 0; }
 .review-form { display: grid; gap: 10px; }
 .review-input, .review-select, .review-textarea {
   width: 100%;
@@ -292,6 +294,11 @@ a.letter:hover { transform: translateY(-3px); }
   color: var(--text);
   font: inherit;
 }
+.photo-input { padding: 9px; font-size: 12px; }
+.photo-input:disabled { opacity: .55; cursor: not-allowed; }
+.cloud-setup-note { margin: 10px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.review-photo { display: block; width: min(100%, 360px); max-height: 280px; margin: 8px 0 14px; border: 1px solid #ffffff24; border-radius: 12px; object-fit: cover; }
+.review-reply-photo { width: min(100%, 280px); max-height: 220px; }
 .review-textarea { min-height: 110px; resize: vertical; }
 .review-select { appearance: none; }
 .star-rating { display: flex; gap: 8px; margin: 2px 0 10px; }
@@ -301,7 +308,9 @@ a.letter:hover { transform: translateY(-3px); }
 .star-button.is-active { color: #ffd166; border-color: rgba(255,209,102,0.75); background: rgba(255,209,102,0.1); }
 .star-button:hover { transform: translateY(-1px); border-color: rgba(255,209,102,0.7); }
 .review-success { margin: 10px 0 0; padding: 10px 12px; border: 1px solid rgba(116, 255, 178, 0.45); border-radius: 10px; background: rgba(111, 240, 167, 0.12); color: var(--green); font-size: 12px; }
+.review-error { margin: 10px 0 0; padding: 10px 12px; border: 1px solid rgba(255, 109, 109, 0.45); border-radius: 10px; background: rgba(255, 109, 109, 0.1); color: #ffafb1; font-size: 12px; }
 .admin-panel { margin-top: 20px; padding-top: 18px; border-top: 1px solid #ffffff12; }
+.admin-sign-out { margin-left: auto; padding: 6px 10px; border: 1px solid #ffffff28; border-radius: 8px; background: #ffffff0b; color: var(--muted); cursor: pointer; font-size: 11px; font-weight: 800; }
 .review-list { display: grid; gap: 16px; }
 .review-card, .review-empty {
   padding: 18px 18px 16px;
@@ -353,6 +362,8 @@ a.letter:hover { transform: translateY(-3px); }
 .admin-access-card p { margin: 0 0 16px; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .admin-access-close { position: absolute; top: 10px; right: 12px; border: 0; background: transparent; color: var(--text); font-size: 24px; cursor: pointer; }
 .admin-access-card .btn { width: 100%; margin-top: 14px; }
+.admin-access-card > div { display: grid; gap: 7px; margin: 14px 0 10px; text-align: left; }
+.admin-access-card > div label { color: var(--muted); font-size: 12px; font-weight: 750; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
 .btn.danger { border-color: rgba(255, 109, 109, 0.4); background: rgba(255, 109, 109, 0.08); color: #ffb8b8; }
 .review-empty-emoji { font-size: 32px; margin-bottom: 8px; }
@@ -665,6 +676,20 @@ a:focus-visible, button:focus-visible, input:focus-visible, .settings-menu summa
 .brightness-control output { min-width: 42px; color: var(--blue); font-size: 12px; font-weight: 850; text-align: right; }
 .settings-toggle { display: flex; min-height: 34px; align-items: center; gap: 10px; color: #ffe8f0; cursor: pointer; font-size: 12px; font-weight: 700; }
 .settings-toggle input { width: 18px; height: 18px; margin: 0; accent-color: var(--green); cursor: pointer; }
+.layout-mode-setting { display: grid; gap: 8px; margin: 2px 0 0; padding: 0; border: 0; }
+.layout-mode-setting legend { margin-bottom: 8px; color: #ffe8f0; font-size: 12px; font-weight: 700; }
+.layout-mode-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; padding: 4px; border: 1px solid #ffffff20; border-radius: 12px; background: #21071380; }
+.layout-mode-option { position: relative; min-width: 0; cursor: pointer; }
+.layout-mode-option input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.layout-mode-option span { display: grid; min-height: 38px; place-items: center; padding: 4px; border-radius: 8px; color: var(--muted); font-size: 11px; font-weight: 800; text-align: center; }
+.layout-mode-option input:checked + span { background: #22e8ff20; color: #b8f5ff; box-shadow: inset 0 0 0 1px #22e8ff70; }
+.layout-mode-option input:focus-visible + span { outline: 3px solid var(--blue); outline-offset: 2px; }
+html[data-layout-mode="phone"] .btn { min-height: 56px; padding-right: 20px; padding-left: 20px; }
+html[data-layout-mode="phone"] .answer, html[data-layout-mode="phone"] .review-input, html[data-layout-mode="phone"] .review-select { min-height: 54px; }
+html[data-layout-mode="phone"] .star-button { width: 44px; height: 44px; }
+html[data-layout-mode="tablet"] .btn { min-height: 52px; }
+html[data-layout-mode="tablet"] .answer, html[data-layout-mode="tablet"] .review-input, html[data-layout-mode="tablet"] .review-select { min-height: 50px; }
+html[data-layout-mode="tablet"] .star-button { width: 42px; height: 42px; }
 .settings-menu summary:active, button:active, .btn:active { transform: scale(.96); filter: brightness(1.15); }
 .school-reveal:not(.hidden) .school-story > * { animation: story-line-arrive .55s cubic-bezier(.2, .75, .25, 1) both; animation-delay: var(--line-delay, 0ms); }
 .story-thanks { margin: 28px auto 24px; padding: 17px 20px; border: 1px solid #c9ff3877; border-radius: 14px; background: #c9ff3812; color: var(--green); font-size: 16px; font-weight: 850; line-height: 1.65; text-align: center; text-shadow: 0 0 18px #c9ff3855; box-shadow: 0 0 24px #c9ff3818; animation: thank-you-arrive .8s cubic-bezier(.2, .75, .25, 1) 1.5s both; }
