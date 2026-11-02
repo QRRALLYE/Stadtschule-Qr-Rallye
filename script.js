@@ -413,6 +413,13 @@ Object.assign(translations.ru, { settingsTitle: "ЭКРАН И ЗВУК", settin
 Object.assign(translations.es, { settingsTitle: "PANTALLA Y SONIDO", settingsOpen: "Abrir ajustes", brightness: "Brillo de pantalla", soundEffects: "Sonidos al pulsar", storyThanks: "¡Gracias por jugar nuestra aventura! ¡Nos alegra que hayas participado! 💙" });
 Object.assign(translations.fr, { settingsTitle: "ÉCRAN ET SON", settingsOpen: "Ouvrir les réglages", brightness: "Luminosité de l’écran", soundEffects: "Sons des clics", storyThanks: "Merci d’avoir joué à notre aventure ! Nous sommes ravis de ta participation ! 💙" });
 Object.assign(translations.tr, { settingsTitle: "EKRAN VE SES", settingsOpen: "Ayarları aç", brightness: "Ekran parlaklığı", soundEffects: "Tıklama sesleri", storyThanks: "Oyunumuzu oynadığın için teşekkürler! Katıldığın için çok mutluyuz! 💙" });
+Object.assign(translations.de, { showcaseEyebrow: "SCHULE MIT KLANG", showcaseTitle: "Eine Schule.<br><span>Voller Energie.</span>", showcaseDescription: "Hier wirken Lernen, Bewegung und Gemeinschaft zusammen – genau wie bei einer echten Rallye durch den Schulalltag.", showcaseCommunity: "Gemeinschaft", showcaseCommunityText: "Jede Stunde baut auf Vertrauen, Hilfe und gemeinsamen Erfolg auf.", showcaseLearning: "Lernen", showcaseLearningText: "Von der ersten Idee bis zum großen Durchbruch steckt in jeder Aufgabe eine neue Entdeckung.", showcaseSport: "Bewegung", showcaseSportText: "Schule ist nicht nur sitzen – sie ist Energie, Teamgeist und gemeinsame Momente.", showcaseFuture: "Zukunft", showcaseFutureText: "Jeder kann seinen eigenen Weg finden – mit Neugier, Mut und Ideen.", reviewsEyebrow: "SCHUL-STIMMEN", reviewsTitle: "Was andere sagen.<br><span>Und was wir lieben.</span>", reviewsDescription: "Teile deine Meinung, lies die ersten Eindrücke anderer und trage dich in die Schulgeschichte ein.", reviewFormTitle: "Deine Meinung", reviewName: "Name", reviewNamePlaceholder: "Dein Name", reviewText: "Feedback", reviewTextPlaceholder: "Wie war die Rallye?", reviewSubmit: "Veröffentlichen", adminReplyTitle: "Admin Antwort", adminSelect: "Bewertung auswählen", adminReplyText: "Antwort", adminReplyPlaceholder: "Antwort für die Community", adminReplySubmit: "Antwort speichern", reviewEmptyTitle: "Noch keine Stimmen", reviewEmptyText: "Sei der Erste und hinterlasse dein Feedback!", reviewAdminLabel: "Admin", reviewNoReply: "Noch keine Antwort von der Schule.", reviewAddTitle: "Danke für dein Feedback!" });
+Object.assign(translations.en, { showcaseEyebrow: "SCHOOL WITH SPIRIT", showcaseTitle: "A school.<br><span>Full of energy.</span>", showcaseDescription: "Here, learning, movement and community come together – just like in a real school-day rally.", showcaseCommunity: "Community", showcaseCommunityText: "Every lesson grows through trust, support and shared success.", showcaseLearning: "Learning", showcaseLearningText: "From the first idea to the big breakthrough, each task reveals a new discovery.", showcaseSport: "Movement", showcaseSportText: "School is not only sitting still – it is energy, teamwork and shared moments.", showcaseFuture: "Future", showcaseFutureText: "Everyone can find their own path with curiosity, courage and ideas.", reviewsEyebrow: "SCHOOL VOICES", reviewsTitle: "What others say.<br><span>And what we love.</span>", reviewsDescription: "Share your opinion, read the first impressions of others and become part of the school story.", reviewFormTitle: "Your voice", reviewName: "Name", reviewNamePlaceholder: "Your name", reviewText: "Feedback", reviewTextPlaceholder: "How was the rally?", reviewSubmit: "Publish", adminReplyTitle: "Admin reply", adminSelect: "Choose feedback", adminReplyText: "Reply", adminReplyPlaceholder: "Reply to the community", adminReplySubmit: "Save reply", reviewEmptyTitle: "No voices yet", reviewEmptyText: "Be the first and leave your feedback!", reviewAdminLabel: "Admin", reviewNoReply: "No school reply yet.", reviewAddTitle: "Thanks for the feedback!" });
+Object.assign(translations.ar, { showcaseEyebrow: "مدرسة مليئة بالحيوية", showcaseTitle: "مدرسة.<br><span>مليئة بالطاقة.</span>", showcaseDescription: "هنا تتلاقى التعلم والحركة والمجتمع – تمامًا مثل جولة المدرسة الحقيقية.", showcaseCommunity: "المجتمع", showcaseCommunityText: "كل درس يزدهر بالثقة والمساعدة والنجاح المشترك.", showcaseLearning: "التعلم", showcaseLearningText: "من الفكرة الأولى إلى الإنجاز الكبير، كل مهمة تكشف اكتشافًا جديدًا.", showcaseSport: "الحركة", showcaseSportText: "المدرسة ليست مجرد الجلوس – بل هي الطاقة والعمل الجماعي واللحظات المشتركة.", showcaseFuture: "المستقبل", showcaseFutureText: "يمكن لكل شخص أن يجد طريقه الخاص بفضول وشجاعة وأفكار.", reviewsEyebrow: "أصوات المدرسة", reviewsTitle: "ما يقوله الآخرون.<br><span>وما نحبّه.</span>", reviewsDescription: "شارك رأيك واقرأ انطباعات الآخرين واصبح جزءًا من قصة المدرسة.", reviewFormTitle: "رأيك", reviewName: "الاسم", reviewNamePlaceholder: "اسمك", reviewText: "الملاحظات", reviewTextPlaceholder: "كيف كانت الجولة؟", reviewSubmit: "نشر", adminReplyTitle: "رد الإدارة", adminSelect: "اختر تعليقًا", adminReplyText: "الرد", adminReplyPlaceholder: "رد للمجتمع", adminReplySubmit: "حفظ الرد", reviewEmptyTitle: "لا توجد أصوات بعد", reviewEmptyText: "كن أول من يترك تعليقًا!", reviewAdminLabel: "الإدارة", reviewNoReply: "لا يوجد رد من المدرسة بعد.", reviewAddTitle: "شكرًا لتعليقك!" });
+Object.assign(translations.ru, { showcaseEyebrow: "ШКОЛА С ДУХОМ", showcaseTitle: "Школа.<br><span>Полна энергии.</span>", showcaseDescription: "Здесь сочетаются учёба, движение и общение — как в настоящем школьном квесте.", showcaseCommunity: "Сообщество", showcaseCommunityText: "Каждый урок строится на доверии, поддержке и общем успехе.", showcaseLearning: "Учёба", showcaseLearningText: "От первой идеи до большого открытия каждая задача открывает что-то новое.", showcaseSport: "Движение", showcaseSportText: "Школа — это не только сидеть за партой, но и энергия, командный дух и моменты вместе.", showcaseFuture: "Будущее", showcaseFutureText: "Каждый может найти свой путь с любопытством, мужеством и идеями.", reviewsEyebrow: "ГОЛОСА ШКОЛЫ", reviewsTitle: "Что говорят другие.<br><span>И что нам нравится.</span>", reviewsDescription: "Поделись мнением, прочитай отзывы других и стань частью истории школы.", reviewFormTitle: "Твоё мнение", reviewName: "Имя", reviewNamePlaceholder: "Твоё имя", reviewText: "Отзыв", reviewTextPlaceholder: "Как прошёл квест?", reviewSubmit: "Опубликовать", adminReplyTitle: "Ответ администрации", adminSelect: "Выбери отзыв", adminReplyText: "Ответ", adminReplyPlaceholder: "Ответ для сообщества", adminReplySubmit: "Сохранить ответ", reviewEmptyTitle: "Пока без отзывов", reviewEmptyText: "Будь первым и оставь свой отзыв!", reviewAdminLabel: "Админ", reviewNoReply: "Пока нет ответа от школы.", reviewAddTitle: "Спасибо за отзыв!" });
+Object.assign(translations.es, { showcaseEyebrow: "ESCUELA CON ENERGÍA", showcaseTitle: "Una escuela.<br><span>Llena de energía.</span>", showcaseDescription: "Aquí se reúnen aprendizaje, movimiento y comunidad, como en una verdadera ruta escolar.", showcaseCommunity: "Comunidad", showcaseCommunityText: "Cada hora se construye con confianza, ayuda y éxito compartido.", showcaseLearning: "Aprendizaje", showcaseLearningText: "Desde la primera idea hasta el gran avance, cada tarea revela un nuevo descubrimiento.", showcaseSport: "Movimiento", showcaseSportText: "La escuela no es solo estar sentado: es energía, trabajo en equipo y momentos juntos.", showcaseFuture: "Futuro", showcaseFutureText: "Cada persona puede encontrar su camino con curiosidad, valentía e ideas.", reviewsEyebrow: "VOCES DE LA ESCUELA", reviewsTitle: "Lo que dicen otros.<br><span>Y lo que nos encanta.</span>", reviewsDescription: "Comparte tu opinión, lee las primeras impresiones y forma parte de la historia escolar.", reviewFormTitle: "Tu opinión", reviewName: "Nombre", reviewNamePlaceholder: "Tu nombre", reviewText: "Comentario", reviewTextPlaceholder: "¿Cómo fue la ruta?", reviewSubmit: "Publicar", adminReplyTitle: "Respuesta del administrador", adminSelect: "Elige una opinión", adminReplyText: "Respuesta", adminReplyPlaceholder: "Respuesta para la comunidad", adminReplySubmit: "Guardar respuesta", reviewEmptyTitle: "Aún no hay opiniones", reviewEmptyText: "¡Sé el primero y deja tu feedback!", reviewAdminLabel: "Admin", reviewNoReply: "Todavía no hay respuesta de la escuela.", reviewAddTitle: "¡Gracias por tu opinión!" });
+Object.assign(translations.fr, { showcaseEyebrow: "ÉCOLE EN ÉNERGIE", showcaseTitle: "Une école.<br><span> Pleine d’énergie.</span>", showcaseDescription: "Ici, apprentissage, mouvement et esprit de groupe se réunissent — comme dans une vraie aventure scolaire.", showcaseCommunity: "Communauté", showcaseCommunityText: "Chaque heure se construit avec confiance, aide et réussite commune.", showcaseLearning: "Apprentissage", showcaseLearningText: "De la première idée au grand déclic, chaque tâche révèle une nouvelle découverte.", showcaseSport: "Mouvement", showcaseSportText: "L’école n’est pas seulement assis : c’est énergie, esprit d’équipe et moments partagés.", showcaseFuture: "Avenir", showcaseFutureText: "Tout le monde peut trouver sa voie avec curiosité, courage et idées.", reviewsEyebrow: "VOIX DE L’ÉCOLE", reviewsTitle: "Ce que disent les autres.<br><span>Et ce que nous aimons.</span>", reviewsDescription: "Partage ton avis, lis les premières impressions et rejoins l’histoire de l’école.", reviewFormTitle: "Ton avis", reviewName: "Nom", reviewNamePlaceholder: "Ton nom", reviewText: "Feedback", reviewTextPlaceholder: "Comment s’est passée la randonnée ?", reviewSubmit: "Publier", adminReplyTitle: "Réponse admin", adminSelect: "Choisir un avis", adminReplyText: "Réponse", adminReplyPlaceholder: "Réponse pour la communauté", adminReplySubmit: "Enregistrer", reviewEmptyTitle: "Pas encore d’avis", reviewEmptyText: "Sois le premier à laisser un commentaire !", reviewAdminLabel: "Admin", reviewNoReply: "Pas encore de réponse de l’école.", reviewAddTitle: "Merci pour ton avis !" });
+Object.assign(translations.tr, { showcaseEyebrow: "ENERJİK OKUL", showcaseTitle: "Bir okul.<br><span>Enerjiyle dolu.</span>", showcaseDescription: "Burada öğrenme, hareket ve topluluk gerçek bir okul gününde olduğu gibi bir araya gelir.", showcaseCommunity: "Topluluk", showcaseCommunityText: "Her saat güven, yardım ve ortak başarı üzerine kurulur.", showcaseLearning: "Öğrenme", showcaseLearningText: "İlk fikirden büyük çıkışa kadar her görev yeni bir keşif sunar.", showcaseSport: "Hareket", showcaseSportText: "Okul sadece oturmak değil; enerji, takım ruhu ve ortak anlar demektir.", showcaseFuture: "Gelecek", showcaseFutureText: "Herkes merak, cesaret ve fikirlerle kendi yolunu bulabilir.", reviewsEyebrow: "OKUL SESSİZLERİ", reviewsTitle: "Diğerleri ne diyor?<br><span>Ve biz neyi seviyoruz.</span>", reviewsDescription: "Fikrini paylaş, diğerlerinin ilk izlenimlerini oku ve okul hikâyesine katıl.", reviewFormTitle: "Görüşün", reviewName: "Adın", reviewNamePlaceholder: "Adın", reviewText: "Geri bildirim", reviewTextPlaceholder: "Rallye nasıl geçti?", reviewSubmit: "Yayınla", adminReplyTitle: "Yönetici cevabı", adminSelect: "Yorumu seç", adminReplyText: "Cevap", adminReplyPlaceholder: "Topluluk için cevap", adminReplySubmit: "Cevabı kaydet", reviewEmptyTitle: "Henüz yorum yok", reviewEmptyText: "İlk sen ol ve geri bildirimini bırak!", reviewAdminLabel: "Admin", reviewNoReply: "Okuldan henüz cevap gelmedi.", reviewAddTitle: "Geri bildirimin için teşekkürler!" });
 
 Object.assign(translations.de, { creditProgram: "Programmiert von Konstantin Korneev, Klasse 7A", creditDesign: "Design von Konstantin Korneev, Klasse 7A", creditText: "Text von Vladyslav Shevchenko, Klasse 7A", creditTest: "Getestet von Konstantin Korneev und Vladyslav Shevchenko, beide Klasse 7A", soundVolume: "Lautstärke", emojiGameOpen: "Emoji-Spiel öffnen", emojiGameTitle: "DIE EMOJI-MISSION", emojiGameQuestion: "Welches Emoji gehört zu unserer Schule?", emojiGameWrong: "Fast! Such noch einmal.", emojiGameCorrect: "Richtig! 🏫 Du kennst dich aus!" });
 Object.assign(translations.en, { creditProgram: "Programmed by Konstantin Korneev, class 7A", creditDesign: "Designed by Konstantin Korneev, class 7A", creditText: "Text by Vladyslav Shevchenko, class 7A", creditTest: "Tested by Konstantin Korneev and Vladyslav Shevchenko, both class 7A", soundVolume: "Sound volume", emojiGameOpen: "Open the emoji game", emojiGameTitle: "THE EMOJI MISSION", emojiGameQuestion: "Which emoji belongs at our school?", emojiGameWrong: "Almost! Give it another try.", emojiGameCorrect: "Correct! 🏫 You know your school!" });
@@ -445,6 +452,27 @@ let clickAudioContext;
 let emojiGameResult = "";
 let creditTapCount = 0;
 let colorSequence = [];
+const defaultReviews = [];
+const ADMIN_SECRET = "stadtschule";
+
+function isAdminMode() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const urlToken = params.get("admin");
+    const localFlag = localStorage.getItem("missionAdminMode");
+    if (urlToken === ADMIN_SECRET || localFlag === "true") {
+      localStorage.setItem("missionAdminMode", "true");
+      return true;
+    }
+    if (urlToken === "off") {
+      localStorage.removeItem("missionAdminMode");
+      return false;
+    }
+    return Boolean(localFlag === "true");
+  } catch (error) {
+    return false;
+  }
+}
 
 function setLanguage(language) {
   if (!translations[language]) return;
@@ -494,6 +522,7 @@ function setLanguage(language) {
   renderSchoolStory();
   renderSettings();
   renderEmojiGame();
+  renderReviews();
   if (document.getElementById("finalForm")) document.title = translations[language].titleFinal;
   if (document.getElementById("stationGrid")) document.title = translations[language].titleHome;
 }
@@ -524,6 +553,78 @@ function renderSettings() {
   if (soundVolume) soundVolume.value = String(siteSettings.soundVolume);
   const soundVolumeValue = document.getElementById("soundVolumeValue");
   if (soundVolumeValue) soundVolumeValue.value = `${new Intl.NumberFormat(currentLanguage).format(siteSettings.soundVolume)}%`;
+}
+
+function getReviews() {
+  try {
+    const saved = JSON.parse(localStorage.getItem("missionReviews") || "null");
+    if (!Array.isArray(saved)) return [...defaultReviews];
+    return saved.filter((review) => review && typeof review.text === "string" && review.text.trim().length > 0);
+  } catch (error) {
+    console.error("Mission Stadtschule: Bewertungen konnten nicht geladen werden.", error);
+    return [...defaultReviews];
+  }
+}
+
+function saveReviews(reviews) {
+  try {
+    localStorage.setItem("missionReviews", JSON.stringify(reviews));
+    return true;
+  } catch (error) {
+    console.error("Mission Stadtschule: Bewertungen konnten nicht gespeichert werden.", error);
+    return false;
+  }
+}
+
+function renderReviews() {
+  const list = document.getElementById("reviewsList");
+  if (!list) return;
+  const reviews = getReviews();
+  const emptyTitle = translations[currentLanguage]?.reviewEmptyTitle || translations.de.reviewEmptyTitle;
+  const emptyText = translations[currentLanguage]?.reviewEmptyText || translations.de.reviewEmptyText;
+  const adminLabel = translations[currentLanguage]?.reviewAdminLabel || translations.de.reviewAdminLabel;
+  const noReply = translations[currentLanguage]?.reviewNoReply || translations.de.reviewNoReply;
+
+  if (!reviews.length) {
+    list.innerHTML = `
+      <div class="review-empty">
+        <div class="review-empty-emoji" aria-hidden="true">✨</div>
+        <h3>${emptyTitle}</h3>
+        <p>${emptyText}</p>
+      </div>`;
+  } else {
+    list.innerHTML = reviews.map((review) => `
+      <article class="review-card">
+        <div class="review-meta">
+          <strong>${review.name || "Guest"}</strong>
+          <span>⭐</span>
+        </div>
+        <p class="review-text">${review.text}</p>
+        <div class="review-reply">
+          <strong>${adminLabel}</strong>
+          <p>${review.reply ? review.reply : noReply}</p>
+        </div>
+      </article>
+    `).join("");
+  }
+
+  const adminPanel = document.getElementById("adminPanel");
+  const isAdmin = isAdminMode();
+  if (adminPanel) {
+    adminPanel.classList.toggle("hidden", !isAdmin);
+    adminPanel.setAttribute("aria-hidden", String(!isAdmin));
+  }
+
+  const select = document.getElementById("adminReviewSelect");
+  if (select) {
+    const selectedValue = select.value || (reviews[0] && reviews[0].id) || "";
+    select.innerHTML = reviews.length
+      ? reviews.map((review) => `<option value="${review.id}">${review.name || "Guest"}</option>`).join("")
+      : '<option value="">—</option>';
+    if (selectedValue && [...select.options].some((option) => option.value === selectedValue)) {
+      select.value = selectedValue;
+    }
+  }
 }
 
 function renderEmojiGame() {
@@ -864,6 +965,47 @@ document.addEventListener("submit", (event) => {
   if (event.target.id === "finalForm") {
     event.preventDefault();
     checkFinal();
+  }
+  if (event.target.id === "reviewForm") {
+    event.preventDefault();
+    const form = event.target;
+    const nameInput = form.querySelector("#reviewName");
+    const textInput = form.querySelector("#reviewText");
+    const name = (nameInput?.value || "Guest").trim();
+    const text = (textInput?.value || "").trim();
+    if (!text) return;
+    const reviews = getReviews();
+    const nextReview = {
+      id: `review-${Date.now()}`,
+      name: name || "Guest",
+      text,
+      reply: ""
+    };
+    const updatedReviews = [nextReview, ...reviews].slice(0, 12);
+    if (saveReviews(updatedReviews)) {
+      form.reset();
+      renderReviews();
+      const title = translations[currentLanguage]?.reviewAddTitle || translations.de.reviewAddTitle;
+      const message = document.createElement("p");
+      message.className = "review-success";
+      message.textContent = title;
+      form.appendChild(message);
+      window.setTimeout(() => message.remove(), 2200);
+    }
+  }
+  if (event.target.id === "adminReplyForm") {
+    event.preventDefault();
+    const select = document.getElementById("adminReviewSelect");
+    const textArea = document.getElementById("adminReplyText");
+    const reviewId = select?.value;
+    const reply = (textArea?.value || "").trim();
+    if (!reviewId || !reply) return;
+    const reviews = getReviews();
+    const updatedReviews = reviews.map((review) => review.id === reviewId ? { ...review, reply } : review);
+    if (saveReviews(updatedReviews)) {
+      textArea.value = "";
+      renderReviews();
+    }
   }
 });
 document.addEventListener("click", (event) => {

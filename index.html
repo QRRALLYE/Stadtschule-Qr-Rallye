@@ -77,6 +77,38 @@
     <div><b>04</b><span data-i18n="rule4">Finale knacken</span></div>
   </section>
 
+  <section class="school-showcase" aria-labelledby="showcaseTitle">
+    <div class="overview-heading">
+      <div>
+        <div class="section-title" data-i18n="showcaseEyebrow">SCHULE MIT KLANG</div>
+        <h2 id="showcaseTitle" data-i18n-html="showcaseTitle">Eine Schule.<br><span>Voller Energie.</span></h2>
+      </div>
+      <p data-i18n="showcaseDescription">Hier wirken Lernen, Bewegung und Gemeinschaft zusammen – genau wie bei einer echten Rallye durch den Schulalltag.</p>
+    </div>
+    <div class="showcase-grid">
+      <article class="showcase-card">
+        <div class="showcase-emoji" aria-hidden="true">🏫</div>
+        <h3 data-i18n="showcaseCommunity">Gemeinschaft</h3>
+        <p data-i18n="showcaseCommunityText">Jede Stunde baut auf Vertrauen, Hilfe und gemeinsamen Erfolg auf.</p>
+      </article>
+      <article class="showcase-card">
+        <div class="showcase-emoji" aria-hidden="true">📚</div>
+        <h3 data-i18n="showcaseLearning">Lernen</h3>
+        <p data-i18n="showcaseLearningText">Von der ersten Idee bis zum großen Durchbruch steckt in jeder Aufgabe eine neue Entdeckung.</p>
+      </article>
+      <article class="showcase-card">
+        <div class="showcase-emoji" aria-hidden="true">⚽</div>
+        <h3 data-i18n="showcaseSport">Bewegung</h3>
+        <p data-i18n="showcaseSportText">Schule ist nicht nur sitzen – sie ist Energie, Teamgeist und gemeinsame Momente.</p>
+      </article>
+      <article class="showcase-card">
+        <div class="showcase-emoji" aria-hidden="true">🌍</div>
+        <h3 data-i18n="showcaseFuture">Zukunft</h3>
+        <p data-i18n="showcaseFutureText">Jeder kann seinen eigenen Weg finden – mit Neugier, Mut und Ideen.</p>
+      </article>
+    </div>
+  </section>
+
   <section id="stationen" class="station-overview" aria-labelledby="stationTitle">
     <div class="overview-heading">
       <div>
@@ -86,6 +118,45 @@
       <p data-i18n="overviewDescription">Scanne den QR-Code vor Ort oder wähle eine Station aus der Übersicht.</p>
     </div>
     <div id="stationGrid" class="station-grid"></div>
+  </section>
+
+  <section class="reviews-section" aria-labelledby="reviewsTitle">
+    <div class="overview-heading reviews-heading">
+      <div>
+        <div class="section-title" data-i18n="reviewsEyebrow">SCHUL-STIMMEN</div>
+        <h2 id="reviewsTitle" data-i18n-html="reviewsTitle">Was andere sagen.<br><span>Und was wir lieben.</span></h2>
+      </div>
+      <p data-i18n="reviewsDescription">Teile deine Meinung, lies die ersten Eindrücke anderer und trage dich in die Schulgeschichte ein.</p>
+    </div>
+    <div class="reviews-layout">
+      <div class="review-form-card">
+        <h3 data-i18n="reviewFormTitle">Deine Meinung</h3>
+        <form id="reviewForm" class="review-form">
+          <label for="reviewName" data-i18n="reviewName">Name</label>
+          <input id="reviewName" class="answer review-input" type="text" maxlength="40" placeholder="Dein Name" data-i18n-placeholder="reviewNamePlaceholder" required>
+          <label for="reviewText" data-i18n="reviewText">Feedback</label>
+          <textarea id="reviewText" class="review-textarea" rows="4" maxlength="220" placeholder="Wie war die Rallye?" data-i18n-placeholder="reviewTextPlaceholder" required></textarea>
+          <button class="btn" type="submit"><span data-i18n="reviewSubmit">Veröffentlichen</span> <span aria-hidden="true">→</span></button>
+        </form>
+        <div class="admin-panel hidden" id="adminPanel">
+          <div class="admin-panel-head">
+            <h4 data-i18n="adminReplyTitle">Admin Antwort</h4>
+            <span class="admin-badge">ADMIN</span>
+          </div>
+          <p class="admin-hint" data-i18n="adminHint">Nur für den Schul-Admin sichtbar. Öffne die Seite mit ?admin=stadtschule, um die Antworten zu verwalten.</p>
+          <form id="adminReplyForm" class="review-form">
+            <label for="adminReviewSelect" data-i18n="adminSelect">Bewertung auswählen</label>
+            <select id="adminReviewSelect" class="review-select"></select>
+            <label for="adminReplyText" data-i18n="adminReplyText">Antwort</label>
+            <textarea id="adminReplyText" class="review-textarea" rows="3" maxlength="220" placeholder="Antwort für die Community" data-i18n-placeholder="adminReplyPlaceholder" required></textarea>
+            <button class="btn secondary" type="submit"><span data-i18n="adminReplySubmit">Antwort speichern</span> <span aria-hidden="true">→</span></button>
+          </form>
+        </div>
+      </div>
+      <div class="review-list-wrap">
+        <div id="reviewsList" class="review-list" aria-live="polite"></div>
+      </div>
+    </div>
   </section>
 </main>
 
