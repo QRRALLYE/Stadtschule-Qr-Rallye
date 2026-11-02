@@ -128,6 +128,16 @@
       </div>
       <p data-i18n="reviewsDescription">Teile deine Meinung, lies die ersten Eindrücke anderer und trage dich in die Schulgeschichte ein.</p>
     </div>
+    <div class="reviews-cta-row">
+      <button id="leaveReviewButton" class="btn leave-review-button" type="button">
+        <span aria-hidden="true">✍️</span>
+        <span data-i18n="leaveReviewButton">Оставить отзыв</span>
+      </button>
+      <button id="toggleReviewsButton" class="btn secondary reviews-toggle" type="button">
+        <span data-i18n="showReviewsButton">Отзывы</span>
+        <span aria-hidden="true">↓</span>
+      </button>
+    </div>
     <div class="reviews-layout">
       <div class="review-form-card">
         <h3 data-i18n="reviewFormTitle">Deine Meinung</h3>
@@ -177,8 +187,9 @@
   <span data-i18n="footerHome">Eine Entdeckungsreise durch deine Schule.</span>
 </footer>
 
-<button id="adminAccessButton" class="admin-access-button" type="button" aria-label="Admin access" title="Admin access">
+<button id="adminAccessButton" class="admin-access-button" type="button" aria-label="Admin access" data-i18n-aria-label="adminAccessTitle" data-i18n-title="adminAccessTitle" title="Admin access">
   <span aria-hidden="true">🤖</span>
+  <span class="admin-access-label" data-i18n="reviewAdminLabel">Админ</span>
 </button>
 <div id="adminAccessModal" class="admin-access-modal hidden" aria-hidden="true">
   <div class="admin-access-card">
