@@ -1,17 +1,18 @@
 :root {
   color-scheme: dark;
-  --bg: #090e1c;
-  --panel: #141d33;
-  --panel-light: #202d49;
-  --text: #f6f7fb;
-  --muted: #a5b1c5;
-  --accent: #ff526d;
-  --accent-dark: #4a1725;
-  --blue: #45c7ff;
-  --green: #6ff0a7;
-  --line: #34435d;
-  --danger: #ff8c86;
-  --success: #8dffc0;
+  --bg: #260612;
+  --panel: #500d28;
+  --panel-light: #74133c;
+  --text: #fff7fa;
+  --muted: #e7b9ca;
+  --accent: #f51c5b;
+  --accent-dark: #a70f40;
+  --blue: #22e8ff;
+  --green: #c9ff38;
+  --line: #9c3158;
+  --danger: #ff9aab;
+  --success: #d3ff6a;
+  --neon-intensity: .65;
   --radius: 26px;
 }
 
@@ -23,9 +24,10 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(ellipse at 86% 8%, #ff526d22 0, transparent 34rem),
-    radial-gradient(ellipse at 8% 44%, #45c7ff1c 0, transparent 34rem),
-    linear-gradient(138deg, #090e1c 0%, #10182a 54%, #0c1918 100%);
+    radial-gradient(ellipse at 86% 8%, #ff174c55 0, transparent 34rem),
+    radial-gradient(ellipse at 8% 44%, #17dff525 0, transparent 34rem),
+    radial-gradient(ellipse at 52% 95%, #b3ed2717 0, transparent 36rem),
+    linear-gradient(138deg, #310716 0%, #52102b 54%, #290818 100%);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -473,4 +475,54 @@ a.letter:hover { transform: translateY(-3px); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}
+
+.top { background: #370919ed; }
+.hero-card, .progress-card, .station-card, .final-card { background: linear-gradient(145deg, #78143cf5, #410a23f5); }
+.station-tile { background: linear-gradient(155deg, #72143c, #3c0a20); }
+.station-image-wrap { background: #3a0c20; }
+.language-picker select, .answer { border-color: #e783a344; background: #3b0b20; }
+.mission-box, .hint, .locked-message { border-color: #f8d9e426; background: #fff3f708; }
+.station-nav-button { border-color: #fbd7e038; background: #fff4f70b; }
+.station-nav-button.primary { border-color: #22e8ff80; background: #22e8ff18; color: var(--blue); box-shadow: 0 0 18px #22e8ff1c; }
+.btn { box-shadow: 0 9px 26px #f51c5b55, 0 0 22px #f51c5b25, inset 0 1px #ffffff66; }
+.btn:hover { background: #ff4778; box-shadow: 0 14px 32px #f51c5b72, 0 0 24px #22e8ff28, inset 0 1px #ffffff80; }
+.progress-icon { border-color: #c9ff3875; background: #c9ff381c; color: var(--green); box-shadow: 0 0 22px #c9ff3822; }
+.progress-track span, .letter.done { background: var(--green); color: #281006; box-shadow: 0 0 16px #c9ff3877; }
+.success { border-color: #c9ff3877; background: #c9ff381a; color: var(--success); }
+.answer:focus { border-color: var(--blue); box-shadow: 0 0 0 3px #22e8ff35, 0 0 22px #22e8ff22; }
+.story-kicker { color: var(--blue); text-shadow: 0 0 16px #22e8ff66; }
+.school-reveal h2 span { color: var(--green); text-shadow: 0 0 24px #c9ff3877; }
+.story-placeholder, .school-story { max-width: 760px; margin: 0 auto; color: #ffedf3; font-size: 15px; line-height: 1.8; text-align: left; }
+.school-story h3 { margin: 30px 0 8px; color: var(--blue); font-size: 19px; line-height: 1.35; text-shadow: 0 0 15px #22e8ff38; }
+.school-story p { margin: 10px 0 16px; }
+.school-story .story-lead { margin: 0 auto 22px; color: var(--green); font-size: 18px; font-weight: 750; text-align: center; text-shadow: 0 0 18px #c9ff383d; }
+.school-story .story-motto { margin-top: 28px; padding: 18px; border: 1px solid #c9ff3866; border-radius: 14px; background: #c9ff3810; color: var(--green); font-weight: 800; text-align: center; box-shadow: 0 0 24px #c9ff3817; }
+.story-spectrum span:nth-child(1) { box-shadow: 0 0 18px #f51c5b; }
+.story-spectrum span:nth-child(2) { box-shadow: 0 0 18px #22e8ff; }
+.story-spectrum span:nth-child(3) { box-shadow: 0 0 18px #c9ff38; }
+.school-reveal:not(.hidden) .story-spectrum span { filter: drop-shadow(0 0 calc(12px * var(--neon-intensity)) currentColor); }
+.school-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 25px auto; text-align: left; }
+.school-facts p { margin: 0; padding: 16px; border: 1px solid #22e8ff4d; border-radius: 12px; background: #22e8ff0d; color: #eaffff; font-size: 13px; line-height: 1.7; box-shadow: 0 0 20px #22e8ff14; }
+.story-credits { margin: 24px auto; padding: 18px; border-top: 1px solid #ffffff24; border-bottom: 1px solid #ffffff24; text-align: left; }
+.story-credits h3 { margin: 0 0 10px; color: var(--green); font-size: 15px; }
+.story-credits ul { display: grid; gap: 8px; margin: 0; padding-left: 20px; color: #f2dce5; font-size: 12px; line-height: 1.6; }
+.easter-egg-trigger, .neon-toggle { border-color: #f51c5b88; background: #f51c5b20; color: #ff7196; box-shadow: 0 0 calc(20px * var(--neon-intensity)) #f51c5b66; }
+.color-key { background: #3d0b21; }
+.color-key.red span { background: var(--accent); box-shadow: 0 0 12px var(--accent); }
+.color-key.blue span { background: var(--blue); box-shadow: 0 0 12px var(--blue); }
+.color-key.green span { background: var(--green); box-shadow: 0 0 12px var(--green); }
+.neon-toggle { display: grid; width: 38px; height: 38px; place-items: center; border: 1px solid #22e8ff80; border-radius: 50%; cursor: pointer; font-size: 19px; transition: transform .18s ease, box-shadow .18s ease; }
+.neon-toggle:hover { transform: scale(1.1); box-shadow: 0 0 24px #22e8ff99; }
+.neon-control { flex-basis: 100%; width: min(360px, 100%); margin: 8px auto 0; padding: 14px 16px; border: 1px solid #22e8ff66; border-radius: 12px; background: #22e8ff0d; text-align: left; }
+.neon-control label { display: grid; gap: 10px; color: var(--blue); font-size: 12px; font-weight: 800; }
+.neon-control input { width: 100%; accent-color: var(--green); cursor: pointer; }
+.neon-control .easter-egg-message { margin-top: 8px; }
+[dir="rtl"] .school-story, [dir="rtl"] .school-facts, [dir="rtl"] .story-credits { text-align: right; }
+[dir="rtl"] .school-story .story-lead, [dir="rtl"] .school-story .story-motto { text-align: center; }
+
+@media (max-width: 700px) {
+  .school-story { font-size: 14px; }
+  .school-story h3 { margin-top: 25px; font-size: 17px; }
+  .school-facts { grid-template-columns: 1fr; }
 }
