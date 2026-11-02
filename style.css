@@ -673,6 +673,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, .settings-menu summa
 #finalInput[aria-invalid="false"] { border-color: var(--green); }
 #schoolReveal { scroll-margin-top: 100px; }
 .quick-emoji-game { position: fixed; right: 22px; bottom: 22px; z-index: 8; }
+body.home-page .quick-emoji-game { right: 150px; }
 .quick-emoji-game > summary { display: grid; width: 52px; height: 52px; place-items: center; border: 1px solid #c9ff38a0; border-radius: 17px; background: #4a1025f2; box-shadow: 0 0 24px #c9ff3850, 0 10px 28px #10030baa; cursor: pointer; font-size: 24px; list-style: none; transition: transform .18s ease, box-shadow .18s ease; }
 .quick-emoji-game > summary::-webkit-details-marker { display: none; }
 .quick-emoji-game > summary:hover, .quick-emoji-game[open] > summary { transform: translateY(-3px) rotate(-5deg); box-shadow: 0 0 30px #c9ff3880, 0 12px 30px #10030bbb; }
@@ -687,6 +688,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, .settings-menu summa
 .emoji-choices button.is-wrong { border-color: var(--danger); background: #ff9aab18; animation: emoji-wrong .3s ease both; }
 .emoji-game-message { min-height: 20px; margin: 12px 0 0; color: var(--green); font-size: 12px; font-weight: 800; line-height: 1.5; }
 .emoji-game-message.is-wrong { color: #ffb9c5; }
+.page-stickers { position: fixed; left: 10px; bottom: 92px; z-index: 3; display: grid; gap: 7px; pointer-events: none; }
+.page-stickers span { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background: rgba(57, 14, 34, 0.72); box-shadow: 0 6px 16px rgba(0,0,0,0.18); font-size: 19px; opacity: .76; }
+.page-stickers span:nth-child(odd) { transform: rotate(-7deg); }
+.page-stickers span:nth-child(even) { transform: rotate(6deg); }
 @keyframes emoji-correct { 50% { transform: scale(1.17) rotate(8deg); } }
 @keyframes emoji-wrong { 25%, 75% { transform: translateX(4px); } 50% { transform: translateX(-4px); } }
 @keyframes story-line-arrive { from { opacity: 0; transform: translateY(14px); filter: blur(4px); } to { opacity: 1; transform: translateY(0); filter: blur(0); } }
@@ -699,6 +704,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, .settings-menu summa
   .settings-panel { top: calc(100% + 8px); }
   .story-thanks { font-size: 14px; }
   .quick-emoji-game { right: 14px; bottom: 14px; }
+  body.home-page .quick-emoji-game { right: 148px; bottom: 14px; }
+  body.home-page .quick-game-panel { right: -126px; }
   .quick-emoji-game > summary { width: 48px; height: 48px; }
   .quick-game-panel { max-height: min(75vh, 360px); overflow-y: auto; }
+  .page-stickers { left: 4px; bottom: 76px; gap: 5px; }
+  .page-stickers span { width: 28px; height: 28px; border-radius: 9px; font-size: 15px; opacity: .55; }
 }
