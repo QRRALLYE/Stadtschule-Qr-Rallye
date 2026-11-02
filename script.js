@@ -78,7 +78,7 @@ const stations = {
   5: {
     title: { de: "FLUR-RECHNUNG", en: "CORRIDOR SUM", ar: "حساب الممر", ru: "ЗАДАЧА В КОРИДОРЕ" },
     place: { de: "Schulflur", en: "School corridor", ar: "ممر المدرسة", ru: "Школьный коридор" },
-    image: "images/station6.jpg",
+    image: "images/station5.jpg",
     letter: "I",
     question: {
       de: "Zähle die roten Feuerlöscher auf dem Foto und addiere 6.",
@@ -97,7 +97,7 @@ const stations = {
   6: {
     title: { de: "SCHULHOF-CODE", en: "SCHOOLYARD CODE", ar: "رمز ساحة المدرسة", ru: "КОД ШКОЛЬНОГО ДВОРА" },
     place: { de: "Sportfläche draußen", en: "Outdoor sports court", ar: "الملعب الخارجي", ru: "Спортивная площадка во дворе" },
-    image: "images/station7.jpg",
+    image: "images/station6.jpg",
     letter: "O",
     question: {
       de: "Finde die Farbe der Sportfläche. Addiere 5 zur Buchstabenanzahl des Wortes ROT.",
@@ -116,7 +116,7 @@ const stations = {
   7: {
     title: { de: "PLAKAT-RECHNUNG", en: "POSTER SUM", ar: "حساب الملصق", ru: "ЗАДАЧА НА ПЛАКАТЕ" },
     place: { de: "Schulflur beim Podcast-Plakat", en: "School corridor by the podcast poster", ar: "ممر المدرسة بجانب ملصق البودكاست", ru: "Коридор у плаката подкаста" },
-    image: "images/station5.jpg",
+    image: "images/station7.jpg",
     letter: "N",
     question: {
       de: "Zähle die Buchstaben des Wortes PODCAST auf dem Plakat und ziehe 2 ab.",
@@ -159,7 +159,7 @@ const translations = {
     metaHome: "Descubre Stadtschule con un reto QR interactivo de siete estaciones.", metaStation: "Resuelve una estación del reto QR de Stadtschule.", metaFinal: "Reúne las letras y descifra la misión final."
   },
   fr: {
-    language: "Langue", languageSelect: "Choisir la langue", homeLink: "Accueil Mission Stadtschule", backHome: "Retour à l’accueil Mission Stadtschule", mainNav: "Navigation principale", navStations: "Étapes", navFinal: "Final", stationCount: "7 ÉTAPES",
+    language: "Langue", languageSelect: "Choisir la langue", homeLink: "Accueil Mission Stadtschule", backHome: "Retour à l’accueil Mission Stadtschule", mainNav: "Navigation principale", navStations: "Étapes", navFinal: "Finale", stationCount: "7 ÉTAPES",
     progressAria: "Progression dans les sept étapes", resetProgress: "Réinitialiser la progression", resetConfirm: "Veux-tu vraiment réinitialiser ta progression ?", resetDone: "Progression réinitialisée. Tu peux recommencer.",
     heroEyebrow: "LE DÉFI DE L’ÉCOLE", heroTitle: "Ton école.<br><span>Ta mission.</span>", heroDescription: "Découvre Stadtschule autrement. Trouve les codes QR, résous sept énigmes et rassemble les lettres du mot secret.",
     startMission: "COMMENCER", seeStations: "Voir toutes les étapes", heroNote: "Sept étapes · un mot secret",
@@ -199,7 +199,7 @@ const translations = {
     lockedTitle: "Son görev henüz kilitli.", lockedText: "Önce yedi harfi topla. Sıradaki çözülmemiş ipucu seni bekliyor.", nextOpen: "SONRAKİ İSTASYON",
     solutionLabel: "Gizli kelime", solutionPlaceholder: "GİZLİ KELİME", checkCode: "KODU KONTROL ET", accepted: "✓ KOD KABUL EDİLDİ! Son görev açıldı.",
     wrongCode: "✕ Kod henüz doğru değil. Yedi harfin tamamını topla.", welcome: "Stadtschule’ye hoş geldin!",
-    videoDescription: "Bunu hak ettin. Macerayı bitirmek için videoyu izle.", closingVideo: "FİNAL VİDEON", videoPrompt: "YouTube veya MP4 videonu buraya ekle.",
+    videoDescription: "Bunu hak ettin. Macerayı bitirmek için videoyu izle.", closingVideo: "KAPANIŞ VİDEOSU", videoPrompt: "YouTube veya MP4 videonu buraya ekle.",
     footerHome: "Okulunda bir keşif yolculuğu.", footerFinal: "Mission Stadtschule · Final",
     titleHome: "Mission Stadtschule – QR Macerası", titleStation: "İstasyon", titleNotFound: "İstasyon bulunamadı", titleFinal: "Mission Stadtschule – Final",
     metaHome: "Stadtschule’yi yedi istasyonlu etkileşimli QR macerasıyla keşfet.", metaStation: "Stadtschule QR macerasında bir istasyonu çöz.", metaFinal: "Harfleri birleştir ve son görevin şifresini çöz."
@@ -210,8 +210,8 @@ const stationTranslations = {
   es: [
     { title: "CÓDIGO DEL CARTEL", place: "Sala de profesores", question: "El nombre grande en inglés de la puerta tiene dos palabras. Multiplica el número de palabras por 3.", hint: "Mira «STAFF ROOM» y calcula 2 × 3.", answers: ["6", "SEIS"] },
     { title: "ACERTIJO DEL CARTEL", place: "Secretaría", question: "Cuenta las letras de la palabra grande del cartel y réstale 4.", hint: "«Sekretariat» tiene 11 letras. Calcula 11 − 4.", answers: ["7", "SIETE"] },
-    { title: "CÓDIGO DEL INDICADOR", place: "Indicador del salón de actos y el comedor", question: "Suma las letras de los dos lugares del indicador. ¿Cuál es el resultado?", hint: "AULA tiene 4 letras y MENSA tiene 5.", answers: ["9", "NUEVE"] },
-    { title: "CÓDIGO DEL AULA", place: "Puerta de la cocina de lavado", question: "En el cartel de la puerta pone N.E35. Suma las dos cifras del número del aula.", hint: "Las cifras son 3 y 5.", answers: ["8", "OCHO"] },
+    { title: "CÓDIGO DEL INDICADOR", place: "Señal hacia el salón de actos y el comedor", question: "Suma las letras de los dos lugares que aparecen en la señal. ¿Cuál es el resultado?", hint: "AULA tiene 4 letras y MENSA tiene 5.", answers: ["9", "NUEVE"] },
+    { title: "CÓDIGO DEL NÚMERO DE SALA", place: "Puerta de la sala de lavado de vajilla", question: "En la puerta pone N.E35. Suma las dos cifras del número de la sala.", hint: "Las cifras son 3 y 5.", answers: ["8", "OCHO"] },
     { title: "SUMA DEL PASILLO", place: "Pasillo de la escuela", question: "Cuenta los extintores rojos de la foto y suma 6.", hint: "En la foto hay un extintor. Calcula 1 + 6.", answers: ["7", "SIETE"] },
     { title: "CÓDIGO DEL PATIO", place: "Pista deportiva exterior", question: "Busca el color de la pista. Suma 5 al número de letras de la palabra alemana ROT.", hint: "La pista es roja. ROT tiene 3 letras: 3 + 5.", answers: ["8", "OCHO"] },
     { title: "SUMA DEL CARTEL", place: "Pasillo junto al cartel del pódcast", question: "Cuenta las letras de PODCAST en el cartel y réstale 2.", hint: "PODCAST tiene 7 letras. Calcula 7 − 2.", answers: ["5", "CINCO"] }
@@ -219,7 +219,7 @@ const stationTranslations = {
   fr: [
     { title: "CODE DE L’ENSEIGNE", place: "Salle des professeurs", question: "Le grand nom anglais sur la porte contient deux mots. Multiplie le nombre de mots par 3.", hint: "Regarde « STAFF ROOM » et calcule 2 × 3.", answers: ["6", "SIX"] },
     { title: "ÉNIGME DE L’ENSEIGNE", place: "Secrétariat", question: "Compte les lettres du grand mot sur l’enseigne, puis soustrais 4.", hint: "« Sekretariat » contient 11 lettres. Calcule 11 − 4.", answers: ["7", "SEPT"] },
-    { title: "CODE DU PANNEAU", place: "Panneau vers l’aula et la cantine", question: "Additionne le nombre de lettres des deux lieux indiqués. Quel est le résultat ?", hint: "AULA a 4 lettres et MENSA en a 5.", answers: ["9", "NEUF"] },
+    { title: "CODE DU PANNEAU", place: "Panneau indiquant l’aula et la cantine", question: "Additionne le nombre de lettres des deux lieux indiqués. Quel est le résultat ?", hint: "AULA a 4 lettres et MENSA en a 5.", answers: ["9", "NEUF"] },
     { title: "CODE DE LA SALLE", place: "Porte de la plonge", question: "La porte indique N.E35. Additionne les deux chiffres du numéro de salle.", hint: "Les chiffres sont 3 et 5.", answers: ["8", "HUIT"] },
     { title: "CALCUL DU COULOIR", place: "Couloir de l’école", question: "Compte les extincteurs rouges sur la photo et ajoute 6.", hint: "Il y a un extincteur sur la photo. Calcule 1 + 6.", answers: ["7", "SEPT"] },
     { title: "CODE DE LA COUR", place: "Terrain de sport extérieur", question: "Trouve la couleur du terrain. Ajoute 5 au nombre de lettres du mot allemand ROT.", hint: "Le terrain est rouge. ROT a 3 lettres : 3 + 5.", answers: ["8", "HUIT"] },
@@ -228,7 +228,7 @@ const stationTranslations = {
   tr: [
     { title: "KAPI TABELASI KODU", place: "Öğretmenler odası", question: "Kapıdaki büyük İngilizce oda adında iki kelime var. Kelime sayısını 3 ile çarp.", hint: "«STAFF ROOM» yazısına bak ve 2 × 3 işlemini yap.", answers: ["6", "ALTI"] },
     { title: "TABELA BULMACASI", place: "Sekreterlik", question: "Tabeladaki büyük kelimenin harflerini say ve 4 çıkar.", hint: "«Sekretariat» 11 harflidir. 11 − 4 işlemini yap.", answers: ["7", "YEDİ"] },
-    { title: "YÖN TABELASI KODU", place: "Salon ve yemekhane yön tabelası", question: "Yön tabelasındaki iki yer adının harf sayılarını topla. Sonuç kaç?", hint: "AULA 4, MENSA 5 harflidir.", answers: ["9", "DOKUZ"] },
+    { title: "YÖN TABELASI KODU", place: "Konferans salonu ve yemekhane yön tabelası", question: "Yön tabelasındaki iki yer adının harf sayılarını topla. Sonuç kaç?", hint: "AULA 4, MENSA 5 harflidir.", answers: ["9", "DOKUZ"] },
     { title: "ODA NUMARASI KODU", place: "Bulaşık odasının kapısı", question: "Kapı tabelasında N.E35 yazıyor. Oda numarasındaki iki rakamı topla.", hint: "Rakamlar 3 ve 5.", answers: ["8", "SEKİZ"] },
     { title: "KORİDOR İŞLEMİ", place: "Okul koridoru", question: "Fotoğraftaki kırmızı yangın söndürücüleri say ve 6 ekle.", hint: "Fotoğrafta bir yangın söndürücü var. 1 + 6 işlemini yap.", answers: ["7", "YEDİ"] },
     { title: "OKUL BAHÇESİ KODU", place: "Açık hava spor sahası", question: "Sahanın rengini bul. Almanca ROT kelimesinin harf sayısına 5 ekle.", hint: "Saha kırmızı. ROT 3 harflidir: 3 + 5.", answers: ["8", "SEKİZ"] },
@@ -266,7 +266,7 @@ Object.assign(translations, {
     storageSaveError: "Der Browser konnte deinen Fortschritt nicht speichern. Bitte aktiviere den lokalen Speicher.",
     stationMissing: "Diese Station gibt es nicht.", stationMissingText: "Prüfe den QR-Code oder gehe zurück zur Übersicht.",
     overview: "ZUR ÜBERSICHT", backOverview: "← Zurück zur Übersicht", progressSaved: "Dein Fortschritt wird auf diesem Gerät gespeichert.",
-    finalMission: "FINAL MISSION", finalTitle: "Bereit fürs<br><span>Finale?</span>",
+    finalMission: "FINALE MISSION", finalTitle: "Bereit fürs<br><span>Finale?</span>",
     finalDescription: "Setze deine sieben Buchstaben zusammen und gib das geheime Lösungswort ein.",
     lockedTitle: "Das Finale ist noch verschlossen.",
     lockedText: "Sammle erst alle sieben Buchstaben. Dein nächster offener Hinweis wartet schon.",
@@ -539,7 +539,9 @@ function renderProgress() {
   if (status) {
     status.textContent = storageMessage || (solved.length === 7
       ? translations[currentLanguage].progressDone
-      : translations[currentLanguage].progressEach);
+      : solved.length === 0
+        ? translations[currentLanguage].progressWaiting
+        : translations[currentLanguage].progressEach);
     status.classList.toggle("warning", Boolean(storageMessage));
   }
   renderStationLinks(solved);
@@ -678,7 +680,7 @@ function checkFinal() {
     renderFinal();
     return;
   }
-  if (value === "STATION") {
+  if (value.replaceAll("İ", "I") === "STATION") {
     msg.innerHTML = `<div class="success">${translations[currentLanguage].accepted}</div>`;
     document.getElementById("videoBox").classList.remove("hidden");
   } else {
