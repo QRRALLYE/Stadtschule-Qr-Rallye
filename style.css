@@ -269,6 +269,12 @@ a.letter:hover { transform: translateY(-3px); }
 }
 .review-textarea { min-height: 110px; resize: vertical; }
 .review-select { appearance: none; }
+.star-rating { display: flex; gap: 8px; margin: 2px 0 10px; }
+.star-button {
+  width: 34px; height: 34px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; background: rgba(255,255,255,0.03); color: rgba(255,255,255,0.4); cursor: pointer; font-size: 24px; line-height: 1; transition: transform .2s ease, border-color .2s ease, color .2s ease;
+}
+.star-button.is-active { color: #ffd166; border-color: rgba(255,209,102,0.75); background: rgba(255,209,102,0.1); }
+.star-button:hover { transform: translateY(-1px); border-color: rgba(255,209,102,0.7); }
 .review-success { margin: 10px 0 0; padding: 10px 12px; border: 1px solid rgba(116, 255, 178, 0.45); border-radius: 10px; background: rgba(111, 240, 167, 0.12); color: var(--green); font-size: 12px; }
 .admin-panel { margin-top: 20px; padding-top: 18px; border-top: 1px solid #ffffff12; }
 .review-list { display: grid; gap: 16px; }
@@ -280,16 +286,40 @@ a.letter:hover { transform: translateY(-3px); }
 }
 .review-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
 .review-meta strong { font-size: 14px; }
+.review-stars { display: inline-flex; gap: 2px; color: rgba(255,255,255,0.3); }
+.star-display { font-size: 13px; }
+.star-display.filled { color: #ffd166; }
 .review-text {
   margin: 0 0 12px;
   color: #edf2ff;
   font-size: 14px;
   line-height: 1.7;
 }
+.review-reactions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+.review-reaction {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 30px; padding: 5px 10px; border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; background: rgba(255,255,255,0.03); color: var(--text); cursor: pointer; font-size: 12px;
+}
 .review-reply { padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
 .review-reply strong { display: block; margin-bottom: 6px; color: var(--accent); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
 .review-reply p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .review-empty { text-align: center; }
+.review-admin-actions { display: flex; justify-content: flex-end; margin-bottom: 10px; }
+.admin-delete-btn { border: 1px solid rgba(255, 109, 109, 0.5); border-radius: 999px; background: rgba(255, 109, 109, 0.08); color: #ffafb1; padding: 8px 12px; cursor: pointer; font: inherit; }
+.admin-access-button {
+  position: fixed; right: 22px; bottom: 22px; z-index: 30; display: grid; place-items: center; width: 56px; height: 56px; border: 1px solid rgba(90, 190, 255, 0.7); border-radius: 18px; background: linear-gradient(135deg, rgba(38,57,90,0.95), rgba(17,27,39,0.9)); box-shadow: 0 18px 30px rgba(0,0,0,0.28); color: #fff; cursor: pointer; font-size: 28px;
+}
+.admin-access-modal {
+  position: fixed; inset: 0; z-index: 40; display: grid; place-items: center; background: rgba(4,8,14,0.65); backdrop-filter: blur(6px);
+}
+.admin-access-card {
+  position: relative; width: min(360px, calc(100vw - 32px)); padding: 24px 20px 20px; border: 1px solid rgba(255,255,255,0.12); border-radius: 22px; background: #121d2d; box-shadow: 0 18px 44px rgba(0,0,0,0.35); text-align: center;
+}
+.admin-access-card h3 { margin: 0 0 8px; }
+.admin-access-card p { margin: 0 0 16px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.admin-access-close { position: absolute; top: 10px; right: 12px; border: 0; background: transparent; color: var(--text); font-size: 24px; cursor: pointer; }
+.admin-access-card .btn { width: 100%; margin-top: 14px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+.btn.danger { border-color: rgba(255, 109, 109, 0.4); background: rgba(255, 109, 109, 0.08); color: #ffb8b8; }
 .review-empty-emoji { font-size: 32px; margin-bottom: 8px; }
 .review-empty h3 { margin: 0 0 8px; }
 .review-empty p { margin: 0; color: var(--muted); line-height: 1.7; }

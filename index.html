@@ -134,6 +134,17 @@
         <form id="reviewForm" class="review-form">
           <label for="reviewName" data-i18n="reviewName">Name</label>
           <input id="reviewName" class="answer review-input" type="text" maxlength="40" placeholder="Dein Name" data-i18n-placeholder="reviewNamePlaceholder" required>
+
+          <label data-i18n="reviewRatingLabel">Bewertung</label>
+          <div class="star-rating" role="radiogroup" aria-label="Bewertung">
+            <button type="button" class="star-button is-active" data-rating="1" aria-label="1 Stern" aria-pressed="true">★</button>
+            <button type="button" class="star-button" data-rating="2" aria-label="2 Sterne" aria-pressed="false">★</button>
+            <button type="button" class="star-button" data-rating="3" aria-label="3 Sterne" aria-pressed="false">★</button>
+            <button type="button" class="star-button" data-rating="4" aria-label="4 Sterne" aria-pressed="false">★</button>
+            <button type="button" class="star-button" data-rating="5" aria-label="5 Sterne" aria-pressed="false">★</button>
+          </div>
+          <input id="reviewRatingValue" type="hidden" value="1" aria-label="Selected review rating">
+
           <label for="reviewText" data-i18n="reviewText">Feedback</label>
           <textarea id="reviewText" class="review-textarea" rows="4" maxlength="220" placeholder="Wie war die Rallye?" data-i18n-placeholder="reviewTextPlaceholder" required></textarea>
           <button class="btn" type="submit"><span data-i18n="reviewSubmit">Veröffentlichen</span> <span aria-hidden="true">→</span></button>
@@ -143,13 +154,14 @@
             <h4 data-i18n="adminReplyTitle">Admin Antwort</h4>
             <span class="admin-badge">ADMIN</span>
           </div>
-          <p class="admin-hint" data-i18n="adminHint">Nur für den Schul-Admin sichtbar. Öffne die Seite mit ?admin=stadtschule, um die Antworten zu verwalten.</p>
+          <p class="admin-hint" data-i18n="adminHint">Nur für den Schul-Admin sichtbar. Verwende den Code AdminSS oder ?admin=AdminSS, um die Antworten zu verwalten.</p>
           <form id="adminReplyForm" class="review-form">
             <label for="adminReviewSelect" data-i18n="adminSelect">Bewertung auswählen</label>
             <select id="adminReviewSelect" class="review-select"></select>
             <label for="adminReplyText" data-i18n="adminReplyText">Antwort</label>
             <textarea id="adminReplyText" class="review-textarea" rows="3" maxlength="220" placeholder="Antwort für die Community" data-i18n-placeholder="adminReplyPlaceholder" required></textarea>
             <button class="btn secondary" type="submit"><span data-i18n="adminReplySubmit">Antwort speichern</span> <span aria-hidden="true">→</span></button>
+            <button class="btn danger" type="button" id="deleteSelectedReview"><span data-i18n="adminDelete">Bewertung löschen</span> <span aria-hidden="true">✕</span></button>
           </form>
         </div>
       </div>
@@ -164,6 +176,20 @@
   <a class="brand" href="index.html">MISSION <span>STADTSCHULE</span></a>
   <span data-i18n="footerHome">Eine Entdeckungsreise durch deine Schule.</span>
 </footer>
+
+<button id="adminAccessButton" class="admin-access-button" type="button" aria-label="Admin access" title="Admin access">
+  <span aria-hidden="true">🤖</span>
+</button>
+<div id="adminAccessModal" class="admin-access-modal hidden" aria-hidden="true">
+  <div class="admin-access-card">
+    <button type="button" class="admin-access-close" id="adminAccessClose" aria-label="Close">×</button>
+    <h3 data-i18n="adminAccessTitle">Admin-Zugang</h3>
+    <p data-i18n="adminAccessText">Gib den Code ein, um den Admin-Modus zu aktivieren.</p>
+    <label for="adminAccessInput" class="sr-only" data-i18n="adminAccessLabel">Code</label>
+    <input id="adminAccessInput" class="review-input" type="password" maxlength="20" placeholder="AdminSS" autocomplete="off">
+    <button type="button" class="btn" id="adminAccessConfirm"><span data-i18n="adminAccessActivate">Aktivieren</span> <span aria-hidden="true">→</span></button>
+  </div>
+</div>
 
 <details class="quick-emoji-game">
   <summary data-i18n-aria-label="emojiGameOpen" data-i18n-title="emojiGameOpen" aria-label="Emoji-Spiel öffnen" title="Emoji-Spiel öffnen">🎮</summary>
