@@ -152,8 +152,10 @@ const translations = {
     finalMission: "MISIÓN FINAL", finalTitle: "¿Listo para el<br><span>final?</span>", finalDescription: "Une tus siete letras e introduce la palabra secreta.",
     lockedTitle: "La misión final todavía está bloqueada.", lockedText: "Primero reúne las siete letras. Tu siguiente pista te espera.", nextOpen: "SIGUIENTE ESTACIÓN",
     solutionLabel: "Palabra secreta", solutionPlaceholder: "PALABRA SECRETA", checkCode: "COMPROBAR CÓDIGO", accepted: "✓ ¡CÓDIGO ACEPTADO! La misión final está desbloqueada.",
-    wrongCode: "✕ El código aún no es correcto. Reúne las siete letras.", welcome: "¡Te damos la bienvenida a Stadtschule!",
-    videoDescription: "Te lo has ganado. Mira el vídeo para terminar el reto.", closingVideo: "TU VÍDEO FINAL", videoPrompt: "Añade aquí tu vídeo de YouTube o MP4.",
+    wrongCode: "✕ El código aún no es correcto. Reúne las siete letras.",
+    storyKicker: "LA HISTORIA DE NUESTRA ESCUELA", storyTitle: "Un colegio.<br><span>Muchas historias.</span>", storyPlaceholder: "Aquí aparecerá pronto el texto sobre nuestra escuela.",
+    easterEggButton: "Descubrir la estrella secreta", developerCredit: "Desarrollado por Konstantin Korneev", colorSequenceLabel: "Secuencia secreta de colores",
+    colorRed: "Rojo", colorBlue: "Azul", colorGreen: "Verde", schoolSecret: "¡Has encontrado la combinación secreta de colores!",
     footerHome: "Una aventura por tu escuela.", footerFinal: "Mission Stadtschule · Final",
     titleHome: "Mission Stadtschule – Reto QR", titleStation: "Estación", titleNotFound: "Estación no encontrada", titleFinal: "Mission Stadtschule – Final",
     metaHome: "Descubre Stadtschule con un reto QR interactivo de siete estaciones.", metaStation: "Resuelve una estación del reto QR de Stadtschule.", metaFinal: "Reúne las letras y descifra la misión final."
@@ -175,8 +177,10 @@ const translations = {
     finalMission: "MISSION FINALE", finalTitle: "Prêt pour le<br><span>final ?</span>", finalDescription: "Assemble tes sept lettres et saisis le mot secret.",
     lockedTitle: "La mission finale est encore verrouillée.", lockedText: "Rassemble d’abord les sept lettres. Le prochain indice t’attend.", nextOpen: "ÉTAPE SUIVANTE",
     solutionLabel: "Mot secret", solutionPlaceholder: "MOT SECRET", checkCode: "VÉRIFIER LE CODE", accepted: "✓ CODE ACCEPTÉ ! La mission finale est débloquée.",
-    wrongCode: "✕ Ce n’est pas encore le bon code. Rassemble les sept lettres.", welcome: "Bienvenue à Stadtschule !",
-    videoDescription: "Tu l’as bien mérité. Regarde la vidéo pour terminer le défi.", closingVideo: "TA VIDÉO FINALE", videoPrompt: "Ajoute ici ta vidéo YouTube ou MP4.",
+    wrongCode: "✕ Ce n’est pas encore le bon code. Rassemble les sept lettres.",
+    storyKicker: "L’HISTOIRE DE NOTRE ÉCOLE", storyTitle: "Une école.<br><span>Mille histoires.</span>", storyPlaceholder: "Le texte sur notre école apparaîtra bientôt ici.",
+    easterEggButton: "Découvrir l’étoile secrète", developerCredit: "Développé par Konstantin Korneev", colorSequenceLabel: "Séquence secrète de couleurs",
+    colorRed: "Rouge", colorBlue: "Bleu", colorGreen: "Vert", schoolSecret: "Tu as trouvé la combinaison secrète de couleurs !",
     footerHome: "Une aventure à travers ton école.", footerFinal: "Mission Stadtschule · Final",
     titleHome: "Mission Stadtschule – Défi QR", titleStation: "Étape", titleNotFound: "Étape introuvable", titleFinal: "Mission Stadtschule – Final",
     metaHome: "Découvre Stadtschule avec un défi QR interactif en sept étapes.", metaStation: "Résous une étape du défi QR de Stadtschule.", metaFinal: "Rassemble les lettres et déchiffre la mission finale."
@@ -198,8 +202,10 @@ const translations = {
     finalMission: "SON GÖREV", finalTitle: "Finale<br><span>hazır mısın?</span>", finalDescription: "Yedi harfi birleştir ve gizli kelimeyi gir.",
     lockedTitle: "Son görev henüz kilitli.", lockedText: "Önce yedi harfi topla. Sıradaki çözülmemiş ipucu seni bekliyor.", nextOpen: "SONRAKİ İSTASYON",
     solutionLabel: "Gizli kelime", solutionPlaceholder: "GİZLİ KELİME", checkCode: "KODU KONTROL ET", accepted: "✓ KOD KABUL EDİLDİ! Son görev açıldı.",
-    wrongCode: "✕ Kod henüz doğru değil. Yedi harfin tamamını topla.", welcome: "Stadtschule’ye hoş geldin!",
-    videoDescription: "Bunu hak ettin. Macerayı bitirmek için videoyu izle.", closingVideo: "KAPANIŞ VİDEOSU", videoPrompt: "YouTube veya MP4 videonu buraya ekle.",
+    wrongCode: "✕ Kod henüz doğru değil. Yedi harfin tamamını topla.",
+    storyKicker: "OKULUMUZUN HİKÂYESİ", storyTitle: "Bir okul.<br><span>Birçok hikâye.</span>", storyPlaceholder: "Okulumuzun hikâyesi yakında burada yer alacak.",
+    easterEggButton: "Gizli yıldızı keşfet", developerCredit: "Konstantin Korneev tarafından geliştirildi", colorSequenceLabel: "Gizli renk sırası",
+    colorRed: "Kırmızı", colorBlue: "Mavi", colorGreen: "Yeşil", schoolSecret: "Gizli renk dizisini buldun!",
     footerHome: "Okulunda bir keşif yolculuğu.", footerFinal: "Mission Stadtschule · Final",
     titleHome: "Mission Stadtschule – QR Macerası", titleStation: "İstasyon", titleNotFound: "İstasyon bulunamadı", titleFinal: "Mission Stadtschule – Final",
     metaHome: "Stadtschule’yi yedi istasyonlu etkileşimli QR macerasıyla keşfet.", metaStation: "Stadtschule QR macerasında bir istasyonu çöz.", metaFinal: "Harfleri birleştir ve son görevin şifresini çöz."
@@ -273,8 +279,9 @@ Object.assign(translations, {
     nextOpen: "ZUR NÄCHSTEN STATION", solutionLabel: "Dein Lösungswort", solutionPlaceholder: "LÖSUNGSWORT",
     checkCode: "CODE PRÜFEN", accepted: "✓ CODE AKZEPTIERT! Die letzte Mission ist freigeschaltet.",
     wrongCode: "✕ Der Code stimmt noch nicht. Sammle alle sieben Buchstaben.",
-    welcome: "Willkommen an der Stadtschule!", videoDescription: "Das hast du dir verdient. Schau dir zum Abschluss das Video an.",
-    closingVideo: "DEIN ABSCHLUSSVIDEO", videoPrompt: "Füge hier euer YouTube- oder MP4-Video ein.",
+    storyKicker: "DIE GESCHICHTE UNSERER SCHULE", storyTitle: "Ein Ort.<br><span>Viele Geschichten.</span>", storyPlaceholder: "Hier erscheint bald der Text über unsere Schule.",
+    easterEggButton: "Den geheimen Stern entdecken", developerCredit: "Entwickelt von Konstantin Korneev", colorSequenceLabel: "Geheime Farbenfolge",
+    colorRed: "Rot", colorBlue: "Blau", colorGreen: "Grün", schoolSecret: "Geheime Farbkombination gefunden!",
     footerHome: "Eine Entdeckungsreise durch deine Schule.", footerFinal: "Mission Stadtschule · Finale",
     titleHome: "Mission Stadtschule – Die QR-Rallye", titleStation: "Station", titleNotFound: "Station nicht gefunden",
     titleFinal: "Mission Stadtschule – Finale", metaHome: "Entdecke die Stadtschule bei einer interaktiven QR-Rallye mit sieben spannenden Stationen.", metaStation: "Löse eine Station der QR-Rallye an der Stadtschule.", metaFinal: "Setze die gesammelten Buchstaben zusammen und knacke das Finale der Mission Stadtschule."
@@ -307,8 +314,9 @@ Object.assign(translations, {
     nextOpen: "NEXT STATION", solutionLabel: "Your secret word", solutionPlaceholder: "SECRET WORD",
     checkCode: "CHECK CODE", accepted: "✓ CODE ACCEPTED! The final mission is unlocked.",
     wrongCode: "✕ That code is not right yet. Collect all seven letters.",
-    welcome: "Welcome to Stadtschule!", videoDescription: "You earned it. Watch the video to finish the rally.",
-    closingVideo: "YOUR FINAL VIDEO", videoPrompt: "Add your YouTube or MP4 video here.",
+    storyKicker: "THE STORY OF OUR SCHOOL", storyTitle: "One school.<br><span>Many stories.</span>", storyPlaceholder: "The story of our school will appear here soon.",
+    easterEggButton: "Find the hidden star", developerCredit: "Developed by Konstantin Korneev", colorSequenceLabel: "Secret color sequence",
+    colorRed: "Red", colorBlue: "Blue", colorGreen: "Green", schoolSecret: "Secret color sequence found!",
     footerHome: "An adventure through your school.", footerFinal: "Mission Stadtschule · Final",
     titleHome: "Mission Stadtschule – QR Rally", titleStation: "Station", titleNotFound: "Station not found",
     titleFinal: "Mission Stadtschule – Final", metaHome: "Explore Stadtschule in an interactive QR rally with seven exciting stations.", metaStation: "Solve a station in the Stadtschule QR rally.", metaFinal: "Put your collected letters together and crack the final mission."
@@ -341,8 +349,9 @@ Object.assign(translations, {
     nextOpen: "المحطة التالية", solutionLabel: "الكلمة السرية", solutionPlaceholder: "الكلمة السرية",
     checkCode: "تحقق من الرمز", accepted: "✓ الرمز صحيح! فُتحت المهمة النهائية.",
     wrongCode: "✕ الرمز غير صحيح بعد. اجمع الحروف السبعة.",
-    welcome: "مرحبًا بك في مدرسة شتادتشوله!", videoDescription: "لقد استحققت ذلك. شاهد الفيديو لإنهاء الجولة.",
-    closingVideo: "فيديو الختام", videoPrompt: "أضف فيديو YouTube أو MP4 هنا.",
+    storyKicker: "قصة مدرستنا", storyTitle: "مدرسة واحدة.<br><span>قصص كثيرة.</span>", storyPlaceholder: "ستظهر هنا قريبًا قصة مدرستنا.",
+    easterEggButton: "اكتشف النجمة المخفية", developerCredit: "تطوير كونستانتين كورنييف", colorSequenceLabel: "تسلسل الألوان السري",
+    colorRed: "أحمر", colorBlue: "أزرق", colorGreen: "أخضر", schoolSecret: "لقد وجدت تسلسل الألوان السري!",
     footerHome: "مغامرة لاكتشاف مدرستك.", footerFinal: "مهمة شتادتشوله · النهاية",
     titleHome: "مهمة شتادتشوله – جولة QR", titleStation: "المحطة", titleNotFound: "المحطة غير موجودة",
     titleFinal: "مهمة شتادتشوله – النهاية", metaHome: "اكتشف مدرسة شتادتشوله في جولة تفاعلية برموز QR تضم سبع محطات ممتعة.", metaStation: "حل إحدى محطات جولة رموز QR في مدرسة شتادتشوله.", metaFinal: "اجمع الحروف التي حصلت عليها واكتشف المهمة النهائية."
@@ -375,8 +384,9 @@ Object.assign(translations, {
     nextOpen: "СЛЕДУЮЩАЯ СТАНЦИЯ", solutionLabel: "Секретное слово", solutionPlaceholder: "СЕКРЕТНОЕ СЛОВО",
     checkCode: "ПРОВЕРИТЬ КОД", accepted: "✓ КОД ПРИНЯТ! Финальная миссия открыта.",
     wrongCode: "✕ Код пока неверный. Собери все семь букв.",
-    welcome: "Добро пожаловать в Stadtschule!", videoDescription: "Ты заслужил это. Посмотри видео в конце квеста.",
-    closingVideo: "ФИНАЛЬНОЕ ВИДЕО", videoPrompt: "Добавь сюда видео YouTube или MP4.",
+    storyKicker: "ИСТОРИЯ НАШЕЙ ШКОЛЫ", storyTitle: "Одна школа.<br><span>Много историй.</span>", storyPlaceholder: "Здесь скоро появится текст о нашей школе.",
+    easterEggButton: "Найти спрятанную звезду", developerCredit: "Разработано Константином Корнеевым", colorSequenceLabel: "Секретная последовательность цветов",
+    colorRed: "Красный", colorBlue: "Синий", colorGreen: "Зелёный", schoolSecret: "Секретная цветовая комбинация найдена!",
     footerHome: "Приключение по твоей школе.", footerFinal: "Миссия Stadtschule · Финал",
     titleHome: "Миссия Stadtschule – QR-квест", titleStation: "Станция", titleNotFound: "Станция не найдена",
     titleFinal: "Миссия Stadtschule – Финал", metaHome: "Исследуй Stadtschule в интерактивном QR-квесте с семью интересными станциями.", metaStation: "Реши одну из станций QR-квеста Stadtschule.", metaFinal: "Составь финальное слово из собранных букв и разгадай последнюю загадку."
@@ -389,6 +399,8 @@ Object.assign(translations.ar, { previousStation: "المحطة السابقة",
 Object.assign(translations.ru, { previousStation: "ПРЕДЫДУЩАЯ СТАНЦИЯ", stationOverview: "ВСЕ СТАНЦИИ" });
 
 let currentLanguage = "de";
+let creditTapCount = 0;
+let colorSequence = [];
 
 function setLanguage(language) {
   if (!translations[language]) return;
@@ -682,7 +694,7 @@ function checkFinal() {
   }
   if (value.replaceAll("İ", "I") === "STATION") {
     msg.innerHTML = `<div class="success">${translations[currentLanguage].accepted}</div>`;
-    document.getElementById("videoBox").classList.remove("hidden");
+    document.getElementById("schoolReveal").classList.remove("hidden");
   } else {
     msg.innerHTML = `<div class="error">${translations[currentLanguage].wrongCode}</div>`;
   }
@@ -698,6 +710,27 @@ document.addEventListener("submit", (event) => {
   }
 });
 document.addEventListener("click", (event) => {
+  const creditTrigger = event.target.closest("#creditTrigger");
+  if (creditTrigger) {
+    creditTapCount += 1;
+    if (creditTapCount >= 5) document.getElementById("developerCredit").classList.remove("hidden");
+    return;
+  }
+  const colorKey = event.target.closest("[data-secret-color]");
+  if (colorKey) {
+    const sequence = ["red", "blue", "green"];
+    const selectedColor = colorKey.dataset.secretColor;
+    colorSequence.push(selectedColor);
+    if (selectedColor !== sequence[colorSequence.length - 1]) {
+      colorSequence = selectedColor === "red" ? ["red"] : [];
+    }
+    if (colorSequence.length === sequence.length) {
+      document.getElementById("schoolSecret").classList.remove("hidden");
+      document.getElementById("schoolReveal").classList.add("secret-found");
+      colorSequence = [];
+    }
+    return;
+  }
   const hintToggle = event.target.closest("#hintToggle");
   if (hintToggle) {
     const hint = document.getElementById("stationHint");
