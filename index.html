@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#8c123d">
   <meta name="description" content="Entdecke die Stadtschule bei einer interaktiven QR-Rallye mit sieben spannenden Stationen.">
   <title>Mission Stadtschule – Die QR-Rallye</title>
-  <link rel="stylesheet" href="style.css?v=mission-20261102-5">
+  <link rel="stylesheet" href="style.css?v=mission-20261102-6">
 </head>
 <body>
 <header class="top">
@@ -27,6 +27,15 @@
       <option value="tr">Türkçe</option>
     </select>
   </div>
+  <details class="settings-menu">
+    <summary data-i18n-aria-label="settingsOpen" data-i18n-title="settingsOpen" aria-label="Einstellungen öffnen" title="Einstellungen öffnen">⚙️</summary>
+    <div class="settings-panel">
+      <strong data-i18n="settingsTitle">ANSICHT &amp; TON</strong>
+      <label for="siteBrightness" data-i18n="brightness">Bildschirmhelligkeit</label>
+      <div class="brightness-control"><input id="siteBrightness" type="range" min="80" max="120" value="105"><output id="brightnessValue" for="siteBrightness">105%</output></div>
+      <label class="settings-toggle" for="soundEffects"><input id="soundEffects" type="checkbox" checked><span data-i18n="soundEffects">Klicksounds</span></label>
+    </div>
+  </details>
   <div class="badge" data-i18n="stationCount">7 STATIONEN</div>
 </header>
 
@@ -83,6 +92,6 @@
   <span data-i18n="footerHome">Eine Entdeckungsreise durch deine Schule.</span>
 </footer>
 
-<script src="script.js?v=mission-20261102-5"></script>
+<script src="script.js?v=mission-20261102-6"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#8c123d">
   <meta name="description" content="Löse eine Station der QR-Rallye an der Stadtschule.">
   <title>Station – Mission Stadtschule</title>
-  <link rel="stylesheet" href="style.css?v=mission-20261102-5">
+  <link rel="stylesheet" href="style.css?v=mission-20261102-6">
 </head>
 <body>
 <header class="top">
@@ -26,6 +26,15 @@
       <option value="tr">Türkçe</option>
     </select>
   </div>
+  <details class="settings-menu">
+    <summary data-i18n-aria-label="settingsOpen" data-i18n-title="settingsOpen" aria-label="Einstellungen öffnen" title="Einstellungen öffnen">⚙️</summary>
+    <div class="settings-panel">
+      <strong data-i18n="settingsTitle">ANSICHT &amp; TON</strong>
+      <label for="siteBrightness" data-i18n="brightness">Bildschirmhelligkeit</label>
+      <div class="brightness-control"><input id="siteBrightness" type="range" min="80" max="120" value="105"><output id="brightnessValue" for="siteBrightness">105%</output></div>
+      <label class="settings-toggle" for="soundEffects"><input id="soundEffects" type="checkbox" checked><span data-i18n="soundEffects">Klicksounds</span></label>
+    </div>
+  </details>
   <div id="stationNumber" class="badge">STATION</div>
 </header>
 
@@ -38,6 +47,6 @@
   <span data-i18n="progressSaved">Dein Fortschritt wird auf diesem Gerät gespeichert.</span>
 </footer>
 
-<script src="script.js?v=mission-20261102-5"></script>
+<script src="script.js?v=mission-20261102-6"></script>
 </body>
 </html>

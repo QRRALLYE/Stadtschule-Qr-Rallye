@@ -406,6 +406,14 @@ Object.assign(translations.es, { factMonth: "💡 ¿Sabías que…? ¡Esta ruta 
 Object.assign(translations.fr, { factMonth: "💡 Le savais-tu ? Cette aventure QR a été créée en un mois !", factClass: "🏫 Le savais-tu ? La classe 5e a récemment rejoint notre école !", creditsTitle: "L’équipe derrière le parcours", creditProgram: "Programmation : Konstantin Korneev (Konstantin Kornieiev)", creditDesign: "Design : Konstantin Korneev (Konstantin Kornieiev)", creditText: "Texte : Vladyslav Shevchenko", creditTest: "Tests : Konstantin Korneev et Vladyslav Shevchenko", sliderToggle: "Ouvrir le réglage néon", sliderLabel: "Lueur néon", sliderSecret: "✨ Intensité néon réglée !", colorSecret: "🌈 Séquence de couleurs néon découverte !", starSecret: "⭐ Secret de l’étoile découvert !" });
 Object.assign(translations.tr, { factMonth: "💡 Biliyor muydun? Bu QR macerası bir ay boyunca hazırlandı!", factClass: "🏫 Biliyor muydun? Okulumuzda kısa süre önce 5e sınıfı açıldı!", creditsTitle: "Rallinin arkasındaki ekip", creditProgram: "Programlama: Konstantin Korneev (Konstantin Kornieiev)", creditDesign: "Tasarım: Konstantin Korneev (Konstantin Kornieiev)", creditText: "Metin: Vladyslav Shevchenko", creditTest: "Test edenler: Konstantin Korneev ve Vladyslav Shevchenko", sliderToggle: "Neon ayarını aç", sliderLabel: "Neon parlaklığı", sliderSecret: "✨ Neon seviyesi ayarlandı!", colorSecret: "🌈 Gizli neon renk sırası bulundu!", starSecret: "⭐ Yıldız sırrı keşfedildi!" });
 
+Object.assign(translations.de, { settingsTitle: "ANSICHT & TON", settingsOpen: "Einstellungen öffnen", brightness: "Bildschirmhelligkeit", soundEffects: "Klicksounds", storyThanks: "Danke, dass du unsere Rallye gespielt hast. Schön, dass du dabei warst! 💙" });
+Object.assign(translations.en, { settingsTitle: "DISPLAY & SOUND", settingsOpen: "Open settings", brightness: "Screen brightness", soundEffects: "Click sounds", storyThanks: "Thanks for playing our rally! We are glad you joined us! 💙" });
+Object.assign(translations.ar, { settingsTitle: "العرض والصوت", settingsOpen: "فتح الإعدادات", brightness: "سطوع الشاشة", soundEffects: "أصوات النقر", storyThanks: "شكرًا لمشاركتك في لعبتنا! سعدنا بوجودك معنا! 💙" });
+Object.assign(translations.ru, { settingsTitle: "ЭКРАН И ЗВУК", settingsOpen: "Открыть настройки", brightness: "Яркость экрана", soundEffects: "Звуки нажатий", storyThanks: "Спасибо, что прошёл нашу игру! Рады, что ты был с нами! 💙" });
+Object.assign(translations.es, { settingsTitle: "PANTALLA Y SONIDO", settingsOpen: "Abrir ajustes", brightness: "Brillo de pantalla", soundEffects: "Sonidos al pulsar", storyThanks: "¡Gracias por jugar nuestra aventura! ¡Nos alegra que hayas participado! 💙" });
+Object.assign(translations.fr, { settingsTitle: "ÉCRAN ET SON", settingsOpen: "Ouvrir les réglages", brightness: "Luminosité de l’écran", soundEffects: "Sons des clics", storyThanks: "Merci d’avoir joué à notre aventure ! Nous sommes ravis de ta participation ! 💙" });
+Object.assign(translations.tr, { settingsTitle: "EKRAN VE SES", settingsOpen: "Ayarları aç", brightness: "Ekran parlaklığı", soundEffects: "Tıklama sesleri", storyThanks: "Oyunumuzu oynadığın için teşekkürler! Katıldığın için çok mutluyuz! 💙" });
+
 const schoolStories = {
   de: `<p class="story-lead">💙🏫 <strong>STADTSCHULE LÜBBECKE</strong><br>Gemeinsam lernen. Gemeinsam wachsen. Gemeinsam erfolgreich sein!</p><p>Willkommen an der Stadtschule Lübbecke! 🌟 Lernen, Gemeinschaft, Kreativität und persönliche Entwicklung gehören zusammen. Schülerinnen und Schüler entdecken Interessen, stärken Fähigkeiten und finden ihren eigenen Weg in die Zukunft. Wir sind eine Ganztagsschule für die Jahrgänge 5 bis 10 und bieten verschiedene Schulabschlüsse der Sekundarstufe I. Bei uns ist jeder Mensch wichtig! ❤️</p><h3>📚 1. Spannender Unterricht ab Klasse 5</h3><p>Mathematik stärkt logisches Denken; in Deutsch lesen und schreiben wir, in Englisch üben wir eine internationale Sprache. Gesellschaftslehre verbindet Geschichte, Erdkunde, Politik und Kulturen. Naturwissenschaften entdecken Tiere, Pflanzen, den menschlichen Körper und Naturphänomene. Informatik erkundet Computer und digitale Technologien. Sport und Schwimmen bringen Bewegung und Teamgeist; Kunst und Musik fördern Kreativität. Religion und Praktische Philosophie beschäftigen sich mit Werten und Lebensfragen. Soziales Lernen übt Respekt, Zusammenarbeit und Konfliktlösung.</p><h3>🧪 2. Naturwissenschaften: Forschen und Entdecken</h3><p>In höheren Klassen werden die Fächer vertieft: 🧬 Biologie behandelt Körper, Tiere, Pflanzen, Umwelt und Gesundheit. ⚗️ Chemie erforscht Stoffe, Reaktionen, Experimente und Chemie im Alltag. ⚡ Physik beschäftigt sich mit Energie, Bewegung, Elektrizität, Licht, Schall und Technik.</p><h3>⭐ 3. Wahlpflicht ab Klasse 7</h3><p>Am Ende der 6. Klasse wählen Jugendliche ein zusätzliches Fach: 🇫🇷 Französisch, 🇪🇸 Spanisch, 💻 MINT (Mathematik, Informatik, Naturwissenschaften und Technik), 🎭 Darstellen und Gestalten, 🍳 Hauswirtschaft oder 🔧 Technik. Es zählt wie ein Hauptfach; Interessen und Stärken helfen bei der Wahl.</p><h3>🌍 4. Bilingualer Unterricht</h3><p>Erweiterter Englischunterricht ab Klasse 5 kann auf den bilingualen Schwerpunkt ab Klasse 7 vorbereiten. Ausgewählte Unterrichtsinhalte können dann auch auf Englisch behandelt werden.</p><h3>💻 5. MINT – Die Zukunft entdecken</h3><p>MINT steht für Mathematik, Informatik, Naturwissenschaften und Technik. Jugendliche probieren Neues aus und erforschen Computer, Technik und Wissenschaft.</p><h3>⏰ 6. Ganztagsschule und Lernzeiten</h3><p>Dazu gehören begleitete Lernzeiten für Aufgaben und Wiederholung, Mittagspause in der schuleigenen Cafeteria, Arbeitsgemeinschaften und überwiegend 90-minütige Unterrichtsblöcke für vertieftes Lernen.</p><h3>❤️ 7. Eine Schule für alle</h3><p>Kinder und Jugendliche mit unterschiedlichen Fähigkeiten und Lernvoraussetzungen lernen gemeinsam. Lehrkräfte, Sonderpädagoginnen und Sonderpädagogen sowie weitere Fachkräfte bieten individuelle Unterstützung, differenziertes Lernen, zusätzliche Förderung und gegenseitige Rücksichtnahme.</p><p class="story-motto">Unser Motto: Jeder Mensch ist unterschiedlich – und genau das macht unsere Gemeinschaft stark! 🌈</p>`,
   en: `<p class="story-lead">💙🏫 <strong>STADTSCHULE LÜBBECKE</strong><br>Learning together. Growing together. Succeeding together!</p><p>Welcome to Stadtschule Lübbecke! 🌟 Learning, community, creativity and personal development belong together. Students discover their interests, build their strengths and find their own path to the future. We are an all-day school for grades 5–10, offering several lower-secondary qualifications. Everyone matters here! ❤️</p><h3>📚 1. Exciting lessons from grade 5</h3><p>Maths develops logical thinking; in German we read and write, and in English we practise an international language. Social studies explores history, geography, politics and cultures. Science investigates animals, plants, the human body and nature. Computing explores computers and digital technology. Sport and swimming bring movement and teamwork; art and music encourage creativity. Religion and Practical Philosophy explore values and life’s big questions. Social learning builds respect, cooperation and conflict-resolution skills.</p><h3>🧪 2. Science: explore and discover</h3><p>In higher grades, subjects go deeper: 🧬 Biology covers the body, animals, plants, the environment and health. ⚗️ Chemistry explores materials, reactions, experiments and everyday chemistry. ⚡ Physics looks at energy, motion, electricity, light, sound and technology.</p><h3>⭐ 3. Electives from grade 7</h3><p>At the end of grade 6, students choose an extra subject: 🇫🇷 French, 🇪🇸 Spanish, 💻 STEM, 🎭 Performing Arts and Design, 🍳 Home Economics or 🔧 Technology. It counts as a core subject, so interests and strengths matter.</p><h3>🌍 4. Bilingual learning</h3><p>Extended English lessons from grade 5 can prepare students for the bilingual focus from grade 7, where selected subject content may also be taught in English.</p><h3>💻 5. STEM: discover the future</h3><p>STEM means science, technology, engineering and mathematics. Students explore questions, try new things and discover computing, technology and science.</p><h3>⏰ 6. All-day school and study time</h3><p>The school day includes teacher-supported study time for assignments and revision, lunch in the school cafeteria, clubs and mostly 90-minute lesson blocks for in-depth learning.</p><h3>❤️ 7. A school for everyone</h3><p>Students with different abilities and learning needs learn together. Teachers, special-education teachers and other professionals provide individual support, differentiated learning, extra help and mutual respect.</p><p class="story-motto">Our motto: Everyone is different – and that is what makes our community strong! 🌈</p>`,
@@ -417,6 +425,8 @@ const schoolStories = {
 };
 
 let currentLanguage = "de";
+let siteSettings = { brightness: 105, soundEffects: true };
+let clickAudioContext;
 let creditTapCount = 0;
 let colorSequence = [];
 
@@ -447,6 +457,10 @@ function setLanguage(language) {
     const value = translations[language][element.dataset.i18nAriaLabel];
     if (value !== undefined) element.setAttribute("aria-label", value);
   });
+  document.querySelectorAll("[data-i18n-title]").forEach((element) => {
+    const value = translations[language][element.dataset.i18nTitle];
+    if (value !== undefined) element.title = value;
+  });
   const finalMessage = document.getElementById("finalMessage");
   if (finalMessage?.firstElementChild?.classList.contains("success")) {
     finalMessage.firstElementChild.textContent = translations[language].accepted;
@@ -462,6 +476,7 @@ function setLanguage(language) {
   renderStation();
   renderFinal();
   renderSchoolStory();
+  renderSettings();
   if (document.getElementById("finalForm")) document.title = translations[language].titleFinal;
   if (document.getElementById("stationGrid")) document.title = translations[language].titleHome;
 }
@@ -478,6 +493,60 @@ function initLanguage() {
     select.addEventListener("change", () => setLanguage(select.value));
   });
   setLanguage(currentLanguage);
+}
+
+function renderSettings() {
+  const brightness = document.getElementById("siteBrightness");
+  if (!brightness) return;
+  brightness.value = String(siteSettings.brightness);
+  const output = document.getElementById("brightnessValue");
+  if (output) output.value = `${new Intl.NumberFormat(currentLanguage).format(siteSettings.brightness)}%`;
+  const soundToggle = document.getElementById("soundEffects");
+  if (soundToggle) soundToggle.checked = siteSettings.soundEffects;
+}
+
+function saveSettings() {
+  try {
+    localStorage.setItem("missionSettings", JSON.stringify(siteSettings));
+  } catch (error) {
+    console.error("Mission Stadtschule: Einstellungen konnten nicht gespeichert werden.", error);
+  }
+}
+
+function initSettings() {
+  try {
+    const saved = JSON.parse(localStorage.getItem("missionSettings") || "{}");
+    if (Number.isFinite(saved.brightness)) siteSettings.brightness = Math.min(120, Math.max(80, Math.round(saved.brightness)));
+    if (typeof saved.soundEffects === "boolean") siteSettings.soundEffects = saved.soundEffects;
+  } catch (error) {
+    console.error("Mission Stadtschule: Einstellungen konnten nicht geladen werden.", error);
+  }
+  document.documentElement.style.setProperty("--display-brightness", String(siteSettings.brightness / 100));
+  renderSettings();
+}
+
+function playClickSound() {
+  if (!siteSettings.soundEffects) return;
+  const AudioContextConstructor = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContextConstructor) return;
+  try {
+    clickAudioContext ||= new AudioContextConstructor();
+    if (clickAudioContext.state === "suspended") clickAudioContext.resume().catch(() => {});
+    const oscillator = clickAudioContext.createOscillator();
+    const volume = clickAudioContext.createGain();
+    const start = clickAudioContext.currentTime;
+    oscillator.type = "sine";
+    oscillator.frequency.setValueAtTime(660, start);
+    oscillator.frequency.exponentialRampToValueAtTime(440, start + 0.07);
+    volume.gain.setValueAtTime(0.035, start);
+    volume.gain.exponentialRampToValueAtTime(0.001, start + 0.08);
+    oscillator.connect(volume);
+    volume.connect(clickAudioContext.destination);
+    oscillator.start(start);
+    oscillator.stop(start + 0.08);
+  } catch (error) {
+    console.warn("Mission Stadtschule: Klicksound ist nicht verfügbar.", error);
+  }
 }
 
 function stationText(station, key) {
@@ -705,7 +774,12 @@ function renderFinal() {
 }
 function renderSchoolStory() {
   const story = document.getElementById("schoolStory");
-  if (story) story.innerHTML = schoolStories[currentLanguage];
+  if (story) {
+    story.innerHTML = schoolStories[currentLanguage];
+    story.querySelectorAll(":scope > *").forEach((line, index) => {
+      line.style.setProperty("--line-delay", `${Math.min(index * 70, 900)}ms`);
+    });
+  }
   const facts = document.getElementById("schoolFacts");
   if (facts) facts.innerHTML = `<p>${translations[currentLanguage].factMonth}</p><p>${translations[currentLanguage].factClass}</p>`;
   const credits = document.getElementById("creditsList");
@@ -748,6 +822,17 @@ document.addEventListener("submit", (event) => {
   }
 });
 document.addEventListener("click", (event) => {
+  const control = event.target.closest("button, a.btn");
+  if (control) {
+    if (!window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+      control.animate?.([
+        { transform: "scale(1)" },
+        { transform: "scale(.96)" },
+        { transform: "scale(1)" }
+      ], { duration: 190, easing: "ease-out" });
+    }
+    playClickSound();
+  }
   const creditTrigger = event.target.closest("#creditTrigger");
   if (creditTrigger) {
     creditTapCount += 1;
@@ -794,12 +879,24 @@ document.addEventListener("click", (event) => {
   if (event.target.closest("#resetProgress")) resetProgress();
 });
 document.addEventListener("input", (event) => {
-  if (event.target.id === "neonIntensity") {
+  if (event.target.id === "siteBrightness") {
+    siteSettings.brightness = Math.min(120, Math.max(80, Number(event.target.value)));
+    document.documentElement.style.setProperty("--display-brightness", String(siteSettings.brightness / 100));
+    renderSettings();
+    saveSettings();
+  } else if (event.target.id === "neonIntensity") {
     document.documentElement.style.setProperty("--neon-intensity", String(Number(event.target.value) / 100));
     const message = document.getElementById("sliderSecret");
     message.textContent = translations[currentLanguage].sliderSecret;
     message.classList.remove("hidden");
   }
 });
+document.addEventListener("change", (event) => {
+  if (event.target.id === "soundEffects") {
+    siteSettings.soundEffects = event.target.checked;
+    saveSettings();
+  }
+});
 initLanguage();
+initSettings();
 bindAnswerFields();
