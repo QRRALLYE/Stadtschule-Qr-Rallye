@@ -12,6 +12,9 @@ create table if not exists public.reviews (
   created_at timestamptz not null default now()
 );
 
+alter table public.reviews add column if not exists photo_approved boolean not null default false;
+alter table public.reviews add column if not exists reply_photo_approved boolean not null default false;
+
 create table if not exists public.review_admins (
   user_id uuid primary key references auth.users(id) on delete cascade
 );
@@ -37,7 +40,7 @@ grant execute on function public.is_review_admin() to anon, authenticated;
 revoke all on public.reviews from anon, authenticated;
 grant select on public.reviews to anon, authenticated;
 grant insert (name, text, rating, photo_path) on public.reviews to anon, authenticated;
-grant update (reply, reply_photo_path) on public.reviews to authenticated;
+grant update (reply, reply_photo_path, photo_approved, reply_photo_approved) on public.reviews to authenticated;
 grant delete on public.reviews to authenticated;
 grant select on public.review_admins to authenticated;
 
@@ -55,6 +58,8 @@ create policy "Visitors can submit reviews"
     and reply = ''
     and (photo_path is null or photo_path like 'reviews/%')
     and reply_photo_path is null
+    and not photo_approved
+    and not reply_photo_approved
     and reactions = '{"love":0,"great":0,"fire":0}'::jsonb
   );
 
@@ -105,13 +110,28 @@ revoke all on function public.add_review_reaction(uuid, text) from public;
 grant execute on function public.add_review_reaction(uuid, text) to anon, authenticated;
 
 insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
-values ('review-photos', 'review-photos', true, 5242880, array['image/jpeg', 'image/png', 'image/webp'])
+values ('review-photos', 'review-photos', false, 5242880, array['image/jpeg', 'image/png', 'image/webp'])
 on conflict (id) do update set public = excluded.public, file_size_limit = excluded.file_size_limit, allowed_mime_types = excluded.allowed_mime_types;
 
- drop policy if exists "Review photos are public" on storage.objects;
-create policy "Review photos are public"
+drop policy if exists "Review photos are public" on storage.objects;
+drop policy if exists "Approved review photos and admin previews" on storage.objects;
+create policy "Approved review photos and admin previews"
   on storage.objects for select to anon, authenticated
-  using (bucket_id = 'review-photos');
+  using (
+    bucket_id = 'review-photos'
+    and (
+      exists (
+        select 1 from public.reviews r
+        where r.photo_path = name
+          and (r.photo_approved or public.is_review_admin())
+      )
+      or exists (
+        select 1 from public.reviews r
+        where r.reply_photo_path = name
+          and (r.reply_photo_approved or public.is_review_admin())
+      )
+    )
+  );
 
 drop policy if exists "Visitors upload review photos and admins upload replies" on storage.objects;
 create policy "Visitors upload review photos and admins upload replies"

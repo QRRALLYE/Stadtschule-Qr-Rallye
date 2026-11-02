@@ -480,6 +480,13 @@ Object.assign(translations.ar, { adminSignOut: "تسجيل الخروج" });
 Object.assign(translations.es, { adminSignOut: "Cerrar sesión" });
 Object.assign(translations.fr, { adminSignOut: "Se déconnecter" });
 Object.assign(translations.tr, { adminSignOut: "Çıkış yap" });
+Object.assign(translations.de, { photoPending: "Foto wartet auf Freigabe", photoApprove: "Freigeben", photoRevoke: "Veröffentlichung zurücknehmen" });
+Object.assign(translations.en, { photoPending: "Photo awaiting approval", photoApprove: "Approve", photoRevoke: "Unpublish" });
+Object.assign(translations.ar, { photoPending: "الصورة بانتظار الموافقة", photoApprove: "موافقة", photoRevoke: "إلغاء النشر" });
+Object.assign(translations.ru, { photoPending: "Фото ожидает одобрения", photoApprove: "Одобрить фото", photoRevoke: "Снять с публикации" });
+Object.assign(translations.es, { photoPending: "Foto pendiente de aprobación", photoApprove: "Aprobar", photoRevoke: "Retirar" });
+Object.assign(translations.fr, { photoPending: "Photo en attente d’approbation", photoApprove: "Approuver", photoRevoke: "Retirer" });
+Object.assign(translations.tr, { photoPending: "Fotoğraf onay bekliyor", photoApprove: "Onayla", photoRevoke: "Yayından kaldır" });
 
 let currentLanguage = "de";
 let siteSettings = { brightness: 105, soundEffects: true, soundVolume: 80, layoutMode: "auto" };
@@ -670,24 +677,38 @@ async function loadCloudReviews() {
   if (!supabaseClient) return;
   const { data, error } = await supabaseClient
     .from("reviews")
-    .select("id,name,text,rating,photo_path,reply,reply_photo_path,reactions,created_at")
+    .select("id,name,text,rating,photo_path,photo_approved,reply,reply_photo_path,reply_photo_approved,reactions,created_at")
     .order("created_at", { ascending: false })
     .limit(100);
   if (error) {
     console.error("Mission Stadtschule: Cloud-Bewertungen konnten nicht geladen werden.", error);
     return;
   }
-  cloudReviews = (data || []).map((review) => ({
+  cloudReviews = await Promise.all((data || []).map(async (review) => ({
     id: review.id,
     name: review.name,
     text: review.text,
     rating: review.rating,
-    photoUrl: review.photo_path ? supabaseClient.storage.from("review-photos").getPublicUrl(review.photo_path).data.publicUrl : "",
+    photoPath: review.photo_path || "",
+    photoApproved: Boolean(review.photo_approved),
+    photoUrl: await getCloudPhotoUrl(review.photo_path, review.photo_approved),
     reply: review.reply || "",
-    replyPhotoUrl: review.reply_photo_path ? supabaseClient.storage.from("review-photos").getPublicUrl(review.reply_photo_path).data.publicUrl : "",
+    replyPhotoPath: review.reply_photo_path || "",
+    replyPhotoApproved: Boolean(review.reply_photo_approved),
+    replyPhotoUrl: await getCloudPhotoUrl(review.reply_photo_path, review.reply_photo_approved),
     reactions: review.reactions || { love: 0, great: 0, fire: 0 }
-  }));
+  })));
   renderReviews();
+}
+
+async function getCloudPhotoUrl(path, approved) {
+  if (!path || (!approved && !cloudAdmin)) return "";
+  const { data, error } = await supabaseClient.storage.from("review-photos").createSignedUrl(path, 300);
+  if (error) {
+    console.error("Mission Stadtschule: Foto konnte nicht geladen werden.", error);
+    return "";
+  }
+  return data.signedUrl;
 }
 
 async function syncCloudAdmin() {
@@ -705,7 +726,7 @@ async function syncCloudAdmin() {
     .maybeSingle();
   cloudAdmin = Boolean(data && !error);
   if (!cloudAdmin) await supabaseClient.auth.signOut();
-  renderReviews();
+  await loadCloudReviews();
 }
 
 async function uploadCloudPhoto(file, folder) {
@@ -797,6 +818,20 @@ function renderReviews() {
       const replyPhoto = review.replyPhotoUrl
         ? `<img class="review-photo review-reply-photo" src="${escapeHtml(review.replyPhotoUrl)}" alt="${escapeHtml(adminLabel)}">`
         : "";
+      const photoModeration = (path, approved, kind) => {
+        if (!path) return "";
+        if (!isAdminMode()) return approved ? "" : `<p class="photo-pending">${translations[currentLanguage].photoPending}</p>`;
+        return `
+          <div class="photo-moderation">
+            <span>${approved ? translations[currentLanguage].photoApprove : translations[currentLanguage].photoPending}</span>
+            <button type="button" class="photo-moderation-button" data-photo-approval data-review-id="${escapeHtml(review.id)}" data-photo-kind="${kind}" data-next-state="${!approved}">
+              ${approved ? translations[currentLanguage].photoRevoke : translations[currentLanguage].photoApprove}
+            </button>
+          </div>
+        `;
+      };
+      const reviewPhotoModeration = photoModeration(review.photoPath, review.photoApproved, "review");
+      const replyPhotoModeration = photoModeration(review.replyPhotoPath, review.replyPhotoApproved, "reply");
 
       return `
         <article class="review-card">
@@ -806,12 +841,14 @@ function renderReviews() {
           </div>
           <p class="review-text">${escapeHtml(review.text)}</p>
           ${reviewPhoto}
+          ${reviewPhotoModeration}
           <div class="review-reactions" aria-label="Reactions">${reactionButtons}</div>
           ${adminActions}
           <div class="review-reply">
             <strong>${adminLabel}</strong>
             <p>${review.reply ? escapeHtml(review.reply) : noReply}</p>
             ${replyPhoto}
+            ${replyPhotoModeration}
           </div>
         </article>
       `;
@@ -1208,7 +1245,7 @@ document.addEventListener("submit", async (event) => {
           name: name || "Guest",
           text,
           rating: Math.max(1, Math.min(5, rating)),
-          photo_path: photoUrl || null
+          photo_path: photoUrl || null,
         });
         if (error) throw error;
         form.reset();
@@ -1264,7 +1301,7 @@ document.addEventListener("submit", async (event) => {
       try {
         const photoUrl = await uploadCloudPhoto(photoFile, "replies");
         const { error } = await supabaseClient.from("reviews")
-          .update({ reply, reply_photo_path: photoUrl || null })
+          .update({ reply, reply_photo_path: photoUrl || null, reply_photo_approved: false })
           .eq("id", reviewId);
         if (error) throw error;
         textArea.value = "";
@@ -1387,6 +1424,21 @@ document.addEventListener("click", async (event) => {
     if (saveReviews(reviews)) {
       renderReviews();
     }
+    return;
+  }
+
+  const photoApprovalButton = event.target.closest("[data-photo-approval]");
+  if (photoApprovalButton) {
+    if (!supabaseClient || !isAdminMode()) return;
+    const reviewId = photoApprovalButton.dataset.reviewId;
+    const photoKind = photoApprovalButton.dataset.photoKind;
+    const approved = photoApprovalButton.dataset.nextState === "true";
+    const column = photoKind === "reply" ? "reply_photo_approved" : "photo_approved";
+    const { error } = await supabaseClient.from("reviews")
+      .update({ [column]: approved })
+      .eq("id", reviewId);
+    if (error) console.error("Mission Stadtschule: Foto-Freigabe konnte nicht geändert werden.", error);
+    await loadCloudReviews();
     return;
   }
 
