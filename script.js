@@ -429,6 +429,14 @@ Object.assign(translations.es, { leaveReviewButton: "Dejar una opinión" });
 Object.assign(translations.fr, { leaveReviewButton: "Laisser un avis" });
 Object.assign(translations.tr, { leaveReviewButton: "Yorum bırak" });
 
+Object.assign(translations.de, { schoolLinkEyebrow: "DIE STADTSCHULE", schoolLinkTitle: "Lerne die<br><span>Stadtschule kennen.</span>", schoolLinkDescription: "Entdecke mehr über unsere Schule, ihre Angebote und das gemeinsame Lernen.", schoolLinkCta: "Zur offiziellen Schulwebsite", schoolLinkImageAlt: "Blick durch ein Fenster auf den Schulhof der Stadtschule" });
+Object.assign(translations.en, { schoolLinkEyebrow: "STADTSCHULE", schoolLinkTitle: "Get to know<br><span>Stadtschule.</span>", schoolLinkDescription: "Discover more about our school, its programs and learning together.", schoolLinkCta: "Visit the official school website", schoolLinkImageAlt: "View through a window onto the Stadtschule schoolyard" });
+Object.assign(translations.ar, { schoolLinkEyebrow: "مدرسة شتات", schoolLinkTitle: "تعرّف على<br><span>مدرسة شتات.</span>", schoolLinkDescription: "اكتشف المزيد عن مدرستنا وبرامجها والتعلّم معًا.", schoolLinkCta: "زيارة الموقع الرسمي للمدرسة", schoolLinkImageAlt: "منظر عبر نافذة إلى ساحة مدرسة شتات" });
+Object.assign(translations.ru, { schoolLinkEyebrow: "ШТАДТШУЛЕ", schoolLinkTitle: "Познакомься<br><span>со Штадтшуле.</span>", schoolLinkDescription: "Узнай больше о нашей школе, её программах и совместном обучении.", schoolLinkCta: "Перейти на официальный сайт школы", schoolLinkImageAlt: "Вид через окно на школьный двор Штадтшуле" });
+Object.assign(translations.es, { schoolLinkEyebrow: "STADTSCHULE", schoolLinkTitle: "Conoce la<br><span>Stadtschule.</span>", schoolLinkDescription: "Descubre más sobre nuestra escuela, sus programas y el aprendizaje en comunidad.", schoolLinkCta: "Visitar la web oficial de la escuela", schoolLinkImageAlt: "Vista a través de una ventana hacia el patio de la Stadtschule" });
+Object.assign(translations.fr, { schoolLinkEyebrow: "STADTSCHULE", schoolLinkTitle: "Découvre la<br><span>Stadtschule.</span>", schoolLinkDescription: "Découvre notre école, ses activités et l’apprentissage ensemble.", schoolLinkCta: "Visiter le site officiel de l’école", schoolLinkImageAlt: "Vue à travers une fenêtre sur la cour de la Stadtschule" });
+Object.assign(translations.tr, { schoolLinkEyebrow: "STADTSCHULE", schoolLinkTitle: "<span>Stadtschule’yi</span><br>tanı.", schoolLinkDescription: "Okulumuz, programları ve birlikte öğrenme hakkında daha fazlasını keşfet.", schoolLinkCta: "Resmî okul sitesini ziyaret et", schoolLinkImageAlt: "Bir pencereden Stadtschule'nin okul bahçesine bakış" });
+
 Object.assign(translations.de, { creditProgram: "Programmiert von Konstantin Korneev, Klasse 7A", creditDesign: "Design von Konstantin Korneev, Klasse 7A", creditText: "Text von Vladyslav Shevchenko, Klasse 7A", creditTest: "Getestet von Konstantin Korneev und Vladyslav Shevchenko, beide Klasse 7A", soundVolume: "Lautstärke", emojiGameOpen: "Emoji-Spiel öffnen", emojiGameTitle: "DIE EMOJI-MISSION", emojiGameQuestion: "Welches Emoji gehört zu unserer Schule?", emojiGameWrong: "Fast! Such noch einmal.", emojiGameCorrect: "Richtig! 🏫 Du kennst dich aus!" });
 Object.assign(translations.en, { creditProgram: "Programmed by Konstantin Korneev, class 7A", creditDesign: "Designed by Konstantin Korneev, class 7A", creditText: "Text by Vladyslav Shevchenko, class 7A", creditTest: "Tested by Konstantin Korneev and Vladyslav Shevchenko, both class 7A", soundVolume: "Sound volume", emojiGameOpen: "Open the emoji game", emojiGameTitle: "THE EMOJI MISSION", emojiGameQuestion: "Which emoji belongs at our school?", emojiGameWrong: "Almost! Give it another try.", emojiGameCorrect: "Correct! 🏫 You know your school!" });
 Object.assign(translations.ar, { creditProgram: "البرمجة: Konstantin Korneev، الصف 7A", creditDesign: "التصميم: Konstantin Korneev، الصف 7A", creditText: "النص: Vladyslav Shevchenko، الصف 7A", creditTest: "الاختبار: Konstantin Korneev وVladyslav Shevchenko، الصف 7A", soundVolume: "مستوى الصوت", emojiGameOpen: "افتح لعبة الرموز", emojiGameTitle: "مهمة الرموز التعبيرية", emojiGameQuestion: "أي رمز تعبيري يناسب مدرستنا؟", emojiGameWrong: "قريب! حاول مرة أخرى.", emojiGameCorrect: "صحيح! 🏫 أنت تعرف مدرستك جيدًا!" });
@@ -558,6 +566,10 @@ function setLanguage(language) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = translations[language][element.dataset.i18n];
     if (value !== undefined) element.textContent = value;
+  });
+  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+    const value = translations[language][element.dataset.i18nAlt];
+    if (value !== undefined) element.alt = value;
   });
   document.querySelectorAll("[data-i18n-html]").forEach((element) => {
     const value = translations[language][element.dataset.i18nHtml];

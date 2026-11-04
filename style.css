@@ -252,6 +252,27 @@ a.letter:hover { transform: translateY(-3px); }
 .showcase-card h3 { margin: 0; font-size: 17px; }
 .showcase-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 
+.school-link-section { width: min(1160px, calc(100% - 56px)); margin: 54px auto 0; }
+.school-link-card {
+  display: grid;
+  min-height: 300px;
+  grid-template-columns: 1fr 1.05fr;
+  overflow: hidden;
+  border: 1px solid #ffffff20;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #1d2c47f2, #17243bf2);
+  box-shadow: 0 24px 60px #03091655;
+  transition: transform .18s ease, border-color .18s ease;
+}
+.school-link-card:hover { transform: translateY(-3px); border-color: #f51c5b88; }
+.school-link-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(24px, 5vw, 56px); }
+.school-link-copy h2 { margin: 15px 0; font-size: clamp(30px, 4vw, 46px); letter-spacing: -.06em; line-height: 1.05; }
+.school-link-copy h2 span { color: var(--accent); }
+.school-link-copy p { max-width: 430px; margin: 0; color: #c1cad8; font-size: 14px; line-height: 1.8; }
+.school-link-cta { display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; color: var(--green); font-size: 12px; font-weight: 850; }
+.school-link-cta span:last-child { font-size: 18px; }
+.school-link-card img { width: 100%; height: 100%; min-height: 300px; object-fit: cover; }
+
 .station-overview { width: min(1160px, calc(100% - 56px)); margin: 0 auto; padding: 96px 0 100px; }
 .overview-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 34px; }
 .overview-heading h2 { margin: 14px 0 0; font-size: clamp(36px, 5vw, 55px); letter-spacing: -.06em; line-height: 1.05; }
@@ -570,6 +591,11 @@ a.letter:hover { transform: translateY(-3px); }
   .rules div { min-height: 62px; padding: 10px 7px; }
   .rules div:nth-child(3) { border-left: 0; }
   .rules div:nth-child(n+3) { border-top: 1px solid #ffffff18; }
+  .school-link-section { width: calc(100% - 44px); margin-top: 40px; }
+  .school-link-card { grid-template-columns: 1fr; }
+  .school-link-copy { padding: 28px 24px; }
+  .school-link-copy h2 { font-size: clamp(32px, 9vw, 44px); }
+  .school-link-card img { min-height: 0; height: clamp(190px, 55vw, 300px); }
   .station-overview { width: calc(100% - 44px); padding: 68px 0; }
   .overview-heading { display: block; }
   .overview-heading > p { margin-top: 17px; }
