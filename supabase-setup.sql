@@ -15,11 +15,20 @@ create table if not exists public.reviews (
 alter table public.reviews add column if not exists photo_approved boolean not null default false;
 alter table public.reviews add column if not exists reply_photo_approved boolean not null default false;
 
+create table if not exists public.review_reaction_votes (
+  review_id uuid not null references public.reviews(id) on delete cascade,
+  visitor_id uuid not null,
+  reaction text not null check (reaction in ('love', 'great', 'fire')),
+  created_at timestamptz not null default now(),
+  primary key (review_id, visitor_id, reaction)
+);
+
 create table if not exists public.review_admins (
   user_id uuid primary key references auth.users(id) on delete cascade
 );
 
 alter table public.reviews enable row level security;
+alter table public.review_reaction_votes enable row level security;
 alter table public.review_admins enable row level security;
 
 create or replace function public.is_review_admin()
@@ -43,6 +52,7 @@ grant insert (name, text, rating, photo_path) on public.reviews to anon, authent
 grant update (reply, reply_photo_path, photo_approved, reply_photo_approved) on public.reviews to authenticated;
 grant delete on public.reviews to authenticated;
 grant select on public.review_admins to authenticated;
+revoke all on public.review_reaction_votes from public, anon, authenticated;
 
  drop policy if exists "Reviews are public" on public.reviews;
 create policy "Reviews are public"
@@ -78,36 +88,47 @@ create policy "Admins can read their own role"
   on public.review_admins for select to authenticated
   using (user_id = auth.uid());
 
-create or replace function public.add_review_reaction(p_review_id uuid, p_reaction text)
-returns void
+drop function if exists public.add_review_reaction(uuid, text);
+create or replace function public.add_review_reaction(p_review_id uuid, p_reaction text, p_visitor_id uuid)
+returns boolean
 language plpgsql
 security definer
 set search_path = public
 as $$
 declare
-  current_count integer;
+  inserted_votes integer;
 begin
   if p_reaction not in ('love', 'great', 'fire') then
     raise exception 'Invalid reaction';
   end if;
 
-  select coalesce((reactions ->> p_reaction)::integer, 0)
-    into current_count
-    from public.reviews
-    where id = p_review_id;
-
+  perform 1 from public.reviews where id = p_review_id;
   if not found then
     raise exception 'Review not found';
   end if;
 
+  insert into public.review_reaction_votes (review_id, visitor_id, reaction)
+    values (p_review_id, p_visitor_id, p_reaction)
+    on conflict do nothing;
+  get diagnostics inserted_votes = row_count;
+  if inserted_votes = 0 then
+    return false;
+  end if;
+
   update public.reviews
-    set reactions = jsonb_set(reactions, array[p_reaction], to_jsonb(current_count + 1), true)
+    set reactions = jsonb_set(
+      reactions,
+      array[p_reaction],
+      to_jsonb(coalesce((reactions ->> p_reaction)::integer, 0) + 1),
+      true
+    )
     where id = p_review_id;
+  return true;
 end;
 $$;
 
-revoke all on function public.add_review_reaction(uuid, text) from public;
-grant execute on function public.add_review_reaction(uuid, text) to anon, authenticated;
+revoke all on function public.add_review_reaction(uuid, text, uuid) from public;
+grant execute on function public.add_review_reaction(uuid, text, uuid) to anon, authenticated;
 
 insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
 values ('review-photos', 'review-photos', false, 5242880, array['image/jpeg', 'image/png', 'image/webp'])

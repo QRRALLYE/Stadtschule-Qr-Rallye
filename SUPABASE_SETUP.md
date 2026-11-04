@@ -6,7 +6,7 @@ The site remains static on GitHub Pages. Supabase provides the shared review dat
 
 Create a Supabase project and open **SQL Editor**. Run the contents of `supabase-setup.sql`.
 
-The script creates the reviews table, role table, row-level security policies, reaction function, and private `review-photos` bucket. Review text appears immediately, but uploaded photos stay private until an administrator approves them in the review card. An administrator can also withdraw approval later; previously issued preview links expire after five minutes. Before enabling uploads, get approval from the school and the people responsible for student photos. Do not upload sensitive or identifying images without permission.
+The script creates the reviews table, role table, reaction-vote table and function, row-level security policies, and private `review-photos` bucket. Re-run the complete script after updating the site; it replaces the previous unlimited reaction function. Each browser ID can add each reaction type once per review. Review text appears immediately, but uploaded photos stay private until an administrator approves them in the review card. An administrator can also withdraw approval later; previously issued preview links expire after five minutes. Before enabling uploads, get approval from the school and the people responsible for student photos. Do not upload sensitive or identifying images without permission.
 
 ## 2. Create the admin account
 
@@ -34,7 +34,7 @@ window.MISSION_SUPABASE_CONFIG = {
 
 The publishable/anon key is intended for browser use and is protected by the SQL policies. Never put the `service_role` key in this file or any website code.
 
-Commit and publish `supabase-config.js` with the site. Once configured, reviews, reactions, and image attachments are shared between devices and refresh in real time. Photos accept JPEG, PNG, or WebP up to 5 MB. Review photos and admin reply photos remain private until separately approved.
+Commit and publish `supabase-config.js` with the site. Once configured, reviews, reactions, and image attachments are shared between devices and refresh in real time. The reaction limit uses a random browser ID, not an IP address; clearing browser storage creates a new ID. Photos accept JPEG, PNG, or WebP up to 5 MB. Review photos and admin reply photos remain private until separately approved.
 
 ## Privacy
 

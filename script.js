@@ -429,14 +429,6 @@ Object.assign(translations.es, { leaveReviewButton: "Dejar una opinión" });
 Object.assign(translations.fr, { leaveReviewButton: "Laisser un avis" });
 Object.assign(translations.tr, { leaveReviewButton: "Yorum bırak" });
 
-Object.assign(translations.de, { schoolLinkEyebrow: "DIE STADTSCHULE", schoolLinkTitle: "Lerne die<br><span>Stadtschule kennen.</span>", schoolLinkDescription: "Entdecke mehr über unsere Schule, ihre Angebote und das gemeinsame Lernen.", schoolLinkCta: "Zur offiziellen Schulwebsite", schoolLinkImageAlt: "Schulgebäude der Stadtschule Lübbecke mit dem Schriftzug Unsere Homepage" });
-Object.assign(translations.en, { schoolLinkEyebrow: "STADTSCHULE", schoolLinkTitle: "Get to know<br><span>Stadtschule.</span>", schoolLinkDescription: "Discover more about our school, its programs and learning together.", schoolLinkCta: "Visit the official school website", schoolLinkImageAlt: "Stadtschule Lübbecke school building with the words Our Homepage" });
-Object.assign(translations.ar, { schoolLinkEyebrow: "مدرسة شتات", schoolLinkTitle: "تعرّف على<br><span>مدرسة شتات.</span>", schoolLinkDescription: "اكتشف المزيد عن مدرستنا وبرامجها والتعلّم معًا.", schoolLinkCta: "زيارة الموقع الرسمي للمدرسة", schoolLinkImageAlt: "مبنى مدرسة شتاتشوله لوبكه مع عبارة موقعنا الإلكتروني" });
-Object.assign(translations.ru, { schoolLinkEyebrow: "ШТАДТШУЛЕ", schoolLinkTitle: "Познакомься<br><span>со Штадтшуле.</span>", schoolLinkDescription: "Узнай больше о нашей школе, её программах и совместном обучении.", schoolLinkCta: "Перейти на официальный сайт школы", schoolLinkImageAlt: "Здание школы Штадтшуле в Люббеке с надписью «Наш сайт»" });
-Object.assign(translations.es, { schoolLinkEyebrow: "STADTSCHULE", schoolLinkTitle: "Conoce la<br><span>Stadtschule.</span>", schoolLinkDescription: "Descubre más sobre nuestra escuela, sus programas y el aprendizaje en comunidad.", schoolLinkCta: "Visitar la web oficial de la escuela", schoolLinkImageAlt: "Edificio de Stadtschule Lübbecke con el texto Nuestra página web" });
-Object.assign(translations.fr, { schoolLinkEyebrow: "STADTSCHULE", schoolLinkTitle: "Découvre la<br><span>Stadtschule.</span>", schoolLinkDescription: "Découvre notre école, ses activités et l’apprentissage ensemble.", schoolLinkCta: "Visiter le site officiel de l’école", schoolLinkImageAlt: "Bâtiment de la Stadtschule de Lübbecke avec le texte Notre site web" });
-Object.assign(translations.tr, { schoolLinkEyebrow: "STADTSCHULE", schoolLinkTitle: "<span>Stadtschule’yi</span><br>tanı.", schoolLinkDescription: "Okulumuz, programları ve birlikte öğrenme hakkında daha fazlasını keşfet.", schoolLinkCta: "Resmî okul sitesini ziyaret et", schoolLinkImageAlt: "Üzerinde Web Sitemiz yazısı bulunan Stadtschule Lübbecke okul binası" });
-
 Object.assign(translations.de, { creditProgram: "Programmiert von Konstantin Korneev, Klasse 7A", creditDesign: "Design von Konstantin Korneev, Klasse 7A", creditText: "Text von Vladyslav Shevchenko, Klasse 7A", creditTest: "Getestet von Konstantin Korneev und Vladyslav Shevchenko, beide Klasse 7A", soundVolume: "Lautstärke", emojiGameOpen: "Emoji-Spiel öffnen", emojiGameTitle: "DIE EMOJI-MISSION", emojiGameQuestion: "Welches Emoji gehört zu unserer Schule?", emojiGameWrong: "Fast! Such noch einmal.", emojiGameCorrect: "Richtig! 🏫 Du kennst dich aus!" });
 Object.assign(translations.en, { creditProgram: "Programmed by Konstantin Korneev, class 7A", creditDesign: "Designed by Konstantin Korneev, class 7A", creditText: "Text by Vladyslav Shevchenko, class 7A", creditTest: "Tested by Konstantin Korneev and Vladyslav Shevchenko, both class 7A", soundVolume: "Sound volume", emojiGameOpen: "Open the emoji game", emojiGameTitle: "THE EMOJI MISSION", emojiGameQuestion: "Which emoji belongs at our school?", emojiGameWrong: "Almost! Give it another try.", emojiGameCorrect: "Correct! 🏫 You know your school!" });
 Object.assign(translations.ar, { creditProgram: "البرمجة: Konstantin Korneev، الصف 7A", creditDesign: "التصميم: Konstantin Korneev، الصف 7A", creditText: "النص: Vladyslav Shevchenko، الصف 7A", creditTest: "الاختبار: Konstantin Korneev وVladyslav Shevchenko، الصف 7A", soundVolume: "مستوى الصوت", emojiGameOpen: "افتح لعبة الرموز", emojiGameTitle: "مهمة الرموز التعبيرية", emojiGameQuestion: "أي رمز تعبيري يناسب مدرستنا؟", emojiGameWrong: "قريب! حاول مرة أخرى.", emojiGameCorrect: "صحيح! 🏫 أنت تعرف مدرستك جيدًا!" });
@@ -495,6 +487,27 @@ Object.assign(translations.ru, { photoPending: "Фото ожидает одоб
 Object.assign(translations.es, { photoPending: "Foto pendiente de aprobación", photoApprove: "Aprobar", photoRevoke: "Retirar" });
 Object.assign(translations.fr, { photoPending: "Photo en attente d’approbation", photoApprove: "Approuver", photoRevoke: "Retirer" });
 Object.assign(translations.tr, { photoPending: "Fotoğraf onay bekliyor", photoApprove: "Onayla", photoRevoke: "Yayından kaldır" });
+Object.assign(translations.de, { photoPreviewUnavailable: "Foto-Vorschau konnte nicht geladen werden.", reviewReactionUsed: "Diese Reaktion hast du bereits verwendet.", historyFact: "Die Stadtschule ist eine Ganztagsschule für die Klassen 5 bis 10.", lessonFact: "Viele Unterrichtsstunden dauern 90 Minuten.", choiceFact: "Ab Klasse 7 können Schülerinnen und Schüler Wahlpflichtfächer wählen.", creditComments: "Kommentare und Bereiche: Konstantin Korneev, Klasse 7A", creditIdeas: "Vielen Dank an Herrn Hafner für die Ideen." });
+Object.assign(translations.en, { photoPreviewUnavailable: "The photo preview could not be loaded.", reviewReactionUsed: "You have already used this reaction.", historyFact: "Stadtschule is an all-day school for grades 5 to 10.", lessonFact: "Many lessons last 90 minutes.", choiceFact: "Students can choose elective subjects from grade 7.", creditComments: "Comments and sections: Konstantin Korneev, class 7A", creditIdeas: "Many thanks to Mr Hafner for the ideas." });
+Object.assign(translations.ar, { photoPreviewUnavailable: "تعذر تحميل معاينة الصورة.", reviewReactionUsed: "لقد استخدمت هذا التفاعل بالفعل.", historyFact: "مدرسة شتادتشوله مدرسة دوام كامل للصفوف من الخامس إلى العاشر.", lessonFact: "تستمر كثير من الحصص 90 دقيقة.", choiceFact: "يمكن للطلاب اختيار مواد اختيارية ابتداءً من الصف السابع.", creditComments: "التعليقات والأقسام: Konstantin Korneev، الصف 7A", creditIdeas: "جزيل الشكر للسيد Hafner على الأفكار." });
+Object.assign(translations.ru, { photoPreviewUnavailable: "Не удалось загрузить превью фотографии.", reviewReactionUsed: "Ты уже поставил эту реакцию.", historyFact: "Stadtschule — школа полного дня для учеников с 5-го по 10-й класс.", lessonFact: "Многие занятия длятся 90 минут.", choiceFact: "С 7-го класса ученики могут выбирать дополнительные предметы.", creditComments: "Комментарии и разделы: Константин Корнеев, 7А", creditIdeas: "Большое спасибо господину Хафнеру за идеи." });
+Object.assign(translations.es, { photoPreviewUnavailable: "No se pudo cargar la vista previa de la foto.", reviewReactionUsed: "Ya has usado esta reacción.", historyFact: "Stadtschule es un centro de jornada completa para los cursos 5.º a 10.º.", lessonFact: "Muchas clases duran 90 minutos.", choiceFact: "Desde 7.º se pueden elegir asignaturas optativas.", creditComments: "Comentarios y secciones: Konstantin Korneev, clase 7A", creditIdeas: "Muchas gracias al señor Hafner por las ideas." });
+Object.assign(translations.fr, { photoPreviewUnavailable: "Impossible de charger l’aperçu de la photo.", reviewReactionUsed: "Tu as déjà utilisé cette réaction.", historyFact: "La Stadtschule est un établissement à temps plein pour les classes de la 5e à la 10e.", lessonFact: "De nombreux cours durent 90 minutes.", choiceFact: "Les élèves peuvent choisir des options à partir de la 7e.", creditComments: "Commentaires et sections : Konstantin Korneev, classe 7A", creditIdeas: "Merci beaucoup à M. Hafner pour ses idées." });
+Object.assign(translations.tr, { photoPreviewUnavailable: "Fotoğraf önizlemesi yüklenemedi.", reviewReactionUsed: "Bu tepkiyi zaten kullandın.", historyFact: "Stadtschule, 5–10. sınıflar için tam gün eğitim veren bir okuldur.", lessonFact: "Birçok ders 90 dakika sürer.", choiceFact: "Öğrenciler 7. sınıftan itibaren seçmeli ders seçebilir.", creditComments: "Yorumlar ve bölümler: Konstantin Korneev, 7A sınıfı", creditIdeas: "Fikirleri için Bay Hafner'e çok teşekkürler." });
+Object.assign(translations.de, { activityFact: "Im Juli 2026 nahmen fünf Schüler am Schachturnier in Preußisch Oldendorf teil.", mediatorFact: "Neun Schüler absolvierten eine Streitschlichter-Ausbildung." });
+Object.assign(translations.en, { activityFact: "In July 2026, five students took part in a chess tournament in Preußisch Oldendorf.", mediatorFact: "Nine students completed peer-mediator training." });
+Object.assign(translations.ar, { activityFact: "في يوليو 2026، شارك خمسة طلاب في بطولة شطرنج في بريوسيش أولدندورف.", mediatorFact: "أكمل تسعة طلاب تدريبًا على الوساطة بين الأقران." });
+Object.assign(translations.ru, { activityFact: "В июле 2026 года пять учеников участвовали в шахматном турнире в Пройсиш-Ольдендорфе.", mediatorFact: "Девять учеников прошли подготовку школьных медиаторов." });
+Object.assign(translations.es, { activityFact: "En julio de 2026, cinco estudiantes participaron en un torneo de ajedrez en Preußisch Oldendorf.", mediatorFact: "Nueve estudiantes completaron una formación de mediación escolar." });
+Object.assign(translations.fr, { activityFact: "En juillet 2026, cinq élèves ont participé à un tournoi d’échecs à Preußisch Oldendorf.", mediatorFact: "Neuf élèves ont suivi une formation de médiation entre pairs." });
+Object.assign(translations.tr, { activityFact: "Temmuz 2026'da beş öğrenci Preußisch Oldendorf'daki satranç turnuvasına katıldı.", mediatorFact: "Dokuz öğrenci akran arabuluculuğu eğitimi aldı." });
+Object.assign(translations.de, { factsSource: "Quelle: offizielle Schulwebsite" });
+Object.assign(translations.en, { factsSource: "Source: official school website" });
+Object.assign(translations.ar, { factsSource: "المصدر: الموقع الرسمي للمدرسة" });
+Object.assign(translations.ru, { factsSource: "Источник: официальный сайт школы" });
+Object.assign(translations.es, { factsSource: "Fuente: sitio web oficial de la escuela" });
+Object.assign(translations.fr, { factsSource: "Source : site officiel de l’école" });
+Object.assign(translations.tr, { factsSource: "Kaynak: okulun resmî sitesi" });
 
 let currentLanguage = "de";
 let siteSettings = { brightness: 105, soundEffects: true, soundVolume: 80, layoutMode: "auto" };
@@ -505,6 +518,9 @@ let colorSequence = [];
 const defaultReviews = [];
 const ADMIN_SECRET = "AdminSS";
 const LEGACY_ADMIN_SECRET = "stadtschule";
+const REVIEW_REACTION_VOTES_KEY = "missionReviewReactionVotes";
+const REVIEW_VISITOR_ID_KEY = "missionReviewVisitorId";
+const HOME_REACTION_STATE_KEY = "missionHomeReactionState";
 const supabaseConfig = window.MISSION_SUPABASE_CONFIG || {};
 const supabaseClient = window.supabase?.createClient && supabaseConfig.url && supabaseConfig.anonKey
   ? window.supabase.createClient(supabaseConfig.url, supabaseConfig.anonKey)
@@ -566,10 +582,6 @@ function setLanguage(language) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = translations[language][element.dataset.i18n];
     if (value !== undefined) element.textContent = value;
-  });
-  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
-    const value = translations[language][element.dataset.i18nAlt];
-    if (value !== undefined) element.alt = value;
   });
   document.querySelectorAll("[data-i18n-html]").forEach((element) => {
     const value = translations[language][element.dataset.i18nHtml];
@@ -675,6 +687,71 @@ function saveReviews(reviews) {
   }
 }
 
+function makeBrowserUuid() {
+  const bytes = new Uint8Array(16);
+  crypto.getRandomValues(bytes);
+  bytes[6] = (bytes[6] & 15) | 64;
+  bytes[8] = (bytes[8] & 63) | 128;
+  return [...bytes].map((byte, index) => `${[4, 6, 8, 10].includes(index) ? "-" : ""}${byte.toString(16).padStart(2, "0")}`).join("");
+}
+
+function getReviewVisitorId() {
+  try {
+    let visitorId = localStorage.getItem(REVIEW_VISITOR_ID_KEY);
+    if (!visitorId) {
+      visitorId = makeBrowserUuid();
+      localStorage.setItem(REVIEW_VISITOR_ID_KEY, visitorId);
+    }
+    return visitorId;
+  } catch (error) {
+    console.error("Mission Stadtschule: Reaktions-ID konnte nicht gespeichert werden.", error);
+    return makeBrowserUuid();
+  }
+}
+
+function getReviewReactionVotes() {
+  try {
+    return JSON.parse(localStorage.getItem(REVIEW_REACTION_VOTES_KEY) || "{}");
+  } catch (error) {
+    return {};
+  }
+}
+
+function hasUsedReviewReaction(reviewId, reactionKey) {
+  return Boolean(getReviewReactionVotes()[reviewId]?.includes(reactionKey));
+}
+
+function markReviewReactionUsed(reviewId, reactionKey) {
+  const votes = getReviewReactionVotes();
+  votes[reviewId] = [...new Set([...(votes[reviewId] || []), reactionKey])];
+  try {
+    localStorage.setItem(REVIEW_REACTION_VOTES_KEY, JSON.stringify(votes));
+  } catch (error) {
+    console.error("Mission Stadtschule: Reaktion konnte im Browser nicht markiert werden.", error);
+  }
+}
+
+function getHomeReactionState() {
+  try {
+    return JSON.parse(localStorage.getItem(HOME_REACTION_STATE_KEY) || '{"voted":[],"counts":{}}');
+  } catch (error) {
+    return { voted: [], counts: {} };
+  }
+}
+
+function renderHomeReactions() {
+  const state = getHomeReactionState();
+  document.querySelectorAll("[data-hero-reaction]").forEach((button) => {
+    const key = button.dataset.heroReaction;
+    const voted = state.voted.includes(key);
+    const count = button.querySelector("[data-hero-count]");
+    if (count) count.textContent = String(state.counts[key] || 0);
+    button.disabled = voted;
+    button.setAttribute("aria-pressed", String(voted));
+    button.classList.toggle("is-pressed", voted);
+  });
+}
+
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>"']/g, (character) => ({
     "&": "&amp;",
@@ -696,20 +773,38 @@ async function loadCloudReviews() {
     console.error("Mission Stadtschule: Cloud-Bewertungen konnten nicht geladen werden.", error);
     return;
   }
-  cloudReviews = await Promise.all((data || []).map(async (review) => ({
+  const photoPaths = [...new Set((data || []).flatMap((review) => [
+    review.photo_path && (review.photo_approved || cloudAdmin) ? review.photo_path : "",
+    review.reply_photo_path && (review.reply_photo_approved || cloudAdmin) ? review.reply_photo_path : ""
+  ]).filter(Boolean))];
+  const signedPhotoUrls = new Map();
+  if (photoPaths.length) {
+    const { data: signedPhotos, error: signedPhotoError } = await supabaseClient.storage
+      .from("review-photos")
+      .createSignedUrls(photoPaths, 300);
+    if (signedPhotoError) {
+      console.error("Mission Stadtschule: Foto-Vorschauen konnten nicht signiert werden.", signedPhotoError);
+    } else {
+      signedPhotos.forEach((photo) => {
+        if (photo.signedUrl) signedPhotoUrls.set(photo.path, photo.signedUrl);
+        else console.error("Mission Stadtschule: Foto-Vorschau fehlt.", photo.error);
+      });
+    }
+  }
+  cloudReviews = (data || []).map((review) => ({
     id: review.id,
     name: review.name,
     text: review.text,
     rating: review.rating,
     photoPath: review.photo_path || "",
     photoApproved: Boolean(review.photo_approved),
-    photoUrl: await getCloudPhotoUrl(review.photo_path, review.photo_approved),
+    photoUrl: signedPhotoUrls.get(review.photo_path) || "",
     reply: review.reply || "",
     replyPhotoPath: review.reply_photo_path || "",
     replyPhotoApproved: Boolean(review.reply_photo_approved),
-    replyPhotoUrl: await getCloudPhotoUrl(review.reply_photo_path, review.reply_photo_approved),
+    replyPhotoUrl: signedPhotoUrls.get(review.reply_photo_path) || "",
     reactions: review.reactions || { love: 0, great: 0, fire: 0 }
-  })));
+  }));
   renderReviews();
 }
 
@@ -783,6 +878,11 @@ function showFormMessage(form, text, isError = false) {
   window.setTimeout(() => message.remove(), 3500);
 }
 
+function showReviewActionMessage(text, isError = true) {
+  const container = document.querySelector(".review-list-wrap");
+  if (container) showFormMessage(container, text, isError);
+}
+
 function renderReviews() {
   const list = document.getElementById("reviewsList");
   if (!list) return;
@@ -817,18 +917,22 @@ function renderReviews() {
         : "";
       const reactionButtons = reactionConfig.map(({ key, emoji }) => {
         const count = Number(reactions[key] || 0);
+        const alreadyUsed = hasUsedReviewReaction(review.id, key);
         return `
-            <button type="button" class="review-reaction" data-review-reaction="${key}" data-review-id="${escapeHtml(review.id)}" aria-label="${emoji}">
+            <button type="button" class="review-reaction" data-review-reaction="${key}" data-review-id="${escapeHtml(review.id)}" aria-label="${emoji}" aria-pressed="${alreadyUsed}" ${alreadyUsed ? "disabled" : ""}>
             <span>${emoji}</span>
             <span>${count}</span>
           </button>
         `;
       }).join("");
       const reviewPhoto = review.photoUrl
-        ? `<img class="review-photo" src="${escapeHtml(review.photoUrl)}" alt="${escapeHtml(review.name)}">`
+        ? `<img class="review-photo" data-cloud-photo data-photo-path="${escapeHtml(review.photoPath)}" data-photo-approved="${review.photoApproved}" src="${escapeHtml(review.photoUrl)}" alt="${escapeHtml(review.name)}">`
         : "";
       const replyPhoto = review.replyPhotoUrl
-        ? `<img class="review-photo review-reply-photo" src="${escapeHtml(review.replyPhotoUrl)}" alt="${escapeHtml(adminLabel)}">`
+        ? `<img class="review-photo review-reply-photo" data-cloud-photo data-photo-path="${escapeHtml(review.replyPhotoPath)}" data-photo-approved="${review.replyPhotoApproved}" src="${escapeHtml(review.replyPhotoUrl)}" alt="${escapeHtml(adminLabel)}">`
+        : "";
+      const photoUnavailable = (path, url) => path && !url && isAdminMode()
+        ? `<p class="photo-preview-error">${translations[currentLanguage].photoPreviewUnavailable}</p>`
         : "";
       const photoModeration = (path, approved, kind) => {
         if (!path) return "";
@@ -853,6 +957,7 @@ function renderReviews() {
           </div>
           <p class="review-text">${escapeHtml(review.text)}</p>
           ${reviewPhoto}
+          ${photoUnavailable(review.photoPath, review.photoUrl)}
           ${reviewPhotoModeration}
           <div class="review-reactions" aria-label="Reactions">${reactionButtons}</div>
           ${adminActions}
@@ -860,6 +965,7 @@ function renderReviews() {
             <strong>${adminLabel}</strong>
             <p>${review.reply ? escapeHtml(review.reply) : noReply}</p>
             ${replyPhoto}
+            ${photoUnavailable(review.replyPhotoPath, review.replyPhotoUrl)}
             ${replyPhotoModeration}
           </div>
         </article>
@@ -1195,9 +1301,9 @@ function renderSchoolStory() {
     });
   }
   const facts = document.getElementById("schoolFacts");
-  if (facts) facts.innerHTML = `<p>${translations[currentLanguage].factMonth}</p><p>${translations[currentLanguage].factClass}</p>`;
+  if (facts) facts.innerHTML = `<p>${translations[currentLanguage].historyFact}</p><p>${translations[currentLanguage].lessonFact}</p><p>${translations[currentLanguage].choiceFact}</p><p>${translations[currentLanguage].activityFact}</p><p>${translations[currentLanguage].mediatorFact}</p><p>${translations[currentLanguage].factMonth}</p><p class="school-facts-source"><a href="https://stadtschule-luebbecke.de/" target="_blank" rel="noopener noreferrer">${translations[currentLanguage].factsSource}</a></p>`;
   const credits = document.getElementById("creditsList");
-  if (credits) credits.innerHTML = `<h3>${translations[currentLanguage].creditsTitle}</h3><ul><li>${translations[currentLanguage].creditProgram}</li><li>${translations[currentLanguage].creditDesign}</li><li>${translations[currentLanguage].creditText}</li><li>${translations[currentLanguage].creditTest}</li></ul>`;
+  if (credits) credits.innerHTML = `<h3>${translations[currentLanguage].creditsTitle}</h3><ul><li>${translations[currentLanguage].creditProgram}</li><li>${translations[currentLanguage].creditDesign}</li><li>${translations[currentLanguage].creditText}</li><li>${translations[currentLanguage].creditComments}</li><li>${translations[currentLanguage].creditTest}</li><li>${translations[currentLanguage].creditIdeas}</li></ul>`;
   const slider = document.getElementById("neonIntensity");
   if (slider) slider.setAttribute("aria-label", translations[currentLanguage].sliderLabel);
   const toggle = document.getElementById("neonToggle");
@@ -1446,11 +1552,18 @@ document.addEventListener("click", async (event) => {
     const photoKind = photoApprovalButton.dataset.photoKind;
     const approved = photoApprovalButton.dataset.nextState === "true";
     const column = photoKind === "reply" ? "reply_photo_approved" : "photo_approved";
-    const { error } = await supabaseClient.from("reviews")
+    const { data, error } = await supabaseClient.from("reviews")
       .update({ [column]: approved })
-      .eq("id", reviewId);
-    if (error) console.error("Mission Stadtschule: Foto-Freigabe konnte nicht geändert werden.", error);
+      .eq("id", reviewId)
+      .select("id")
+      .maybeSingle();
+    if (error || !data) {
+      console.error("Mission Stadtschule: Foto-Freigabe konnte nicht geändert werden.", error);
+      showReviewActionMessage(translations[currentLanguage].reviewCloudError);
+      return;
+    }
     await loadCloudReviews();
+    showReviewActionMessage(approved ? translations[currentLanguage].photoApprove : translations[currentLanguage].photoRevoke, false);
     return;
   }
 
@@ -1475,15 +1588,24 @@ document.addEventListener("click", async (event) => {
   if (reactionButton) {
     const reviewId = reactionButton.getAttribute("data-review-id");
     const reactionKey = reactionButton.getAttribute("data-review-reaction");
+    if (hasUsedReviewReaction(reviewId, reactionKey)) return;
     if (supabaseClient) {
-      const { error } = await supabaseClient.rpc("add_review_reaction", {
+      const { data: accepted, error } = await supabaseClient.rpc("add_review_reaction", {
         p_review_id: reviewId,
-        p_reaction: reactionKey
+        p_reaction: reactionKey,
+        p_visitor_id: getReviewVisitorId()
       });
-      if (error) console.error("Mission Stadtschule: Reaktion konnte nicht gespeichert werden.", error);
+      if (error) {
+        console.error("Mission Stadtschule: Reaktion konnte nicht gespeichert werden.", error);
+        showReviewActionMessage(translations[currentLanguage].reviewCloudError);
+        return;
+      }
+      markReviewReactionUsed(reviewId, reactionKey);
       await loadCloudReviews();
+      if (accepted === false) showReviewActionMessage(translations[currentLanguage].reviewReactionUsed);
       return;
     }
+    markReviewReactionUsed(reviewId, reactionKey);
     const reviews = getReviews();
     const updatedReviews = reviews.map((review) => {
       if (review.id !== reviewId) return review;
@@ -1535,11 +1657,17 @@ document.addEventListener("click", async (event) => {
   }
   const heroReaction = event.target.closest("[data-hero-reaction]");
   if (heroReaction) {
-    const count = heroReaction.querySelector("[data-hero-count]");
-    const nextCount = Number(count?.textContent || 0) + 1;
-    if (count) count.textContent = String(nextCount);
-    heroReaction.setAttribute("aria-pressed", "true");
-    heroReaction.classList.add("is-pressed");
+    const state = getHomeReactionState();
+    const key = heroReaction.dataset.heroReaction;
+    if (state.voted.includes(key)) return;
+    state.voted.push(key);
+    state.counts[key] = (state.counts[key] || 0) + 1;
+    try {
+      localStorage.setItem(HOME_REACTION_STATE_KEY, JSON.stringify(state));
+    } catch (error) {
+      console.error("Mission Stadtschule: Startseiten-Reaktion konnte nicht gespeichert werden.", error);
+    }
+    renderHomeReactions();
     return;
   }
   const creditTrigger = event.target.closest("#creditTrigger");
@@ -1587,6 +1715,13 @@ document.addEventListener("click", async (event) => {
   }
   if (event.target.closest("#resetProgress")) resetProgress();
 });
+document.addEventListener("error", async (event) => {
+  const image = event.target;
+  if (!image.matches?.("img[data-cloud-photo]") || image.dataset.photoRetried === "true") return;
+  image.dataset.photoRetried = "true";
+  const refreshedUrl = await getCloudPhotoUrl(image.dataset.photoPath, image.dataset.photoApproved === "true");
+  if (refreshedUrl) image.src = refreshedUrl;
+}, true);
 document.addEventListener("input", (event) => {
   if (event.target.id === "siteBrightness") {
     siteSettings.brightness = Math.min(120, Math.max(80, Number(event.target.value)));
@@ -1617,6 +1752,7 @@ document.addEventListener("change", (event) => {
 initLanguage();
 initSettings();
 bindAnswerFields();
+renderHomeReactions();
 setCloudUi();
 if (supabaseClient) {
   void loadCloudReviews();
