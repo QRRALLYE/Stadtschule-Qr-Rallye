@@ -1,12 +1,14 @@
 # Supabase setup for reviews
 
-The site remains static on GitHub Pages. Supabase provides the shared review database, public photo storage, and admin authentication. Until configured, text reviews continue to use this browser's local storage and photo inputs stay disabled.
+The site remains static on GitHub Pages. Supabase provides the shared review database, private photo storage, and admin authentication. Until configured, text reviews continue to use this browser's local storage and photo inputs stay disabled.
 
 ## 1. Create a project
 
 Create a Supabase project and open **SQL Editor**. Run the contents of `supabase-setup.sql`.
 
-The script creates the reviews table, role table, reaction-vote table and function, row-level security policies, and private `review-photos` bucket. Re-run the complete script after updating the site; it replaces the previous unlimited reaction function. Each browser ID can add each reaction type once per review. Review text appears immediately, but uploaded photos stay private until an administrator approves them in the review card. An administrator can also withdraw approval later; previously issued preview links expire after five minutes. Before enabling uploads, get approval from the school and the people responsible for student photos. Do not upload sensitive or identifying images without permission.
+The script creates the reviews table, role table, reaction-vote table and function, row-level security policies, and private `review-photos` bucket. Re-run the complete script after updating the site so the latest storage policies are applied; it also replaces the previous unlimited reaction function. Each browser ID can add each reaction type once per review. Review text appears immediately, but uploaded photos stay private until an administrator approves them in the review card. An administrator can also withdraw approval later; previously issued preview links expire after five minutes. Before enabling uploads, get approval from the school and the people responsible for student photos. Do not upload sensitive or identifying images without permission.
+
+If an administrator sees that a photo preview cannot be loaded, re-run `supabase-setup.sql` and confirm that the administrator's user UUID is present in `public.review_admins`. Unapproved photos are only available to that signed-in administrator; visitors can see them only after approval.
 
 ## 2. Create the admin account
 

@@ -239,19 +239,18 @@ a.letter:hover { transform: translateY(-3px); }
 
 .school-showcase, .reviews-section { width: min(1160px, calc(100% - 56px)); margin: 0 auto; }
 .school-showcase { padding-top: 30px; }
-.showcase-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 28px; }
-.showcase-card {
-  display: grid;
-  gap: 12px;
-  padding: 20px 18px;
-  border: 1px solid #ffffff18;
-  border-radius: 20px;
-  background: linear-gradient(160deg, rgba(31, 46, 72, 0.95), rgba(16, 24, 37, 0.86));
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
-}
-.showcase-emoji { display: grid; width: 52px; height: 52px; place-items: center; border-radius: 16px; background: rgba(255, 82, 109, 0.12); box-shadow: inset 0 0 0 1px rgba(255, 82, 109, 0.28); font-size: 26px; }
-.showcase-card h3 { margin: 0; font-size: 17px; }
-.showcase-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.school-profile-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: stretch; gap: 22px; }
+.school-photo-card { position: relative; display: block; min-height: 380px; overflow: hidden; border: 1px solid #ffffff24; border-radius: 20px; background: #101a30; box-shadow: 0 24px 60px #03091655; }
+.school-photo-card img { display: block; width: 100%; height: 100%; min-height: 380px; object-fit: cover; transition: transform .25s ease; }
+.school-photo-card:hover img { transform: scale(1.025); }
+.school-photo-caption { position: absolute; right: 0; bottom: 0; left: 0; display: flex; align-items: center; gap: 10px; padding: 22px 18px 16px; background: linear-gradient(transparent, #07101de8); color: #fff; font-size: 12px; font-weight: 800; }
+.school-photo-caption strong { margin-right: auto; letter-spacing: .04em; }
+.school-photo-caption > span:nth-child(2) { color: var(--green); }
+.home-school-facts { min-width: 0; padding: 20px; border: 1px solid #ffffff18; border-radius: 20px; background: linear-gradient(160deg, rgba(31, 46, 72, 0.95), rgba(16, 24, 37, 0.86)); }
+.home-school-facts h3 { margin: 0 0 14px; color: var(--green); font-size: 17px; }
+.home-school-facts .school-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0; }
+.home-school-facts .school-facts p { padding: 12px; font-size: 12px; }
+.home-school-facts .school-facts-source { grid-column: 1 / -1; }
 
 .station-overview { width: min(1160px, calc(100% - 56px)); margin: 0 auto; padding: 96px 0 100px; }
 .overview-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 34px; }
@@ -573,6 +572,10 @@ a.letter:hover { transform: translateY(-3px); }
   .rules div { min-height: 62px; padding: 10px 7px; }
   .rules div:nth-child(3) { border-left: 0; }
   .rules div:nth-child(n+3) { border-top: 1px solid #ffffff18; }
+  .school-showcase { width: calc(100% - 44px); }
+  .school-profile-grid { grid-template-columns: 1fr; }
+  .school-photo-card, .school-photo-card img { min-height: 0; height: clamp(210px, 58vw, 350px); }
+  .home-school-facts .school-facts { grid-template-columns: 1fr; }
   .station-overview { width: calc(100% - 44px); padding: 68px 0; }
   .overview-heading { display: block; }
   .overview-heading > p { margin-top: 17px; }

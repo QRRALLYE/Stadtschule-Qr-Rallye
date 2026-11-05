@@ -143,12 +143,12 @@ create policy "Approved review photos and admin previews"
     and (
       exists (
         select 1 from public.reviews r
-        where r.photo_path = name
+        where r.photo_path = objects.name
           and (r.photo_approved or public.is_review_admin())
       )
       or exists (
         select 1 from public.reviews r
-        where r.reply_photo_path = name
+        where r.reply_photo_path = objects.name
           and (r.reply_photo_approved or public.is_review_admin())
       )
     )

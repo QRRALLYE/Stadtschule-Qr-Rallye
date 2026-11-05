@@ -508,6 +508,13 @@ Object.assign(translations.ru, { factsSource: "Источник: официал�
 Object.assign(translations.es, { factsSource: "Fuente: sitio web oficial de la escuela" });
 Object.assign(translations.fr, { factsSource: "Source : site officiel de l’école" });
 Object.assign(translations.tr, { factsSource: "Kaynak: okulun resmî sitesi" });
+Object.assign(translations.de, { navSchool: "Unsere Schule", schoolProfileEyebrow: "ÜBER DIE SCHULE", schoolProfileTitle: "Stadtschule Lübbecke.<br><span>Gemeinsam wachsen.</span>", schoolProfileDescription: "Eine Ganztagsschule für die Jahrgänge 5 bis 10: Hier gehören Lernen, individuelle Förderung und Gemeinschaft zusammen.", schoolFactsTitle: "Unsere Schule im Überblick", schoolPhotoAlt: "Schulgebäude der Stadtschule Lübbecke", schoolLinkCta: "Zur offiziellen Schulwebsite" });
+Object.assign(translations.en, { navSchool: "Our school", schoolProfileEyebrow: "ABOUT OUR SCHOOL", schoolProfileTitle: "Stadtschule Lübbecke.<br><span>Growing together.</span>", schoolProfileDescription: "An all-day school for grades 5–10, where learning, individual support and community go hand in hand.", schoolFactsTitle: "Our school at a glance", schoolPhotoAlt: "Stadtschule Lübbecke school building", schoolLinkCta: "Visit the official school website" });
+Object.assign(translations.ar, { navSchool: "مدرستنا", schoolProfileEyebrow: "عن مدرستنا", schoolProfileTitle: "Stadtschule Lübbecke.<br><span>ننمو معًا.</span>", schoolProfileDescription: "مدرسة بدوام كامل للصفوف من الخامس إلى العاشر، تجمع بين التعلّم والدعم الفردي وروح المجتمع.", schoolFactsTitle: "مدرستنا في لمحة", schoolPhotoAlt: "مبنى مدرسة Stadtschule Lübbecke", schoolLinkCta: "زيارة الموقع الرسمي للمدرسة" });
+Object.assign(translations.ru, { navSchool: "О школе", schoolProfileEyebrow: "О НАШЕЙ ШКОЛЕ", schoolProfileTitle: "Stadtschule Lübbecke.<br><span>Растём вместе.</span>", schoolProfileDescription: "Школа полного дня для 5–10 классов, где учёба, индивидуальная поддержка и дружное сообщество идут вместе.", schoolFactsTitle: "Наша школа вкратце", schoolPhotoAlt: "Здание школы Stadtschule Lübbecke", schoolLinkCta: "Официальный сайт школы" });
+Object.assign(translations.es, { navSchool: "Nuestra escuela", schoolProfileEyebrow: "SOBRE NUESTRA ESCUELA", schoolProfileTitle: "Stadtschule Lübbecke.<br><span>Crecemos juntos.</span>", schoolProfileDescription: "Un centro de jornada completa para los cursos 5.º a 10.º, donde el aprendizaje, el apoyo individual y la comunidad van de la mano.", schoolFactsTitle: "Nuestra escuela de un vistazo", schoolPhotoAlt: "Edificio de la Stadtschule Lübbecke", schoolLinkCta: "Visitar el sitio web oficial de la escuela" });
+Object.assign(translations.fr, { navSchool: "Notre école", schoolProfileEyebrow: "À PROPOS DE NOTRE ÉCOLE", schoolProfileTitle: "Stadtschule Lübbecke.<br><span>Grandir ensemble.</span>", schoolProfileDescription: "Un établissement à temps plein pour les classes de la 5e à la 10e, où apprentissage, accompagnement individuel et communauté vont de pair.", schoolFactsTitle: "Notre école en bref", schoolPhotoAlt: "Bâtiment de la Stadtschule Lübbecke", schoolLinkCta: "Visiter le site officiel de l’école" });
+Object.assign(translations.tr, { navSchool: "Okulumuz", schoolProfileEyebrow: "OKULUMUZ HAKKINDA", schoolProfileTitle: "Stadtschule Lübbecke.<br><span>Birlikte büyüyoruz.</span>", schoolProfileDescription: "5–10. sınıflar için tam gün eğitim veren okulumuzda öğrenme, bireysel destek ve topluluk duygusu bir aradadır.", schoolFactsTitle: "Okulumuz hakkında kısa bilgiler", schoolPhotoAlt: "Stadtschule Lübbecke okul binası", schoolLinkCta: "Okulun resmî sitesini ziyaret et" });
 
 let currentLanguage = "de";
 let siteSettings = { brightness: 105, soundEffects: true, soundVolume: 80, layoutMode: "auto" };
@@ -590,6 +597,10 @@ function setLanguage(language) {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
     const value = translations[language][element.dataset.i18nPlaceholder];
     if (value !== undefined) element.placeholder = value;
+  });
+  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+    const value = translations[language][element.dataset.i18nAlt];
+    if (value !== undefined) element.alt = value;
   });
   document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
     const value = translations[language][element.dataset.i18nAriaLabel];
@@ -785,7 +796,7 @@ async function loadCloudReviews() {
     if (signedPhotoError) {
       console.error("Mission Stadtschule: Foto-Vorschauen konnten nicht signiert werden.", signedPhotoError);
     } else {
-      signedPhotos.forEach((photo) => {
+      signedPhotos?.forEach((photo) => {
         if (photo.signedUrl) signedPhotoUrls.set(photo.path, photo.signedUrl);
         else console.error("Mission Stadtschule: Foto-Vorschau fehlt.", photo.error);
       });
@@ -811,8 +822,8 @@ async function loadCloudReviews() {
 async function getCloudPhotoUrl(path, approved) {
   if (!path || (!approved && !cloudAdmin)) return "";
   const { data, error } = await supabaseClient.storage.from("review-photos").createSignedUrl(path, 300);
-  if (error) {
-    console.error("Mission Stadtschule: Foto konnte nicht geladen werden.", error);
+  if (error || !data?.signedUrl) {
+    console.error("Mission Stadtschule: Foto konnte nicht signiert werden.", error || new Error("Signed photo URL missing."));
     return "";
   }
   return data.signedUrl;
@@ -1717,10 +1728,22 @@ document.addEventListener("click", async (event) => {
 });
 document.addEventListener("error", async (event) => {
   const image = event.target;
-  if (!image.matches?.("img[data-cloud-photo]") || image.dataset.photoRetried === "true") return;
-  image.dataset.photoRetried = "true";
-  const refreshedUrl = await getCloudPhotoUrl(image.dataset.photoPath, image.dataset.photoApproved === "true");
-  if (refreshedUrl) image.src = refreshedUrl;
+  if (!image.matches?.("img[data-cloud-photo]")) return;
+  if (image.dataset.photoRetried !== "true") {
+    image.dataset.photoRetried = "true";
+    const refreshedUrl = await getCloudPhotoUrl(image.dataset.photoPath, image.dataset.photoApproved === "true");
+    if (refreshedUrl) {
+      image.src = refreshedUrl;
+      return;
+    }
+  }
+  image.hidden = true;
+  if (isAdminMode() && !image.nextElementSibling?.classList.contains("photo-preview-error")) {
+    const error = document.createElement("p");
+    error.className = "photo-preview-error";
+    error.textContent = translations[currentLanguage].photoPreviewUnavailable;
+    image.after(error);
+  }
 }, true);
 document.addEventListener("input", (event) => {
   if (event.target.id === "siteBrightness") {

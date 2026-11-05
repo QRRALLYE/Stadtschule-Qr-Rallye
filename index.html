@@ -6,12 +6,13 @@
   <meta name="theme-color" content="#8c123d">
   <meta name="description" content="Entdecke die Stadtschule bei einer interaktiven QR-Rallye mit sieben spannenden Stationen.">
   <title>Mission Stadtschule – Die QR-Rallye</title>
-  <link rel="stylesheet" href="style.css?v=mission-20261104-4">
+  <link rel="stylesheet" href="style.css?v=mission-20261105-1">
 </head>
 <body class="home-page">
 <header class="top">
   <a class="brand" href="index.html" aria-label="Mission Stadtschule – Startseite" data-i18n-aria-label="homeLink">MISSION <span>STADTSCHULE</span></a>
   <nav class="top-links" aria-label="Hauptnavigation" data-i18n-aria-label="mainNav">
+    <a href="#schule" data-i18n="navSchool">Unsere Schule</a>
     <a href="#stationen" data-i18n="navStations">Stationen</a>
     <a href="final.html" data-i18n="navFinal">Finale</a>
   </nav>
@@ -91,35 +92,31 @@
     <div><b>04</b><span data-i18n="rule4">Finale knacken</span></div>
   </section>
 
-  <section class="school-showcase" aria-labelledby="showcaseTitle">
+  <section id="schule" class="school-showcase" aria-labelledby="schoolProfileTitle">
     <div class="overview-heading">
       <div>
-        <div class="section-title" data-i18n="showcaseEyebrow">SCHULE MIT KLANG</div>
-        <h2 id="showcaseTitle" data-i18n-html="showcaseTitle">Eine Schule.<br><span>Voller Energie.</span></h2>
+        <div class="section-title" data-i18n="schoolProfileEyebrow">ÜBER DIE SCHULE</div>
+        <h2 id="schoolProfileTitle" data-i18n-html="schoolProfileTitle">Stadtschule Lübbecke.<br><span>Gemeinsam wachsen.</span></h2>
       </div>
-      <p data-i18n="showcaseDescription">Hier wirken Lernen, Bewegung und Gemeinschaft zusammen – genau wie bei einer echten Rallye durch den Schulalltag.</p>
+      <p data-i18n="schoolProfileDescription">Eine Ganztagsschule für die Jahrgänge 5 bis 10: Hier gehören Lernen, individuelle Förderung und Gemeinschaft zusammen.</p>
     </div>
-    <div class="showcase-grid">
-      <article class="showcase-card">
-        <div class="showcase-emoji" aria-hidden="true">🏫</div>
-        <h3 data-i18n="showcaseCommunity">Gemeinschaft</h3>
-        <p data-i18n="showcaseCommunityText">Jede Stunde baut auf Vertrauen, Hilfe und gemeinsamen Erfolg auf.</p>
-      </article>
-      <article class="showcase-card">
-        <div class="showcase-emoji" aria-hidden="true">📚</div>
-        <h3 data-i18n="showcaseLearning">Lernen</h3>
-        <p data-i18n="showcaseLearningText">Von der ersten Idee bis zum großen Durchbruch steckt in jeder Aufgabe eine neue Entdeckung.</p>
-      </article>
-      <article class="showcase-card">
-        <div class="showcase-emoji" aria-hidden="true">⚽</div>
-        <h3 data-i18n="showcaseSport">Bewegung</h3>
-        <p data-i18n="showcaseSportText">Schule ist nicht nur sitzen – sie ist Energie, Teamgeist und gemeinsame Momente.</p>
-      </article>
-      <article class="showcase-card">
-        <div class="showcase-emoji" aria-hidden="true">🌍</div>
-        <h3 data-i18n="showcaseFuture">Zukunft</h3>
-        <p data-i18n="showcaseFutureText">Jeder kann seinen eigenen Weg finden – mit Neugier, Mut und Ideen.</p>
-      </article>
+    <div class="school-profile-grid">
+      <a class="school-photo-card" href="https://stadtschule-luebbecke.de/unsere-schule/" target="_blank" rel="noopener noreferrer">
+        <img src="images/schulgebaeude.png" alt="Schulgebäude der Stadtschule Lübbecke" data-i18n-alt="schoolPhotoAlt" loading="lazy">
+        <span class="school-photo-caption"><strong>STADTSCHULE LÜBBECKE</strong><span data-i18n="schoolLinkCta">Zur offiziellen Schulwebsite</span><span aria-hidden="true">↗</span></span>
+      </a>
+      <div class="home-school-facts">
+        <h3 data-i18n="schoolFactsTitle">Unsere Schule im Überblick</h3>
+        <div class="school-facts">
+          <p data-i18n="historyFact">Die Stadtschule ist eine Ganztagsschule für die Klassen 5 bis 10.</p>
+          <p data-i18n="lessonFact">Viele Unterrichtsstunden dauern 90 Minuten.</p>
+          <p data-i18n="choiceFact">Ab Klasse 7 können Schülerinnen und Schüler Wahlpflichtfächer wählen.</p>
+          <p data-i18n="activityFact">Im Juli 2026 nahmen fünf Schüler am Schachturnier in Preußisch Oldendorf teil.</p>
+          <p data-i18n="mediatorFact">Neun Schüler absolvierten eine Streitschlichter-Ausbildung.</p>
+          <p data-i18n="factMonth">An dieser QR-Rallye wurde einen Monat lang gearbeitet.</p>
+          <p class="school-facts-source"><a href="https://stadtschule-luebbecke.de/" target="_blank" rel="noopener noreferrer" data-i18n="factsSource">Quelle: offizielle Schulwebsite</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -244,7 +241,7 @@
 </details>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="supabase-config.js?v=mission-20261104-4"></script>
-<script src="script.js?v=mission-20261104-4"></script>
+<script src="supabase-config.js?v=mission-20261105-1"></script>
+<script src="script.js?v=mission-20261105-1"></script>
 </body>
 </html>
