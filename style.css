@@ -840,6 +840,100 @@ main, .site-footer { position: relative; z-index: 1; }
   .success-sparkles { margin-left: 0; }
   .bonus-collection { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+:root {
+  --accent: #ec001b;
+  --accent-dark: #820012;
+  --panel: #111113;
+  --panel-light: #1b1b1e;
+}
+body {
+  background:
+    radial-gradient(ellipse at 86% 8%, #d0001b12 0, transparent 34rem),
+    radial-gradient(ellipse at 8% 44%, #b9a37208 0, transparent 34rem),
+    linear-gradient(138deg, #050506 0%, #111113 54%, #060607 100%);
+}
+.top { background: #070708f5; }
+.hero-card, .progress-card, .station-card, .final-card, .home-school-facts,
+.achievement-panel, .collection-panel, .bonus-panel {
+  background: linear-gradient(150deg, #151517f5, #0c0c0ef5);
+}
+.btn { background: #b9001b; }
+.btn:hover { background: #ed001f; }
+.review-form-card, .review-list-wrap, .review-card {
+  min-width: 0;
+  border-color: #ffffff19;
+  background: linear-gradient(150deg, #151517f5, #0c0c0ef5);
+}
+.reviews-layout, .review-list, .review-card, .review-meta, .review-text,
+.review-reply, .review-reply p, .review-admin-actions {
+  min-width: 0;
+  max-width: 100%;
+}
+.review-card, .review-meta strong, .review-text, .review-reply p {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.review-text { white-space: pre-wrap; }
+.review-photo { max-width: 100%; height: auto; }
+.home-school-facts .school-facts p {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  border-color: #ffffff20;
+  background: #ffffff07;
+  color: #f0eee9;
+}
+.story-credits .system-credits {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #ffffff1a;
+}
+.system-credits p {
+  margin: 0;
+  padding: 11px 12px;
+  border: 1px solid #ffffff17;
+  border-radius: 10px;
+  background: #ffffff05;
+  color: #e4e0d8;
+  font-size: 12px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.cipher-easter-egg { cursor: pointer; }
+.cipher-easter-egg:focus-visible { outline: 2px solid var(--accent); outline-offset: 7px; }
+.secret-code-toast {
+  position: fixed;
+  z-index: 50;
+  right: 16px;
+  bottom: 88px;
+  left: 16px;
+  width: fit-content;
+  max-width: min(520px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 13px 18px;
+  border: 1px solid #ec001b8a;
+  border-radius: 13px;
+  background: #101012f5;
+  box-shadow: 0 12px 40px #000b, 0 0 22px #ec001b22;
+  color: #f3e8e8;
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.55;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 700px) {
+  .reviews-layout { grid-template-columns: minmax(0, 1fr); }
+  .reviews-layout > * { min-width: 0; }
+  .review-form-card, .review-list-wrap { padding: 16px; }
+  .review-card { padding: 15px; }
+  .review-meta { flex-wrap: wrap; }
+  .review-meta strong { flex: 1 1 100%; }
+  .home-school-facts .school-facts { grid-template-columns: minmax(0, 1fr); }
+  .home-school-facts .school-facts p { padding: 14px; font-size: 14px; line-height: 1.65; }
+}
 [dir="rtl"] .school-story, [dir="rtl"] .school-facts, [dir="rtl"] .story-credits { text-align: right; }
 [dir="rtl"] .school-story .story-lead, [dir="rtl"] .school-story .story-motto { text-align: center; }
 

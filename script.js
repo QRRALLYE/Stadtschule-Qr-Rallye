@@ -494,6 +494,69 @@ Object.assign(translations.ru, { photoPreviewUnavailable: "Не удалось �
 Object.assign(translations.es, { photoPreviewUnavailable: "No se pudo cargar la vista previa de la foto.", reviewReactionUsed: "Ya has usado esta reacción.", historyFact: "Stadtschule es un centro de jornada completa para los cursos 5.º a 10.º.", lessonFact: "Muchas clases duran 90 minutos.", choiceFact: "Desde 7.º se pueden elegir asignaturas optativas.", creditComments: "Comentarios y secciones: Konstantin Korneev, clase 7A", creditIdeas: "Muchas gracias al señor Hafner por las ideas." });
 Object.assign(translations.fr, { photoPreviewUnavailable: "Impossible de charger l’aperçu de la photo.", reviewReactionUsed: "Tu as déjà utilisé cette réaction.", historyFact: "La Stadtschule est un établissement à temps plein pour les classes de la 5e à la 10e.", lessonFact: "De nombreux cours durent 90 minutes.", choiceFact: "Les élèves peuvent choisir des options à partir de la 7e.", creditComments: "Commentaires et sections : Konstantin Korneev, classe 7A", creditIdeas: "Merci beaucoup à M. Hafner pour ses idées." });
 Object.assign(translations.tr, { photoPreviewUnavailable: "Fotoğraf önizlemesi yüklenemedi.", reviewReactionUsed: "Bu tepkiyi zaten kullandın.", historyFact: "Stadtschule, 5–10. sınıflar için tam gün eğitim veren bir okuldur.", lessonFact: "Birçok ders 90 dakika sürer.", choiceFact: "Öğrenciler 7. sınıftan itibaren seçmeli ders seçebilir.", creditComments: "Yorumlar ve bölümler: Konstantin Korneev, 7A sınıfı", creditIdeas: "Fikirleri için Bay Hafner'e çok teşekkürler." });
+Object.assign(translations.de, {
+  developerCredit: "Entwickelt von Konstantin Kornieiev",
+  creditProgram: "Programmiert von Konstantin Kornieiev, Klasse 7A", creditDesign: "Design von Konstantin Kornieiev, Klasse 7A",
+  creditTest: "Getestet von Konstantin Kornieiev und Vladyslav Shevchenko, beide Klasse 7A",
+  creditComments: "Das Kommentarsystem wurde von Konstantin Kornieiev aus der Klasse 7A entwickelt.",
+  creditAdmin: "Auch das Administrationssystem wurde von Konstantin Kornieiev aus der Klasse 7A entwickelt.",
+  cipherEggButton: "Die geheime Botschaft entdecken", cipherEggSecret: "🕵️ Geheime Botschaft entschlüsselt! Du hast den Fall geknackt.",
+  keyboardEggSecret: "🗝️ Geheimcode erkannt: Konstantin Kornieiev und die Klasse 7A grüßen dich!"
+});
+Object.assign(translations.en, {
+  developerCredit: "Developed by Konstantin Kornieiev",
+  creditProgram: "Programmed by Konstantin Kornieiev, class 7A", creditDesign: "Designed by Konstantin Kornieiev, class 7A",
+  creditTest: "Tested by Konstantin Kornieiev and Vladyslav Shevchenko, both class 7A",
+  creditComments: "The comment system was developed by Konstantin Kornieiev from class 7A.",
+  creditAdmin: "The admin system was also developed by Konstantin Kornieiev from class 7A.",
+  cipherEggButton: "Discover the secret message", cipherEggSecret: "🕵️ Secret message decoded! You cracked the case.",
+  keyboardEggSecret: "🗝️ Secret code recognized: Konstantin Kornieiev and class 7A say hello!"
+});
+Object.assign(translations.ar, {
+  developerCredit: "طوّره Konstantin Kornieiev",
+  creditProgram: "البرمجة: Konstantin Kornieiev، الصف 7A", creditDesign: "التصميم: Konstantin Kornieiev، الصف 7A",
+  creditTest: "الاختبار: Konstantin Kornieiev وVladyslav Shevchenko، الصف 7A",
+  creditComments: "طوّر Konstantin Kornieiev من الصف 7A نظام التعليقات.",
+  creditAdmin: "كما طوّر Konstantin Kornieiev من الصف 7A نظام الإدارة.",
+  cipherEggButton: "اكتشف الرسالة السرية", cipherEggSecret: "🕵️ فُكّت الرسالة السرية! لقد حللت القضية.",
+  keyboardEggSecret: "🗝️ تم التعرّف على الرمز السري: يحييك Konstantin Kornieiev والصف 7A!"
+});
+Object.assign(translations.ru, {
+  developerCredit: "Разработано Konstantin Kornieiev",
+  creditProgram: "Программирование: Konstantin Kornieiev, 7А", creditDesign: "Дизайн: Konstantin Kornieiev, 7А",
+  creditTest: "Тестирование: Konstantin Kornieiev и Vladyslav Shevchenko, 7А",
+  creditComments: "Систему комментариев разработал Konstantin Kornieiev из класса 7А.",
+  creditAdmin: "Систему администрирования тоже разработал Konstantin Kornieiev из класса 7А.",
+  cipherEggButton: "Открыть секретное послание", cipherEggSecret: "🕵️ Тайное послание расшифровано! Дело раскрыто.",
+  keyboardEggSecret: "🗝️ Секретный код принят: Konstantin Kornieiev и класс 7А передают привет!"
+});
+Object.assign(translations.es, {
+  developerCredit: "Desarrollado por Konstantin Kornieiev",
+  creditProgram: "Programación: Konstantin Kornieiev, clase 7A", creditDesign: "Diseño: Konstantin Kornieiev, clase 7A",
+  creditTest: "Pruebas: Konstantin Kornieiev y Vladyslav Shevchenko, ambos de 7A",
+  creditComments: "El sistema de comentarios fue desarrollado por Konstantin Kornieiev, de la clase 7A.",
+  creditAdmin: "El sistema de administración también fue desarrollado por Konstantin Kornieiev, de la clase 7A.",
+  cipherEggButton: "Descubre el mensaje secreto", cipherEggSecret: "🕵️ ¡Mensaje secreto descifrado! Has resuelto el caso.",
+  keyboardEggSecret: "🗝️ Código secreto reconocido: ¡Konstantin Kornieiev y la clase 7A te saludan!"
+});
+Object.assign(translations.fr, {
+  developerCredit: "Développé par Konstantin Kornieiev",
+  creditProgram: "Programmation : Konstantin Kornieiev, classe 7A", creditDesign: "Design : Konstantin Kornieiev, classe 7A",
+  creditTest: "Tests : Konstantin Kornieiev et Vladyslav Shevchenko, tous deux en 7A",
+  creditComments: "Le système de commentaires a été développé par Konstantin Kornieiev, de la classe 7A.",
+  creditAdmin: "Le système d’administration a également été développé par Konstantin Kornieiev, de la classe 7A.",
+  cipherEggButton: "Découvrir le message secret", cipherEggSecret: "🕵️ Message secret déchiffré ! Affaire résolue.",
+  keyboardEggSecret: "🗝️ Code secret reconnu : Konstantin Kornieiev et la classe 7A te saluent !"
+});
+Object.assign(translations.tr, {
+  developerCredit: "Konstantin Kornieiev tarafından geliştirildi",
+  creditProgram: "Programlama: Konstantin Kornieiev, 7A sınıfı", creditDesign: "Tasarım: Konstantin Kornieiev, 7A sınıfı",
+  creditTest: "Test edenler: Konstantin Kornieiev ve Vladyslav Shevchenko, ikisi de 7A sınıfında",
+  creditComments: "Yorum sistemi 7A sınıfından Konstantin Kornieiev tarafından geliştirildi.",
+  creditAdmin: "Yönetim sistemi de 7A sınıfından Konstantin Kornieiev tarafından geliştirildi.",
+  cipherEggButton: "Gizli mesajı keşfet", cipherEggSecret: "🕵️ Gizli mesaj çözüldü! Dosyayı kapattın.",
+  keyboardEggSecret: "🗝️ Gizli kod tanındı: Konstantin Kornieiev ve 7A sınıfı sana selam söylüyor!"
+});
 Object.assign(translations.de, { activityFact: "Im Juli 2026 nahmen fünf Schüler am Schachturnier in Preußisch Oldendorf teil.", mediatorFact: "Neun Schüler absolvierten eine Streitschlichter-Ausbildung." });
 Object.assign(translations.en, { activityFact: "In July 2026, five students took part in a chess tournament in Preußisch Oldendorf.", mediatorFact: "Nine students completed peer-mediator training." });
 Object.assign(translations.ar, { activityFact: "في يوليو 2026، شارك خمسة طلاب في بطولة شطرنج في بريوسيش أولدندورف.", mediatorFact: "أكمل تسعة طلاب تدريبًا على الوساطة بين الأقران." });
@@ -585,6 +648,9 @@ let clickAudioContext;
 let emojiGameResult = "";
 let creditTapCount = 0;
 let colorSequence = [];
+let cipherTapCount = 0;
+let secretCodeBuffer = "";
+let secretCodeToastTimer;
 const defaultReviews = [];
 const ADMIN_SECRET = "AdminSS";
 const LEGACY_ADMIN_SECRET = "stadtschule";
@@ -1448,7 +1514,7 @@ function renderSchoolStory() {
   const facts = document.getElementById("schoolFacts");
   if (facts) facts.innerHTML = `<p>${translations[currentLanguage].historyFact}</p><p>${translations[currentLanguage].lessonFact}</p><p>${translations[currentLanguage].choiceFact}</p><p>${translations[currentLanguage].activityFact}</p><p>${translations[currentLanguage].mediatorFact}</p><p>${translations[currentLanguage].factMonth}</p><p class="school-facts-source"><a href="https://stadtschule-luebbecke.de/" target="_blank" rel="noopener noreferrer">${translations[currentLanguage].factsSource}</a></p>`;
   const credits = document.getElementById("creditsList");
-  if (credits) credits.innerHTML = `<h3>${translations[currentLanguage].creditsTitle}</h3><ul><li>${translations[currentLanguage].creditProgram}</li><li>${translations[currentLanguage].creditDesign}</li><li>${translations[currentLanguage].creditText}</li><li>${translations[currentLanguage].creditComments}</li><li>${translations[currentLanguage].creditTest}</li><li>${translations[currentLanguage].creditIdeas}</li></ul>`;
+  if (credits) credits.innerHTML = `<h3>${translations[currentLanguage].creditsTitle}</h3><ul><li>${translations[currentLanguage].creditProgram}</li><li>${translations[currentLanguage].creditDesign}</li><li>${translations[currentLanguage].creditText}</li><li>${translations[currentLanguage].creditTest}</li><li>${translations[currentLanguage].creditIdeas}</li></ul><div class="system-credits"><p>💬 ${translations[currentLanguage].creditComments}</p><p>🛡️ ${translations[currentLanguage].creditAdmin}</p></div>`;
   const slider = document.getElementById("neonIntensity");
   if (slider) slider.setAttribute("aria-label", translations[currentLanguage].sliderLabel);
   const toggle = document.getElementById("neonToggle");
@@ -1459,6 +1525,8 @@ function renderSchoolStory() {
   if (colorSecret && !colorSecret.classList.contains("hidden")) colorSecret.textContent = translations[currentLanguage].colorSecret;
   const sliderSecret = document.getElementById("sliderSecret");
   if (sliderSecret && !sliderSecret.classList.contains("hidden")) sliderSecret.textContent = translations[currentLanguage].sliderSecret;
+  const cipherSecret = document.getElementById("cipherSecret");
+  if (cipherSecret && !cipherSecret.classList.contains("hidden")) cipherSecret.textContent = translations[currentLanguage].cipherEggSecret;
 }
 function checkFinal() {
   const input = document.getElementById("finalInput");
@@ -1587,6 +1655,18 @@ document.addEventListener("submit", async (event) => {
   }
 });
 document.addEventListener("click", async (event) => {
+  const cipherEasterEgg = event.target.closest(".cipher-easter-egg");
+  if (cipherEasterEgg) {
+    cipherTapCount += 1;
+    if (cipherTapCount >= 7) {
+      const secret = document.getElementById("cipherSecret");
+      secret.textContent = translations[currentLanguage].cipherEggSecret;
+      secret.classList.remove("hidden");
+      document.getElementById("schoolReveal").classList.add("secret-found");
+      cipherTapCount = 0;
+    }
+    return;
+  }
   const secretEgg = event.target.closest("[data-secret-egg]");
   if (secretEgg) {
     const number = Number(secretEgg.dataset.secretEgg);
@@ -1874,6 +1954,38 @@ document.addEventListener("click", async (event) => {
     return;
   }
   if (event.target.closest("#resetProgress")) resetProgress();
+});
+document.addEventListener("keydown", (event) => {
+  const target = event.target;
+  if (target.isContentEditable || target.closest("input, textarea, select")) {
+    secretCodeBuffer = "";
+    return;
+  }
+  if (event.key === "Enter" || event.key === " ") {
+    if (target.matches?.(".cipher-easter-egg")) {
+      event.preventDefault();
+      target.click();
+    }
+    return;
+  }
+  if (!/^[a-z]$/i.test(event.key)) return;
+  secretCodeBuffer = `${secretCodeBuffer}${event.key.toUpperCase()}`.slice(-"KORNIEIEV".length);
+  if (secretCodeBuffer !== "KORNIEIEV") return;
+
+  let toast = document.getElementById("secretCodeToast");
+  if (!toast) {
+    toast = document.createElement("p");
+    toast.id = "secretCodeToast";
+    toast.className = "secret-code-toast hidden";
+    toast.setAttribute("role", "status");
+    toast.setAttribute("aria-live", "polite");
+    document.body.append(toast);
+  }
+  toast.textContent = translations[currentLanguage].keyboardEggSecret;
+  toast.classList.remove("hidden");
+  window.clearTimeout(secretCodeToastTimer);
+  secretCodeToastTimer = window.setTimeout(() => toast.classList.add("hidden"), 5000);
+  secretCodeBuffer = "";
 });
 document.addEventListener("error", async (event) => {
   const image = event.target;
