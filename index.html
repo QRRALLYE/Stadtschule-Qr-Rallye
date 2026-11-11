@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#8c123d">
+  <meta name="theme-color" content="#090a0c">
   <meta name="description" content="Entdecke die Stadtschule bei einer interaktiven QR-Rallye mit sieben spannenden Stationen.">
   <title>Mission Stadtschule – Die QR-Rallye</title>
-  <link rel="stylesheet" href="style.css?v=mission-20261105-1">
+  <link rel="stylesheet" href="style.css?v=mission-20261111-1">
 </head>
 <body class="home-page">
+<div class="emoji-backdrop" aria-hidden="true"><span>🕵️</span><span>🔎</span><span>🗝️</span><span>💎</span><span>🐈‍⬛</span><span>🥷</span><span>🚨</span><span>💰</span><span>🎭</span><span>🃏</span><span>🕵️</span><span>🔎</span><span>🗝️</span><span>💎</span><span>🐈‍⬛</span><span>🥷</span><span>🚨</span><span>💰</span><span>🎭</span><span>🃏</span><span>🕵️</span><span>🔎</span><span>🗝️</span><span>💎</span><span>🐈‍⬛</span></div>
 <header class="top">
   <a class="brand" href="index.html" aria-label="Mission Stadtschule – Startseite" data-i18n-aria-label="homeLink">MISSION <span>STADTSCHULE</span></a>
   <nav class="top-links" aria-label="Hauptnavigation" data-i18n-aria-label="mainNav">
@@ -90,6 +91,41 @@
     <div><b>02</b><span data-i18n="rule2">Aufgabe lösen</span></div>
     <div><b>03</b><span data-i18n="rule3">Buchstaben sammeln</span></div>
     <div><b>04</b><span data-i18n="rule4">Finale knacken</span></div>
+  </section>
+
+  <section class="mission-intel" aria-labelledby="intelTitle">
+    <div class="overview-heading intel-heading">
+      <div>
+        <div class="section-title" data-i18n="intelEyebrow">GEHEIME AKTE</div>
+        <h2 id="intelTitle" data-i18n-html="intelTitle">Deine Beute.<br><span>Dein Ruf.</span></h2>
+      </div>
+      <p data-i18n="intelDescription">Knacke die Fälle, sammle Beweise und finde fünf versteckte Bonusobjekte.</p>
+    </div>
+    <section class="achievement-panel" aria-labelledby="achievementsTitle">
+      <h3 id="achievementsTitle" data-i18n="achievementsTitle">AUSZEICHNUNGEN</h3>
+      <div id="achievementGrid" class="achievement-grid"></div>
+    </section>
+    <section class="collection-panel" aria-labelledby="collectionTitle">
+      <div class="collection-heading">
+        <div>
+          <h3 id="collectionTitle" data-i18n="collectionTitle">FALLKARTEN</h3>
+          <p data-i18n="collectionDescription">Jede gelöste Station schaltet eine Karte frei.</p>
+        </div>
+        <span id="collectionCount" class="collection-count" aria-live="polite"></span>
+      </div>
+      <div id="cardCollection" class="card-collection"></div>
+    </section>
+    <section class="bonus-panel" aria-labelledby="bonusTitle">
+      <div class="collection-heading">
+        <div>
+          <h3 id="bonusTitle" data-i18n="bonusTitle">GEHEIME BEUTE</h3>
+          <p data-i18n="bonusDescription">Finde die fünf versteckten Symbole für Bonuspunkte.</p>
+        </div>
+        <span id="bonusPoints" class="bonus-points" aria-live="polite"></span>
+      </div>
+      <div id="bonusCollection" class="bonus-collection"></div>
+      <p id="bonusMessage" class="bonus-message" role="status" aria-live="polite"></p>
+    </section>
   </section>
 
   <section id="schule" class="school-showcase" aria-labelledby="schoolProfileTitle">
@@ -242,6 +278,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="supabase-config.js?v=mission-20261105-1"></script>
-<script src="script.js?v=mission-20261105-1"></script>
+<script src="script.js?v=mission-20261111-1"></script>
 </body>
 </html>

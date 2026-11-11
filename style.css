@@ -664,6 +664,182 @@ a.letter:hover { transform: translateY(-3px); }
 .neon-control label { display: grid; gap: 10px; color: var(--blue); font-size: 12px; font-weight: 800; }
 .neon-control input { width: 100%; accent-color: var(--green); cursor: pointer; }
 .neon-control .easter-egg-message { margin-top: 8px; }
+
+:root {
+  --bg: #08090b;
+  --panel: #151619;
+  --panel-light: #222328;
+  --text: #f0eee9;
+  --muted: #a7a5a1;
+  --accent: #c51e32;
+  --accent-dark: #7f1423;
+  --blue: #aeb5bf;
+  --green: #c7a45c;
+  --line: #39393b;
+  --danger: #ed7b7b;
+  --success: #d7bd7d;
+}
+
+body {
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse at 86% 8%, #a70f2018 0, transparent 34rem),
+    radial-gradient(ellipse at 8% 44%, #b9a3720b 0, transparent 34rem),
+    linear-gradient(138deg, #090a0c 0%, #171719 54%, #08090b 100%);
+}
+.emoji-backdrop {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  overflow: hidden;
+  opacity: .09;
+  pointer-events: none;
+}
+.emoji-backdrop span { display: grid; place-items: center; font-size: clamp(24px, 4vw, 52px); filter: grayscale(.45); }
+main, .site-footer { position: relative; z-index: 1; }
+.top { border-color: #ffffff10; background: #090a0ced; }
+.brand span { color: var(--accent); }
+.badge, .language-picker select, .answer, .settings-menu summary { border-color: #ffffff24; background-color: #141518; }
+.hero-card, .progress-card, .station-card, .final-card, .home-school-facts {
+  border-color: #ffffff1b;
+  background: linear-gradient(150deg, #1a1b1ef5, #101113f5);
+  box-shadow: 0 28px 80px #000000a6, inset 0 1px #ffffff08;
+}
+.hero h1 span, .overview-heading h2 span { color: #d7d2c8; }
+.eyebrow, .section-title { color: #c7a45c; }
+.btn { background: #a5192c; box-shadow: 0 9px 26px #00000070, inset 0 1px #ffffff35; color: #fff; }
+.btn:hover { background: #c51e32; box-shadow: 0 12px 30px #a5192c40, inset 0 1px #ffffff45; }
+.btn.secondary { background: #28292d; }
+.progress-icon { border-color: #c7a45c55; background: #c7a45c12; color: #d8bc7e; box-shadow: none; }
+.progress-track span, .letter.done { background: #c7a45c; color: #14110a; box-shadow: none; }
+.station-tile { border-color: #ffffff1b; background: linear-gradient(155deg, #1c1d20, #101113); }
+.station-tile:hover, .case-card:hover { border-color: #c7a45c80; box-shadow: 0 15px 40px #0009; }
+.station-image-wrap { background: #101113; }
+.station-image-wrap img, .station-tile img { filter: grayscale(.68) contrast(1.05); }
+.mission-box, .hint, .locked-message { border-color: #ffffff1b; background: #ffffff06; }
+.station-nav-button { border-color: #ffffff20; background: #ffffff06; }
+.station-nav-button.primary { border-color: #c7a45c66; background: #c7a45c12; color: #d8bc7e; box-shadow: none; }
+.success { border-color: #c7a45c66; background: #c7a45c12; color: #e6d7b4; }
+.answer:focus { border-color: #c7a45c; box-shadow: 0 0 0 3px #c7a45c25; }
+.quick-emoji-game > summary { border-color: #c7a45c66; background: #171719f2; box-shadow: 0 10px 28px #000a; }
+.settings-menu summary { border-color: #ffffff24; background: #171719; color: #d2d0cb; }
+.settings-panel { border-color: #c7a45c50; background: linear-gradient(145deg, #202023, #111214); }
+.settings-panel strong { color: #d8bc7e; }
+.school-photo-card, .review-form-card, .review-list-wrap { border-color: #ffffff20; background: #141518; }
+.home-school-facts .school-facts p { border-color: #ffffff1b; background: #ffffff06; color: #ddd9d2; box-shadow: none; }
+.home-school-facts h3, .school-reveal h2 span, .story-credits h3 { color: #d8bc7e; text-shadow: none; }
+.school-facts p { border-color: #ffffff1b; background: #ffffff06; color: #dedbd5; box-shadow: none; }
+.story-kicker, .school-story h3 { color: #c7a45c; text-shadow: none; }
+.story-spectrum span:nth-child(1) { box-shadow: 0 0 14px #b51c30; }
+.story-spectrum span:nth-child(2) { box-shadow: 0 0 14px #aeb5bf; }
+.story-spectrum span:nth-child(3) { box-shadow: 0 0 14px #c7a45c; }
+
+.mission-intel { width: min(1160px, calc(100% - 56px)); margin: 72px auto 0; }
+.intel-heading { margin-bottom: 26px; }
+.achievement-panel, .collection-panel, .bonus-panel {
+  margin-top: 18px;
+  padding: clamp(18px, 3vw, 26px);
+  border: 1px solid #ffffff19;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #17181af2, #101113f2);
+  box-shadow: 0 18px 50px #0005;
+}
+.achievement-panel h3, .collection-heading h3 { margin: 0; color: #d6d2c8; font-size: 13px; font-weight: 900; letter-spacing: .12em; }
+.achievement-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.achievement-card {
+  display: grid;
+  min-height: 124px;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-content: start;
+  gap: 10px 12px;
+  padding: 15px;
+  border: 1px solid #ffffff16;
+  border-radius: 14px;
+  background: #ffffff04;
+  opacity: .66;
+  transition: border-color .2s ease, transform .2s ease, opacity .2s ease;
+}
+.achievement-card.is-earned { border-color: #c7a45c70; background: linear-gradient(145deg, #c7a45c12, #ffffff04); opacity: 1; }
+.achievement-card.is-earned .achievement-icon { animation: achievement-stamp .45s ease both; }
+.achievement-icon { grid-row: span 2; font-size: 25px; }
+.achievement-card h4 { margin: 0; color: var(--text); font-size: 14px; }
+.achievement-card p { margin: 5px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+.achievement-status, .case-card-status, .bonus-token-status { color: #aaa7a0; font-size: 9px; font-weight: 900; letter-spacing: .09em; }
+.achievement-status { grid-column: 2; }
+.is-earned .achievement-status, .is-collected .case-card-status, .bonus-token.is-found .bonus-token-status { color: #d8bc7e; }
+.collection-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.collection-heading p { margin: 7px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
+.collection-count, .bonus-points { flex: 0 0 auto; color: #d8bc7e; font-size: 12px; font-weight: 900; }
+.card-collection { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 17px; }
+.case-card {
+  display: grid;
+  min-width: 0;
+  gap: 8px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #ffffff18;
+  border-radius: 13px;
+  background: #ffffff04;
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.case-card:hover { transform: translateY(-3px); }
+.case-card-image { position: relative; display: block; height: 105px; overflow: hidden; border-radius: 8px; background: #202124; }
+.case-card-image img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) brightness(.46); }
+.case-card.is-collected .case-card-image img { filter: grayscale(.55) brightness(.78); }
+.case-card-letter { position: absolute; inset: 0; display: grid; place-items: center; color: #eee7d9; font-size: 31px; font-weight: 950; text-shadow: 0 2px 12px #000; }
+.case-card-number { color: #a8a6a0; font-size: 9px; font-weight: 900; letter-spacing: .1em; }
+.case-card strong { overflow: hidden; color: #e4e0d8; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.case-card-status { margin-top: 1px; }
+.bonus-collection { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.bonus-token {
+  display: grid;
+  min-width: 0;
+  min-height: 112px;
+  align-content: center;
+  justify-items: center;
+  gap: 7px;
+  padding: 10px 6px;
+  border: 1px dashed #ffffff2a;
+  border-radius: 14px;
+  background: #ffffff04;
+  color: var(--text);
+  cursor: pointer;
+  text-align: center;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+.bonus-token:hover { transform: translateY(-3px); border-color: #c7a45c80; }
+.bonus-token.is-found { border-style: solid; border-color: #c7a45c70; background: #c7a45c0d; }
+.bonus-token-icon { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 50%; background: #ffffff0a; color: #c7a45c; font-size: 21px; font-weight: 900; }
+.bonus-token-title { overflow-wrap: anywhere; color: #c9c6bf; font-size: 10px; font-weight: 750; line-height: 1.35; }
+.bonus-message { min-height: 18px; margin: 12px 0 0; color: #d8bc7e; font-size: 12px; font-weight: 750; }
+.mission-success { position: relative; display: flex; min-height: 50px; align-items: center; gap: 8px; overflow: hidden; }
+.success-stamp { display: inline-grid; width: 28px; height: 28px; flex: 0 0 auto; place-items: center; border: 1px solid #d8bc7e77; border-radius: 50%; color: #e3c77e; font-size: 16px; }
+.success-sparkles { margin-left: auto; color: #d8bc7e; font-size: 17px; letter-spacing: .15em; white-space: nowrap; }
+.mission-success .success-stamp { animation: success-stamp .55s cubic-bezier(.2, 1.4, .4, 1) both; }
+.mission-success .success-sparkles { animation: success-sparkles .8s ease-out both; }
+@keyframes success-stamp { from { opacity: 0; transform: scale(2.4) rotate(-30deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
+@keyframes success-sparkles { 0% { opacity: 0; transform: translateX(24px); } 45% { opacity: 1; } 100% { opacity: .75; transform: translateX(0); } }
+@keyframes achievement-stamp { 0% { transform: scale(.65) rotate(-20deg); } 70% { transform: scale(1.2) rotate(7deg); } 100% { transform: scale(1); } }
+
+@media (max-width: 900px) {
+  .achievement-grid { grid-template-columns: 1fr; }
+  .card-collection { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .mission-intel { width: calc(100% - 44px); margin-top: 48px; }
+  .card-collection { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bonus-collection { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .emoji-backdrop { grid-template-columns: repeat(4, minmax(0, 1fr)); opacity: .07; }
+  .emoji-backdrop span:nth-child(n+21) { display: none; }
+}
+@media (max-width: 380px) {
+  .mission-success { flex-wrap: wrap; }
+  .success-sparkles { margin-left: 0; }
+  .bonus-collection { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 [dir="rtl"] .school-story, [dir="rtl"] .school-facts, [dir="rtl"] .story-credits { text-align: right; }
 [dir="rtl"] .school-story .story-lead, [dir="rtl"] .school-story .story-motto { text-align: center; }
 
