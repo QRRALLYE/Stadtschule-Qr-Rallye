@@ -810,8 +810,9 @@ main, .site-footer { position: relative; z-index: 1; }
   text-align: center;
   transition: transform .2s ease, border-color .2s ease, background .2s ease;
 }
-.bonus-token:hover { transform: translateY(-3px); border-color: #c7a45c80; }
+.bonus-token:hover:not(:disabled) { transform: translateY(-3px); border-color: #c7a45c80; }
 .bonus-token.is-found { border-style: solid; border-color: #c7a45c70; background: #c7a45c0d; }
+.bonus-token:disabled { cursor: default; opacity: 1; }
 .bonus-token-icon { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 50%; background: #ffffff0a; color: #c7a45c; font-size: 21px; font-weight: 900; }
 .bonus-token-title { overflow-wrap: anywhere; color: #c9c6bf; font-size: 10px; font-weight: 750; line-height: 1.35; }
 .bonus-message { min-height: 18px; margin: 12px 0 0; color: #d8bc7e; font-size: 12px; font-weight: 750; }

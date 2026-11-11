@@ -581,7 +581,7 @@ Object.assign(translations.tr, { navSchool: "Okulumuz", schoolProfileEyebrow: "O
 Object.assign(translations.de, {
   intelEyebrow: "GEHEIME AKTE", intelTitle: "Deine Beute.<br><span>Dein Ruf.</span>", intelDescription: "Knacke die Fälle, sammle Beweise und finde fünf versteckte Bonusobjekte.",
   achievementsTitle: "AUSZEICHNUNGEN", collectionTitle: "FALLKARTEN", collectionDescription: "Jede gelöste Station schaltet eine Karte frei.",
-  bonusTitle: "GEHEIME BEUTE", bonusDescription: "Finde die fünf versteckten Symbole für Bonuspunkte.",
+  bonusTitle: "GEHEIME BEUTE", bonusDescription: "Klicke auf ein verborgenes Symbol und erhalte 25 Bonuspunkte.",
   achievementEarned: "FREIGESCHALTET", achievementLocked: "NOCH GESPERRT", collectionUnlocked: "GESICHERT", collectionLocked: "VERSCHLÜSSELT",
   eggFound: "BONUS +25", eggHidden: "VERSTECKTES OBJEKT", eggPoints: "{count} BONUS-PUNKTE",
   intelAchievements: [{ title: "Erster Fall", text: "Löse deine erste Station." }, { title: "Meisterdetektiv", text: "Schließe alle sieben Stationen ab." }, { title: "Schattenjäger", text: "Finde alle fünf Bonusobjekte." }],
@@ -590,7 +590,7 @@ Object.assign(translations.de, {
 Object.assign(translations.en, {
   intelEyebrow: "CLASSIFIED FILE", intelTitle: "Your loot.<br><span>Your legend.</span>", intelDescription: "Crack the cases, collect the evidence and uncover five hidden bonus items.",
   achievementsTitle: "ACHIEVEMENTS", collectionTitle: "CASE CARDS", collectionDescription: "Solve a station to unlock its card.",
-  bonusTitle: "SECRET LOOT", bonusDescription: "Find five hidden symbols to earn bonus points.",
+  bonusTitle: "SECRET LOOT", bonusDescription: "Click a hidden symbol to earn 25 bonus points.",
   achievementEarned: "UNLOCKED", achievementLocked: "STILL LOCKED", collectionUnlocked: "COLLECTED", collectionLocked: "ENCRYPTED",
   eggFound: "BONUS +25", eggHidden: "HIDDEN ITEM", eggPoints: "{count} BONUS POINTS",
   intelAchievements: [{ title: "First Case", text: "Solve your first station." }, { title: "Master Detective", text: "Complete all seven stations." }, { title: "Shadow Hunter", text: "Find all five bonus items." }],
@@ -599,7 +599,7 @@ Object.assign(translations.en, {
 Object.assign(translations.ar, {
   intelEyebrow: "ملف سري", intelTitle: "غنيمتك.<br><span>أسطورتك.</span>", intelDescription: "حلّ القضايا واجمع الأدلة واكتشف خمسة أشياء إضافية مخفية.",
   achievementsTitle: "الإنجازات", collectionTitle: "بطاقات القضايا", collectionDescription: "حلّ محطة لفتح بطاقتها.",
-  bonusTitle: "الغنائم السرية", bonusDescription: "اعثر على خمسة رموز مخفية لتحصل على نقاط إضافية.",
+  bonusTitle: "الغنائم السرية", bonusDescription: "انقر على رمز مخفي لتحصل على ٢٥ نقطة إضافية.",
   achievementEarned: "تم الفتح", achievementLocked: "مغلق", collectionUnlocked: "تم الجمع", collectionLocked: "مشفّرة",
   eggFound: "مكافأة +٢٥", eggHidden: "عنصر مخفي", eggPoints: "{count} نقطة إضافية",
   intelAchievements: [{ title: "القضية الأولى", text: "حلّ محطتك الأولى." }, { title: "المحقق الخبير", text: "أكمل المحطات السبع." }, { title: "صياد الظلال", text: "اعثر على العناصر الإضافية الخمسة." }],
@@ -608,7 +608,7 @@ Object.assign(translations.ar, {
 Object.assign(translations.ru, {
   intelEyebrow: "СЕКРЕТНОЕ ДЕЛО", intelTitle: "Твоя добыча.<br><span>Твоя слава.</span>", intelDescription: "Раскрой дела, собери улики и найди пять спрятанных бонусных предметов.",
   achievementsTitle: "ДОСТИЖЕНИЯ", collectionTitle: "КАРТОЧКИ ДЕЛ", collectionDescription: "Пройди станцию, чтобы открыть её карточку.",
-  bonusTitle: "ТАЙНЫЕ БОНУСЫ", bonusDescription: "Найди пять спрятанных символов и получи бонусные очки.",
+  bonusTitle: "ТАЙНЫЕ БОНУСЫ", bonusDescription: "Нажми на скрытый символ и получи 25 бонусных очков.",
   achievementEarned: "ОТКРЫТО", achievementLocked: "ПОКА ЗАКРЫТО", collectionUnlocked: "СОБРАНО", collectionLocked: "ЗАШИФРОВАНО",
   eggFound: "БОНУС +25", eggHidden: "ТАЙНЫЙ ПРЕДМЕТ", eggPoints: "{count} БОНУСНЫХ ОЧКОВ",
   intelAchievements: [{ title: "Первое дело", text: "Пройди первую станцию." }, { title: "Мастер-сыщик", text: "Пройди все семь станций." }, { title: "Охотник за тенями", text: "Найди все пять бонусных предметов." }],
@@ -617,7 +617,7 @@ Object.assign(translations.ru, {
 Object.assign(translations.es, {
   intelEyebrow: "EXPEDIENTE SECRETO", intelTitle: "Tu botín.<br><span>Tu leyenda.</span>", intelDescription: "Resuelve los casos, reúne pruebas y encuentra cinco objetos de bonificación ocultos.",
   achievementsTitle: "LOGROS", collectionTitle: "CARTAS DE CASO", collectionDescription: "Resuelve una estación para desbloquear su carta.",
-  bonusTitle: "BOTÍN SECRETO", bonusDescription: "Encuentra cinco símbolos ocultos para ganar puntos extra.",
+  bonusTitle: "BOTÍN SECRETO", bonusDescription: "Haz clic en un símbolo oculto para ganar 25 puntos extra.",
   achievementEarned: "DESBLOQUEADO", achievementLocked: "AÚN BLOQUEADO", collectionUnlocked: "RECOGIDA", collectionLocked: "ENCRIPTADA",
   eggFound: "BONIFICACIÓN +25", eggHidden: "OBJETO OCULTO", eggPoints: "{count} PUNTOS EXTRA",
   intelAchievements: [{ title: "Primer caso", text: "Resuelve tu primera estación." }, { title: "Detective experto", text: "Completa las siete estaciones." }, { title: "Cazador de sombras", text: "Encuentra los cinco objetos extra." }],
@@ -626,7 +626,7 @@ Object.assign(translations.es, {
 Object.assign(translations.fr, {
   intelEyebrow: "DOSSIER SECRET", intelTitle: "Ton butin.<br><span>Ta légende.</span>", intelDescription: "Résous les affaires, rassemble les preuves et trouve cinq objets bonus cachés.",
   achievementsTitle: "SUCCÈS", collectionTitle: "CARTES D’AFFAIRES", collectionDescription: "Résous une étape pour débloquer sa carte.",
-  bonusTitle: "BUTIN SECRET", bonusDescription: "Trouve cinq symboles cachés pour gagner des points bonus.",
+  bonusTitle: "BUTIN SECRET", bonusDescription: "Clique sur un symbole caché pour gagner 25 points bonus.",
   achievementEarned: "DÉBLOQUÉ", achievementLocked: "ENCORE VERROUILLÉ", collectionUnlocked: "COLLECTÉE", collectionLocked: "CHIFFRÉE",
   eggFound: "BONUS +25", eggHidden: "OBJET CACHÉ", eggPoints: "{count} POINTS BONUS",
   intelAchievements: [{ title: "Première affaire", text: "Résous ta première étape." }, { title: "Détective expert", text: "Termine les sept étapes." }, { title: "Chasseur d’ombres", text: "Trouve les cinq objets bonus." }],
@@ -635,7 +635,7 @@ Object.assign(translations.fr, {
 Object.assign(translations.tr, {
   intelEyebrow: "GİZLİ DOSYA", intelTitle: "Ganimetin.<br><span>Efsanen.</span>", intelDescription: "Dosyaları çöz, kanıtları topla ve gizlenmiş beş bonus eşyayı bul.",
   achievementsTitle: "BAŞARILAR", collectionTitle: "DOSYA KARTLARI", collectionDescription: "Kartını açmak için bir istasyonu tamamla.",
-  bonusTitle: "GİZLİ GANİMET", bonusDescription: "Bonus puan kazanmak için gizli beş sembolü bul.",
+  bonusTitle: "GİZLİ GANİMET", bonusDescription: "25 bonus puan kazanmak için gizli bir sembole tıkla.",
   achievementEarned: "AÇILDI", achievementLocked: "HÂLÂ KİLİTLİ", collectionUnlocked: "TOPLANDI", collectionLocked: "ŞİFRELİ",
   eggFound: "BONUS +25", eggHidden: "GİZLİ EŞYA", eggPoints: "{count} BONUS PUAN",
   intelAchievements: [{ title: "İlk Dosya", text: "İlk istasyonunu tamamla." }, { title: "Usta Dedektif", text: "Yedi istasyonun tamamını bitir." }, { title: "Gölge Avcısı", text: "Beş bonus eşyanın tümünü bul." }],
@@ -1390,9 +1390,9 @@ function renderRewards(solved = getSolved()) {
   bonusCollection.innerHTML = copy.intelEggs.map((title, index) => {
     const number = index + 1;
     const found = foundEggs.includes(number);
-    return `<button type="button" class="bonus-token ${found ? "is-found" : ""}" data-secret-egg="${number}" aria-label="${title}: ${found ? copy.eggFound : copy.eggHidden}" aria-pressed="${found}">
+    return `<button type="button" class="bonus-token ${found ? "is-found" : ""}" data-secret-egg="${number}" aria-label="${found ? `${title}: ${copy.eggFound}` : `${copy.eggHidden}: ${copy.eggFound}`}"${found ? " disabled" : ""}>
       <span class="bonus-token-icon" aria-hidden="true">${found ? ["🕵️", "🗝️", "💎", "🐈‍⬛", "🔎"][index] : "?"}</span>
-      <span class="bonus-token-title">${title}</span>
+      ${found ? `<span class="bonus-token-title">${title}</span>` : ""}
       <span class="bonus-token-status">${found ? copy.eggFound : copy.eggHidden}</span>
     </button>`;
   }).join("");
@@ -1670,6 +1670,7 @@ document.addEventListener("click", async (event) => {
   const secretEgg = event.target.closest("[data-secret-egg]");
   if (secretEgg) {
     const number = Number(secretEgg.dataset.secretEgg);
+    if (!Number.isInteger(number) || number < 1 || number > 5) return;
     const foundEggs = getSecretEggs();
     if (foundEggs.includes(number)) return;
     foundEggs.push(number);
@@ -1680,6 +1681,10 @@ document.addEventListener("click", async (event) => {
     renderRewards();
     const message = document.getElementById("bonusMessage");
     message.textContent = `${translations[currentLanguage].intelEggs[number - 1]} · ${translations[currentLanguage].eggFound}`;
+    if (event.detail === 0) {
+      const nextEgg = document.querySelector("[data-secret-egg]:not(:disabled)");
+      (nextEgg || document.getElementById("bonusTitle"))?.focus();
+    }
     return;
   }
   const ratingButton = event.target.closest(".star-button");
